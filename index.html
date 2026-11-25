@@ -3,107 +3,355 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>정부지원사업 알림 대시보드</title>
+<title>정부지원사업 통합 대시보드</title>
 <style>
-  :root{--bg:#f6f7f9;--card:#fff;--ink:#1d2330;--sub:#5d6675;--line:#e3e6eb;
-        --fit:#1f7a4d;--fitbg:#e5f4ec;--rev:#9a6200;--revbg:#fdf1dc;--ex:#7a7f88;--exbg:#eef0f3;--urgent:#c0392b}
-  @media (prefers-color-scheme:dark){:root{--bg:#14171c;--card:#1d2128;--ink:#e8eaee;--sub:#a0a7b3;--line:#2d323b;
-        --fitbg:#173a29;--fit:#6fd3a0;--revbg:#3d2f12;--rev:#f0c06a;--exbg:#262a31;--ex:#a0a7b3;--urgent:#ff7b6b}}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
-  header{padding:24px 20px 8px;max-width:1100px;margin:0 auto}
-  h1{font-size:22px;margin:0 0 4px}
-  .meta{color:var(--sub);font-size:14px}
-  main{max-width:1100px;margin:0 auto;padding:8px 20px 40px}
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-  .stat b{display:block;font-size:26px}
-  .stat span{color:var(--sub);font-size:13px}
-  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 16px}
-  .controls button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer;font-size:14px}
-  .controls button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-  .controls input{flex:1;min-width:180px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-size:14px}
-  .list{display:grid;gap:12px}
-  .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
-  .top{display:flex;gap:8px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
-  .title{font-weight:600;font-size:16px;margin:0}
-  .title a{color:inherit;text-decoration:none}.title a:hover{text-decoration:underline}
-  .badge{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
-  .b-fit{background:var(--fitbg);color:var(--fit)}.b-rev{background:var(--revbg);color:var(--rev)}.b-ex{background:var(--exbg);color:var(--ex)}
-  .dday{font-size:13px;font-weight:600;color:var(--sub);white-space:nowrap}.dday.urgent{color:var(--urgent)}
-  .verdict{margin:8px 0 10px;font-size:14px}
-  dl{display:grid;grid-template-columns:90px 1fr;gap:4px 12px;margin:0;font-size:14px}
-  dt{color:var(--sub)}dd{margin:0}
-  .empty{color:var(--sub);text-align:center;padding:40px 0}
-  footer{color:var(--sub);font-size:12px;text-align:center;padding:20px}
+:root{
+  --g900:#0f4d2c;--g800:#14633a;--g700:#1b7a47;--g600:#23944f;--g500:#3fb15f;--g400:#7fcf6b;--g300:#b4e28f;--g200:#dff2d3;--g100:#eef8e8;--g50:#f6fbf2;
+  --ink:#16251c;--sub:#5b6b61;--line:#e4ece2;--card:#fff;--bg:#f4f8f1;
+  --amberbg:#fdf4d6;--red:#d64535;--redbg:#fde8e5;
+  --r:18px;--shadow:0 2px 10px rgba(20,60,30,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;font-size:15px}
+a{color:inherit}
+.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+aside{background:linear-gradient(180deg,var(--g800),var(--g900));color:#fff;padding:24px 16px;display:flex;flex-direction:column;gap:22px;position:sticky;top:0;height:100vh}
+.brand{display:flex;gap:10px;align-items:center;padding:0 8px}
+.brand svg{flex:none}
+.brand b{display:block;font-size:19px;line-height:1.15}
+.brand small{display:block;font-size:12px;opacity:.75;margin-top:4px}
+nav{display:flex;flex-direction:column;gap:4px}
+nav a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;color:#e5f3e8}
+nav a:hover{background:rgba(255,255,255,.08)}
+nav a.on{background:var(--g300);color:var(--g900)}
+nav a .cnt{margin-left:auto;background:var(--g400);color:var(--g900);font-size:12px;font-weight:700;border-radius:999px;padding:1px 9px}
+nav a .cnt.red{background:#ffb4a8;color:#6b160d}
+.status{margin-top:auto;background:rgba(255,255,255,.09);border-radius:14px;padding:14px 16px;font-size:13px}
+.status b{font-size:15px;display:block;margin-bottom:4px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.status ul{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;opacity:.92}
+.status li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+main{padding:24px 28px 48px;min-width:0;background:radial-gradient(1200px 300px at 80% -80px,var(--g200),transparent)}
+.top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.top .ico{width:58px;height:58px;border-radius:16px;background:var(--card);display:grid;place-items:center;box-shadow:var(--shadow)}
+.top h1{margin:0;font-size:28px;letter-spacing:-.5px}
+.top p{margin:2px 0 0;color:var(--sub)}
+.pills{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.pill{background:var(--card);border-radius:999px;padding:9px 16px;box-shadow:var(--shadow);font-size:13px;display:flex;align-items:center;gap:8px}
+.pill b{font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+.kpi{background:var(--card);border-radius:var(--r);padding:18px;display:flex;gap:16px;align-items:center;box-shadow:var(--shadow)}
+.kpi.first{background:linear-gradient(135deg,#fff,var(--g100));border:1px solid var(--g200)}
+.kpi .ki{width:64px;height:64px;border-radius:16px;background:var(--g100);display:grid;place-items:center;flex:none}
+.kpi.warn .ki{background:var(--redbg)}
+.kpi h3{margin:0;font-size:15px}
+.kpi .n{font-size:34px;font-weight:800;line-height:1.1}
+.kpi .n small{font-size:16px;font-weight:600;margin-left:4px}
+.kpi.warn .n{color:var(--red)}
+.kpi .s{font-size:13px;color:var(--sub);margin-top:2px}
+.kpi .s.up{color:var(--g700);font-weight:600}
+.row{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;margin-bottom:16px}
+.panel{background:var(--card);border-radius:var(--r);padding:20px 22px;box-shadow:var(--shadow);min-width:0}
+.panel h2{margin:0 0 14px;font-size:18px}
+.panel h2 small{font-weight:500;color:var(--sub);font-size:14px}
+.donutwrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.legend{list-style:none;margin:0;padding:0;flex:1;min-width:170px;display:grid;gap:8px;font-size:14px}
+.legend li{display:flex;align-items:center;gap:8px}
+.legend i{width:11px;height:11px;border-radius:50%;flex:none}
+.legend span:last-child{margin-left:auto;font-weight:700}
+.bars svg{width:100%;height:auto;display:block}
+.insight{background:linear-gradient(160deg,var(--g100),var(--g50));border:1px solid var(--g200)}
+.insight ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.insight li{display:flex;gap:10px;font-size:14px}
+.insight li svg{flex:none;margin-top:2px}
+.rec{background:var(--card);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);margin-bottom:16px}
+.rechead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.rechead h2{margin:0;font-size:21px}
+.rechead p{margin:0;color:var(--sub);font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--g800);color:#fff;border-color:var(--g800)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;border-radius:6px;padding:2px 8px;background:var(--g100);color:var(--g800)}
+.tag.src{background:#eef1f5;color:#4a5563}
+.ch{display:flex;gap:12px;align-items:flex-start}
+.ch h3{margin:0;font-size:16.5px;line-height:1.35;flex:1}
+.verdict{flex:none;text-align:center;border-radius:12px;padding:6px 10px;font-weight:800;font-size:14px;white-space:nowrap}
+.v-fit{background:var(--g100);color:var(--g700)}
+.v-rev{background:var(--amberbg);color:#8a6400}
+.v-ex{background:#eef0f2;color:#6b737c}
+.facts{display:flex;gap:16px;color:var(--sub);font-size:13.5px;flex-wrap:wrap}
+.facts .urgent{color:var(--red);font-weight:700}
+.prog{height:7px;background:var(--g100);border-radius:9px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--g600);border-radius:9px}
+.prog.hot i{background:var(--red)}
+.reason{background:var(--g50);border-radius:10px;padding:10px 12px;font-size:13.5px}
+.reason b{color:var(--g700);margin-right:6px}
+.cf{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;margin-top:auto}
+.cf a{font-weight:600;text-decoration:none}
+.cf a:hover{text-decoration:underline}
+.save{background:none;border:0;font:inherit;font-size:13.5px;cursor:pointer;color:var(--sub)}
+.save.on{color:var(--g700);font-weight:700}
+.empty{color:var(--sub);text-align:center;padding:28px 0}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--sub);font-weight:600;font-size:13px;white-space:nowrap}
+td.nm a{font-weight:600;text-decoration:none}
+td.nm a:hover{text-decoration:underline}
+.search{padding:8px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14px;min-width:200px;margin-left:auto}
+footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:24px}
+@media (max-width:1200px){.row{grid-template-columns:1fr 1fr}.insight{grid-column:1/-1}.kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  aside{position:static;height:auto;padding:16px}
+  nav{flex-direction:row;overflow-x:auto}
+  nav a{white-space:nowrap;padding:8px 12px}
+  .status{display:none}
+  main{padding:18px 14px 40px}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .top p{font-size:13px}
+  .bars svg{max-height:240px}
+  .top h1{font-size:22px}
+  .pills{margin-left:0}
+}
+@media (max-width:520px){.kpis{grid-template-columns:minmax(0,1fr)}.cards{grid-template-columns:minmax(0,1fr)}.search{min-width:0;width:100%}}
 </style>
 </head>
 <body>
-<header>
-  <h1>정부지원사업 알림 대시보드</h1>
-  <div class="meta" id="meta">불러오는 중…</div>
-</header>
-<main>
-  <div class="stats" id="stats"></div>
-  <div class="controls" id="controls">
-    <button data-f="active" class="on">꼭 맞음 + 검토 필요</button>
-    <button data-f="꼭 맞음">꼭 맞음</button>
-    <button data-f="검토 필요">검토 필요</button>
-    <button data-f="제외">제외</button>
-    <button data-f="all">전체</button>
-    <input id="q" type="search" placeholder="사업명·기관 검색">
+<div class="app">
+<aside>
+  <div class="brand">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30c0-12 8-20 22-22-1 14-9 22-22 22z" fill="#9be07a"/><path d="M8 30C12 22 18 16 26 12" stroke="#0f4d2c" stroke-width="2" fill="none"/><path d="M6 20c0-6 4-10 11-11-1 7-5 11-11 11z" fill="#c9f0a8"/></svg>
+    <div><b>정부지원사업<br>알림</b><small>매일 자동 수집·판단</small></div>
   </div>
-  <div class="list" id="list"></div>
+  <nav>
+    <a href="#top" class="on"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>통합 대시보드</a>
+    <a href="#rec" data-jump="all"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg>맞춤 지원사업<span class="cnt" id="navRec">0</span></a>
+    <a href="#all"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>전체 공고</a>
+    <a href="#rec" data-jump="urgent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/></svg>마감 임박<span class="cnt red" id="navUrg">0</span></a>
+    <a href="#rec" data-jump="saved"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>관심 지원사업</a>
+  </nav>
+  <div class="status" id="srcBox"></div>
+</aside>
+
+<main id="top">
+  <div class="top">
+    <div class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 2l2.4 6.2L21 10l-6.6 1.8L12 18l-2.4-6.2L3 10l6.6-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div>
+    <div>
+      <h1>정부지원사업 통합 대시보드</h1>
+      <p>서울·경기 의료기기 SW 소기업(2018년 설립) 맞춤 공고 · 알림 전용</p>
+    </div>
+    <div class="pills">
+      <div class="pill"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg><span>바우처 · R&amp;D · 인력</span></div>
+      <div class="pill"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><div><b>자동수집</b><div id="updated" style="color:var(--sub);font-size:12px">-</div></div></div>
+    </div>
+  </div>
+
+  <section class="kpis">
+    <div class="kpi first"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><div><h3>확인한 공고</h3><div class="n" id="kAll">0<small>건</small></div><div class="s" id="kAllS">-</div></div></div>
+    <div class="kpi"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><div><h3>신규 공고</h3><div class="n" id="kNew">0<small>건</small></div><div class="s up" id="kNewS">-</div></div></div>
+    <div class="kpi"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></div><div><h3>맞춤 공고</h3><div class="n" id="kFit">0<small>건</small></div><div class="s" id="kFitS">-</div></div></div>
+    <div class="kpi warn"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d64535" stroke-width="1.8"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M5 3L2 6M19 3l3 3"/></svg></div><div><h3>마감 임박</h3><div class="n" id="kUrg">0<small>건</small></div><div class="s">7일 이내 마감 (맞춤 공고)</div></div></div>
+  </section>
+
+  <section class="row">
+    <div class="panel"><h2>지원 분야별 현황 <small id="donutTotal"></small></h2><div class="donutwrap"><svg id="donut" width="190" height="190" viewBox="0 0 190 190"></svg><ul class="legend" id="legend"></ul></div></div>
+    <div class="panel bars"><h2>마감 시점별 맞춤 공고</h2><svg id="bars" viewBox="0 0 360 210"></svg></div>
+    <div class="panel insight"><h2><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b7a47" stroke-width="2.2" style="vertical-align:-4px;margin-right:6px"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>핵심 인사이트</h2><ul id="insights"></ul></div>
+  </section>
+
+  <section class="rec" id="rec">
+    <div class="rechead">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 2l2.4 6.2L21 10l-6.6 1.8L12 18l-2.4-6.2L3 10l6.6-1.8z"/></svg>
+      <h2>맞춤 지원사업</h2>
+      <p>대상 조건(업종·지역·규모·업력·인증)과 비교해 꼭 맞음 / 검토 필요로 판단한 공고예요.</p>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="panel" id="all">
+    <div class="rechead"><h2 style="font-size:18px">전체 공고</h2><p id="allCount"></p><input class="search" id="q" type="search" placeholder="사업명·기관 검색"></div>
+    <div class="tablewrap"><table><thead><tr><th>판정</th><th>사업명</th><th>기관</th><th>마감</th><th>판단 사유</th><th>수집처</th></tr></thead><tbody id="tbody"></tbody></table></div>
+  </section>
+
+  <footer>평일 오전 9시 자동 갱신 · 알림 전용이며 신청은 직접 하셔야 합니다 · 판단 규칙: agent/CLAUDE.md</footer>
 </main>
-<footer>평일 오전 9시 자동 갱신 · 알림 전용이며 신청은 직접 하셔야 합니다</footer>
+</div>
+
 <script>
-const today = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"})); today.setHours(0,0,0,0);
-let data = {updated:"", notices:[]}, filter = "active";
+const today = (() => { const d = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"})); d.setHours(0,0,0,0); return d; })();
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "#";
-function dday(d){
-  if(!d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return {txt: d || "상시", n: 9999};
-  const n = Math.round((new Date(d+"T00:00:00") - today)/86400000);
-  return {txt: n<0 ? "마감" : n===0 ? "D-Day" : "D-"+n, n};
+const isDate = d => /^\d{4}-\d{2}-\d{2}$/.test(d||"");
+const daysLeft = d => isDate(d) ? Math.round((new Date(d+"T00:00:00") - today)/86400000) : null;
+const ddTxt = d => { const n = daysLeft(d); return n===null ? (d||"상시") : n<0 ? "마감" : n===0 ? "D-Day" : "D-"+n; };
+const isActive = x => x.판정 !== "제외";
+const isUrgent = x => { const n = daysLeft(x.마감일); return n!==null && n<=7; };
+
+// 분야: 저장된 값이 있으면 쓰고, 없으면 사업명·자격요건 키워드로 분류
+const FIELDS = [
+  ["R&D", /R&D|연구|기술개발|과제|실증|테스트베드|TIPS|팁스/i, "#1b7a47"],
+  ["바우처", /바우처/, "#3fb15f"],
+  ["인력", /인력|채용|인건비|고용|일자리|교육|훈련/, "#b4e28f"],
+  ["사업화·판로", /사업화|판로|수출|해외|마케팅|전시|입점/, "#e8c547"],
+];
+const fieldOf = x => {
+  if (x.분야) return x.분야;
+  const t = (x.사업명||"")+" "+(x.자격요건||"");
+  for (const [n, re] of FIELDS) if (re.test(t)) return n;
+  return "기타";
+};
+const COLOR = Object.fromEntries([...FIELDS.map(f=>[f[0],f[2]]), ["기타","#cfd6d1"]]);
+
+let DATA = {notices:[]}, tab = "all";
+const saved = new Set(JSON.parse(localStorage.getItem("savedNotices")||"[]"));
+const visible = () => DATA.notices.filter(x=>{ const n=daysLeft(x.마감일); return n===null || n>=0; });
+
+function kpis(all){
+  const act = all.filter(isActive), fit = act.filter(x=>x.판정==="꼭 맞음"), urg = act.filter(isUrgent);
+  const latest = all.reduce((m,x)=> (x.처음본날짜||"")>m ? x.처음본날짜 : m, "");
+  const fresh = latest ? all.filter(x=>x.처음본날짜===latest) : [];
+  const set = (id, html) => document.getElementById(id).innerHTML = html;
+  set("kAll", all.length+"<small>건</small>");
+  set("kAllS", `맞춤 ${act.length}건 · 제외 ${all.length-act.length}건`);
+  set("kNew", fresh.length+"<small>건</small>");
+  set("kNewS", latest ? `${esc(latest.slice(5).replace("-","/"))} 수집 · 맞춤 ${fresh.filter(isActive).length}건` : "-");
+  set("kFit", act.length+"<small>건</small>");
+  set("kFitS", `꼭 맞음 ${fit.length} · 검토 필요 ${act.length-fit.length}`);
+  set("kUrg", urg.length+"<small>건</small>");
+  set("navRec", act.length); set("navUrg", urg.length);
+  return {act, fit, urg, fresh};
 }
-const cls = v => v==="꼭 맞음" ? "b-fit" : v==="검토 필요" ? "b-rev" : "b-ex";
-function render(){
-  const q = document.getElementById("q").value.trim();
-  const all = data.notices.filter(x => dday(x.마감일).n >= 0);
-  const c = v => all.filter(x=>x.판정===v).length;
-  document.getElementById("stats").innerHTML =
-    `<div class="stat"><b>${c("꼭 맞음")}</b><span>꼭 맞음</span></div>`+
-    `<div class="stat"><b>${c("검토 필요")}</b><span>검토 필요</span></div>`+
-    `<div class="stat"><b>${all.filter(x=>x.판정!=="제외" && dday(x.마감일).n<=7).length}</b><span>7일 안에 마감</span></div>`+
-    `<div class="stat"><b>${c("제외")}</b><span>제외</span></div>`;
-  let rows = all.filter(x => filter==="all" || (filter==="active" ? x.판정!=="제외" : x.판정===filter));
-  if(q) rows = rows.filter(x => (x.사업명+" "+x.기관).includes(q));
-  rows.sort((a,b)=> (a.판정==="꼭 맞음"?0:1)-(b.판정==="꼭 맞음"?0:1) || dday(a.마감일).n - dday(b.마감일).n);
-  document.getElementById("list").innerHTML = rows.length ? rows.map(x=>{
-    const d = dday(x.마감일);
-    return `<article class="item">
-      <div class="top"><h2 class="title"><a href="${esc(safeUrl(x.링크))}" target="_blank" rel="noopener">${esc(x.사업명)}</a></h2>
-      <div><span class="dday ${d.n<=7?"urgent":""}">${esc(d.txt)}</span> <span class="badge ${cls(x.판정)}">${esc(x.판정)}</span></div></div>
-      <p class="verdict">${esc(x.한줄평)}</p>
-      <dl><dt>기관</dt><dd>${esc(x.기관)}</dd>
-      <dt>지원금액</dt><dd>${esc(x.지원금액)}</dd>
-      <dt>신청기간</dt><dd>${esc(x.접수시작||"")} ~ ${esc(x.마감일)} ${esc(x.마감시각||"")}</dd>
-      <dt>자격요건</dt><dd>${esc(x.자격요건)}</dd>
-      <dt>수집처</dt><dd>${esc(x.수집처)}</dd></dl></article>`;
+
+function donut(all){
+  const cnt = {}; all.forEach(x=>{const f=fieldOf(x); cnt[f]=(cnt[f]||0)+1;});
+  const order = [...FIELDS.map(f=>f[0]),"기타"].filter(k=>cnt[k]);
+  const total = all.length || 1, R=78, r=50, cx=95, cy=95;
+  const p = (rad,ang)=>[cx+rad*Math.cos(ang), cy+rad*Math.sin(ang)];
+  let a = -Math.PI/2, svg = "";
+  order.forEach(k=>{
+    const frac = cnt[k]/total, a2 = a + frac*2*Math.PI - (frac===1?0.0001:0), large = a2-a > Math.PI ? 1 : 0;
+    const [x1,y1]=p(R,a),[x2,y2]=p(R,a2),[x3,y3]=p(r,a2),[x4,y4]=p(r,a);
+    svg += `<path d="M${x1},${y1} A${R},${R} 0 ${large} 1 ${x2},${y2} L${x3},${y3} A${r},${r} 0 ${large} 0 ${x4},${y4} Z" fill="${COLOR[k]||"#cfd6d1"}" stroke="#fff" stroke-width="2"><title>${esc(k)} ${cnt[k]}건</title></path>`;
+    a = a2;
+  });
+  svg += `<text x="95" y="96" text-anchor="middle" font-size="30" font-weight="800" fill="#16251c">${all.length}</text><text x="95" y="118" text-anchor="middle" font-size="13" fill="#5b6b61">건</text>`;
+  document.getElementById("donut").innerHTML = svg;
+  document.getElementById("donutTotal").textContent = `(전체 ${all.length}건)`;
+  document.getElementById("legend").innerHTML = order.map(k=>`<li><i style="background:${COLOR[k]||"#cfd6d1"}"></i><span>${esc(k)} (${(cnt[k]/total*100).toFixed(1)}%)</span><span>${cnt[k]}건</span></li>`).join("");
+  return {cnt, order};
+}
+
+function bars(act){
+  const B = [["7일 이내",n=>n!==null&&n<=7],["8~14일",n=>n!==null&&n>7&&n<=14],["15~30일",n=>n!==null&&n>14&&n<=30],["31일 이후",n=>n!==null&&n>30],["상시",n=>n===null]];
+  const v = B.map(([,f])=>act.filter(x=>f(daysLeft(x.마감일))).length);
+  const top = Math.ceil(Math.max(4, ...v)/4)*4, H=150, y0=175, x0=34, w=52, gap=(360-x0-12-w*5)/4;
+  const cols = ["#d64535","#7fcf6b","#3fb15f","#23944f","#1b7a47"];
+  let s = "";
+  for (let i=0;i<=4;i++){ const y=y0-H*i/4; s+=`<line x1="${x0}" x2="352" y1="${y}" y2="${y}" stroke="#e4ece2" ${i?'stroke-dasharray="3 4"':''}/><text x="${x0-8}" y="${y+4}" text-anchor="end" font-size="11" fill="#5b6b61">${top*i/4}</text>`; }
+  v.forEach((n,i)=>{
+    const h = H*n/top, x = x0+6+i*(w+gap);
+    s += `<rect x="${x}" y="${y0-h}" width="${w}" height="${h}" rx="6" fill="${cols[i]}"/>`;
+    s += `<text x="${x+w/2}" y="${y0-h-7}" text-anchor="middle" font-size="13" font-weight="700" fill="#16251c">${n}</text>`;
+    s += `<text x="${x+w/2}" y="${y0+20}" text-anchor="middle" font-size="12" fill="#5b6b61">${B[i][0]}</text>`;
+  });
+  document.getElementById("bars").innerHTML = s;
+}
+
+function insights(all, k, d){
+  const out = [];
+  out.push(k.fresh.length ? `최근 수집에서 새 공고 ${k.fresh.length}건을 확인했고, 그중 맞춤 공고는 ${k.fresh.filter(isActive).length}건이에요.` : "최근 수집에서 새 공고가 없었어요.");
+  if (k.urg.length) out.push(`맞춤 공고 ${k.act.length}건 중 ${k.urg.length}건이 7일 안에 마감돼요.`);
+  out.push(k.fit.length ? `꼭 맞음 공고가 ${k.fit.length}건 있어요. 먼저 확인해 보세요.` : "아직 꼭 맞음 공고는 없어요. 검토 필요 공고는 공고문에서 자격요건을 확인해 주세요.");
+  const topF = d.order.filter(f=>f!=="기타").sort((a,b)=>d.cnt[b]-d.cnt[a])[0];
+  if (topF && all.length) out.push(`${topF} 분야 공고가 ${d.cnt[topF]}건으로 가장 많아요 (${(d.cnt[topF]/all.length*100).toFixed(1)}%).`);
+  const bad = (DATA.sources||[]).filter(s=>!s.ok);
+  if (bad.length) out.push(`수집처 ${bad.length}곳(${bad.slice(0,3).map(s=>s.name).join(", ")}${bad.length>3?" 등":""})을 이번에 읽지 못했어요.`);
+  const ck = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="2.6"><path d="M5 12l5 5 9-10"/></svg>';
+  document.getElementById("insights").innerHTML = out.slice(0,5).map(t=>`<li>${ck}<span>${esc(t)}</span></li>`).join("");
+}
+
+function tabs(act){
+  const fields = {}; act.forEach(x=>{const f=fieldOf(x); fields[f]=(fields[f]||0)+1;});
+  const T = [["all",`전체 (${act.length})`],["꼭 맞음",`꼭 맞음 (${act.filter(x=>x.판정==="꼭 맞음").length})`],["urgent",`마감 임박 (${act.filter(isUrgent).length})`],
+    ...Object.keys(fields).map(f=>["f:"+f,`${f} (${fields[f]})`]), ["saved",`관심 (${act.filter(x=>saved.has(x.id)).length})`]];
+  document.getElementById("tabs").innerHTML = T.map(([k,l])=>`<button data-t="${esc(k)}" class="${k===tab?"on":""}">${esc(l)}</button>`).join("");
+}
+
+function cards(act){
+  const rows = act.filter(x=>{
+    if (tab==="꼭 맞음") return x.판정==="꼭 맞음";
+    if (tab==="urgent") return isUrgent(x);
+    if (tab==="saved") return saved.has(x.id);
+    if (tab.startsWith("f:")) return fieldOf(x)===tab.slice(2);
+    return true;
+  }).sort((a,b)=>(a.판정==="꼭 맞음"?0:1)-(b.판정==="꼭 맞음"?0:1) || (daysLeft(a.마감일)??9999)-(daysLeft(b.마감일)??9999));
+  document.getElementById("cards").innerHTML = rows.length ? rows.map(x=>{
+    const n = daysLeft(x.마감일), fit = x.판정==="꼭 맞음";
+    let pct = null;
+    if (n!==null && isDate(x.접수시작)) { const tot = n - daysLeft(x.접수시작); pct = tot>0 ? Math.min(100,Math.max(0,Math.round((tot-n)/tot*100))) : 100; }
+    const money = x.지원금액 && !/확인 필요/.test(x.지원금액) ? x.지원금액 : "금액 공고문 확인";
+    return `<article class="card">
+      <div class="tags"><span class="tag">${esc(fieldOf(x))}</span><span class="tag src">${esc(x.수집처)}</span></div>
+      <div class="ch"><h3>${esc(x.사업명)}</h3><div class="verdict ${fit?"v-fit":"v-rev"}">${esc(x.판정)}</div></div>
+      <div class="facts"><span>💰 ${esc(money)}</span><span class="${n!==null&&n<=7?"urgent":""}">📅 ${esc(ddTxt(x.마감일))}${isDate(x.마감일)?" ("+esc(x.마감일.slice(5).replace("-","/"))+")":""}</span><span>🏢 ${esc((x.기관||"").split("/")[0].trim())}</span></div>
+      ${pct!==null?`<div class="prog ${n<=7?"hot":""}" title="접수기간 ${pct}% 지남"><i style="width:${pct}%"></i></div>`:""}
+      <div class="reason"><b>판단 사유</b>${esc((x.한줄평||"").replace(/^(꼭 맞음|검토 필요)\s*[:.]\s*/,""))}</div>
+      <div class="cf"><a href="${esc(safeUrl(x.링크))}" target="_blank" rel="noopener">공고문 보기 ↗</a>
+      <button class="save ${saved.has(x.id)?"on":""}" data-id="${esc(x.id)}">${saved.has(x.id)?"★ 관심 저장됨":"☆ 관심사업 저장"}</button></div>
+    </article>`;
   }).join("") : `<div class="empty">조건에 맞는 공고가 없어요.</div>`;
 }
-document.getElementById("controls").addEventListener("click", e=>{
-  if(!e.target.dataset.f) return;
-  filter = e.target.dataset.f;
-  document.querySelectorAll("#controls button").forEach(b=>b.classList.toggle("on", b===e.target));
-  render();
+
+function table(all){
+  const q = document.getElementById("q").value.trim();
+  const rank = {"꼭 맞음":0,"검토 필요":1,"제외":2};
+  const rows = all.filter(x=>!q || (x.사업명+" "+(x.기관||"")).includes(q))
+    .sort((a,b)=>(rank[a.판정]??3)-(rank[b.판정]??3) || (daysLeft(a.마감일)??9999)-(daysLeft(b.마감일)??9999));
+  document.getElementById("allCount").textContent = `${rows.length}건`;
+  const cls = v => v==="꼭 맞음"?"v-fit":v==="검토 필요"?"v-rev":"v-ex";
+  document.getElementById("tbody").innerHTML = rows.map(x=>`<tr>
+    <td><span class="verdict ${cls(x.판정)}" style="font-size:12px;padding:3px 8px">${esc(x.판정)}</span></td>
+    <td class="nm">${x.링크?`<a href="${esc(safeUrl(x.링크))}" target="_blank" rel="noopener">${esc(x.사업명)}</a>`:esc(x.사업명)}</td>
+    <td>${esc(x.기관||"-")}</td><td style="white-space:nowrap">${esc(x.마감일||"-")}</td>
+    <td>${esc((x.한줄평||"").replace(/^(꼭 맞음|검토 필요|제외)\s*[:.]\s*/,""))}</td><td>${esc(x.수집처||"")}</td></tr>`).join("");
+}
+
+function sources(){
+  const S = DATA.sources||[], ok = S.filter(s=>s.ok).length;
+  document.getElementById("srcBox").innerHTML = `<b>자동수집 현황</b>
+    <div><span class="dot" style="background:${S.length&&ok===S.length?"#7fcf6b":"#e8c547"}"></span>${S.length?`${S.length}곳 중 ${ok}곳 수집`:"정보 없음"}</div>
+    <ul>${S.map(s=>`<li title="${esc(s.note||"")}"><span class="dot" style="background:${s.ok?"#7fcf6b":"#ff9b8a"}"></span>${esc(s.name)}</li>`).join("")}</ul>`;
+}
+
+function render(){
+  const all = visible(), act = all.filter(isActive);
+  const k = kpis(all), d = donut(all);
+  bars(act); insights(all,k,d); tabs(act); cards(act); table(all); sources();
+}
+
+document.getElementById("tabs").addEventListener("click", e=>{ const t=e.target.closest("button"); if(!t) return; tab=t.dataset.t; render(); });
+document.getElementById("cards").addEventListener("click", e=>{
+  const b=e.target.closest(".save"); if(!b) return;
+  saved.has(b.dataset.id) ? saved.delete(b.dataset.id) : saved.add(b.dataset.id);
+  localStorage.setItem("savedNotices", JSON.stringify([...saved])); render();
 });
-document.getElementById("q").addEventListener("input", render);
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click", ()=>{
+  document.querySelectorAll("nav a").forEach(b=>b.classList.toggle("on", b===a));
+  if (a.dataset.jump) { tab = a.dataset.jump; render(); }
+}));
+document.getElementById("q").addEventListener("input", ()=>table(visible()));
+
 fetch("notices.json?t="+Date.now()).then(r=>r.json()).then(j=>{
-  data = j;
-  document.getElementById("meta").textContent = `마지막 갱신: ${j.updated || "-"} · 대상: 서울·경기 의료기기 SW 소기업 (2018년 설립)`;
+  DATA = j; DATA.notices = DATA.notices||[];
+  document.getElementById("updated").textContent = (j.updated||"-")+" 기준";
   render();
-}).catch(()=>{document.getElementById("meta").textContent="데이터를 불러오지 못했어요."});
+}).catch(()=>{ document.getElementById("updated").textContent = "데이터를 불러오지 못했어요"; });
 </script>
 </body>
 </html>
