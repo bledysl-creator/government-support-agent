@@ -3,6 +3,28 @@
 GitHub Actions(해외 GitHub 서버)에서 실행된다."""
 import json, os, datetime, sys
 from playwright.sync_api import sync_playwright
+from html.parser import HTMLParser
+from urllib.parse import urljoin
+
+
+class LinkParser(HTMLParser):
+    """페이지 스크립트가 브라우저 기본 기능을 덮어써서 evaluate가 실패할 때 HTML에서 직접 링크를 뽑는다."""
+    def __init__(self, base):
+        super().__init__(); self.base = base; self.links = []; self.text = []; self.cur = None
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            self.cur = {"h": urljoin(self.base, dict(attrs).get("href") or ""), "t": ""}
+    def handle_endtag(self, tag):
+        if tag == "a" and self.cur is not None:
+            self.cur["t"] = " ".join(self.cur["t"].split())
+            if len(self.cur["t"]) >= 8:
+                self.links.append(self.cur)
+            self.cur = None
+    def handle_data(self, data):
+        if self.cur is not None:
+            self.cur["t"] += data
+        if data.strip():
+            self.text.append(data.strip())
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 today = datetime.datetime.now(KST).strftime("%Y-%m-%d")
@@ -37,8 +59,19 @@ with sync_playwright() as p:
                     page.wait_for_load_state("networkidle", timeout=15000)
                 except Exception:
                     pass
-                links = page.evaluate("() => Array.from(document.querySelectorAll('a')).map(a => ({t: (a.innerText||'').trim().replace(/\\s+/g,' '), h: a.href})).filter(x => x.t.length >= 8)")
-                text = page.evaluate("() => document.body ? document.body.innerText : ''")[:30000]
+                try:
+                    links = page.evaluate("() => Array.from(document.querySelectorAll('a')).map(a => ({t: (a.innerText||'').trim().replace(/\\s+/g,' '), h: a.href})).filter(x => x.t.length >= 8)")
+                except Exception:
+                    links = None
+                try:
+                    text = page.evaluate("() => document.body ? document.body.innerText : ''")
+                except Exception:
+                    text = None
+                if not links or not text:
+                    lp = LinkParser(page.url); lp.feed(page.content())
+                    links = links or lp.links
+                    text = text or "\n".join(lp.text)
+                text = (text or "")[:30000]
                 status = r.status if r else None
                 res["tried"].append({"url": url, "status": status, "links": len(links)})
                 if status and status < 400 and len(links) >= 5 and not url.rstrip("/").endswith((".or.kr", ".go.kr")) or (status and status < 400 and url == urls[-1] and len(links) >= 5):
