@@ -30,6 +30,15 @@ nav a .cnt.red{background:#ffb4a8;color:#6b160d}
 .status{margin-top:auto;background:rgba(255,255,255,.09);border-radius:14px;padding:14px 16px;font-size:13px}
 .status b{font-size:15px;display:block;margin-bottom:4px}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.status .sh{display:flex;align-items:center;gap:8px;width:100%;background:none;border:0;color:inherit;font:inherit;padding:0;cursor:pointer;text-align:left}
+.status .sh b{margin:0;flex:1}
+.status .cnt{font-weight:700;font-size:14px}
+.status .lamp{width:11px;height:11px;border-radius:50%;flex:none}
+.status .lamp.g{background:#3ddc6b;box-shadow:0 0 8px #3ddc6b}
+.status .lamp.r{background:#ff4d4d;box-shadow:0 0 8px #ff4d4d}
+.status .chev{transition:transform .2s;opacity:.8}
+.status.closed .chev{transform:rotate(-90deg)}
+.status.closed .sb{display:none}
 .status ul{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;opacity:.92}
 .status li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 main{padding:24px 28px 48px;min-width:0;background:radial-gradient(1200px 300px at 80% -80px,var(--g200),transparent)}
@@ -342,10 +351,14 @@ function table(all){
 }
 
 function sources(){
-  const S = DATA.sources||[], ok = S.filter(s=>s.ok).length;
-  document.getElementById("srcBox").innerHTML = `<b>자동수집 현황</b>
-    <div><span class="dot" style="background:${S.length&&ok===S.length?"#7fcf6b":"#e8c547"}"></span>${S.length?`${S.length}곳 중 ${ok}곳 수집`:"정보 없음"}</div>
-    <ul>${S.map(s=>`<li title="${esc(s.note||"")}"><span class="dot" style="background:${s.ok?"#7fcf6b":"#ff9b8a"}"></span>${esc(s.name)}</li>`).join("")}</ul>`;
+  const S = DATA.sources||[], ok = S.filter(s=>s.ok).length, all = S.length&&ok===S.length;
+  const box = document.getElementById("srcBox");
+  box.classList.toggle("closed", localStorage.getItem("srcClosed")==="1");
+  box.innerHTML = `<button class="sh" type="button" aria-expanded="${!box.classList.contains("closed")}">
+      <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      <b>자동수집 현황</b><span class="cnt">${ok}/${S.length}</span><span class="lamp ${all?"g":"r"}" title="${all?"모두 수집됨":"수집 안 된 곳 있음"}"></span></button>
+    <div class="sb"><ul>${S.map(s=>`<li title="${esc(s.note||"")}"><span class="dot" style="background:${s.ok?"#7fcf6b":"#ff9b8a"}"></span>${esc(s.name)}</li>`).join("")}</ul></div>`;
+  box.querySelector(".sh").onclick = ()=>{ const c = box.classList.toggle("closed"); localStorage.setItem("srcClosed", c?"1":"0"); box.querySelector(".sh").setAttribute("aria-expanded", !c); };
 }
 
 function render(){
