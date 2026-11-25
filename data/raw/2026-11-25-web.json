@@ -1,0 +1,3945 @@
+{
+ "collected_at": "2026-11-25T10:52+09:00",
+ "sources": {
+  "기업마당": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+     "status": 200,
+     "links": 27
+    }
+   ],
+   "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null",
+   "title": "기업마당>정책정보>지원사업 공고",
+   "links": [
+    {
+     "t": "주메뉴 바로가기",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null#gnb"
+    },
+    {
+     "t": "품목별 법정의무 인증제도",
+     "h": "https://www.bizinfo.go.kr/biz/biza/selectBIZA100View.do"
+    },
+    {
+     "t": "입법·행정예고/고시",
+     "h": "https://www.bizinfo.go.kr/biz/biza/selectBIZA300View.do"
+    },
+    {
+     "t": "기업업무용 서식",
+     "h": "https://www.bizinfo.go.kr/biz/bizb/selectBIZB100View.do"
+    },
+    {
+     "t": "입주기업 모집공고",
+     "h": "https://www.bizinfo.go.kr/biz/bizb/selectBIZB200View.do"
+    },
+    {
+     "t": "온라인화상회의실",
+     "h": "https://www.k-startup.go.kr/web/contents/webOLNIVIDEOMTRM.do"
+    },
+    {
+     "t": "속보성 대시보드",
+     "h": "https://www.bizinfo.go.kr/dashboard.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.bizinfo.go.kr/biz/bizd/selectBIZD100View.do"
+    },
+    {
+     "t": "이메일주소 무단 수집 거부안내",
+     "h": "https://www.bizinfo.go.kr/biz/bizd/selectBIZD110View.do"
+    },
+    {
+     "t": "분야(1306)",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?null#"
+    },
+    {
+     "t": "2026년 의료기기 사업화 촉진 사업 지원 기업 상시 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128107"
+    },
+    {
+     "t": "[전북] 고창군 2026년 5차 어업인 경영안정 지원사업 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128106"
+    },
+    {
+     "t": "[전북] 군산시 2027년 청년 어촌정착지원 사업 지원대상자 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128105"
+    },
+    {
+     "t": "[전북] 부안군 2026년 3차 수산물 가공ㆍ유통분야 지원사업 희망자 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128104"
+    },
+    {
+     "t": "2026년 한국건강증진개발원 기술자료 임치 계획 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128103"
+    },
+    {
+     "t": "[전북] 군산시 2026년 3차 어업인 경영안정 지원사업 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128102"
+    },
+    {
+     "t": "[경북] 울진군 2026년 6차 여성어업인 특화건강검진 신청 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128101"
+    },
+    {
+     "t": "[경북] 성주군 2026년 골목형상점가 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128100"
+    },
+    {
+     "t": "[제주] 2026년 5차 양식장 친환경에너지보급사업(인버터) 대상자 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128099"
+    },
+    {
+     "t": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 변경 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128098"
+    },
+    {
+     "t": "[전남광주] 고흥군 2027년 농수산물 베트남 홍보(판촉)행사 지원사업 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128097"
+    },
+    {
+     "t": "[전남광주] 담양군 2026년 동절기 가금농장 드론소독 지원사업 참가 희망업체 접수 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128096"
+    },
+    {
+     "t": "[전남광주] 순천시 2027년 청년어촌정착지원사업 신청자 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128095"
+    },
+    {
+     "t": "[전북] 2026년 10차 전북특별자치도 ILP 서비스 지원사업 ILP 서비스 기술연결 수요기업 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128094"
+    },
+    {
+     "t": "[경기] 양주시 2026년 중소기업 개발생산판로 맞춤형 지원사업 참가기업 추가 모집 공고",
+     "h": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=&rows=15&cpage=&cat=&schPblancDiv=&schJrsdCodeTy=&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=&condition1=&keyword=&pblancId=PBLN_000000000128093"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.bizinfo.go.kr/biz/bizd/selectBIZD100View.do"
+    },
+    {
+     "t": "이메일무단수집거부",
+     "h": "https://www.bizinfo.go.kr/biz/bizd/selectBIZD110View.do"
+    }
+   ],
+   "text": "본문 바로가기\n주메뉴 바로가기\n \n정책정보\n활용정보\n고객알림\n이용안내\n전체메뉴보기\n로그인\n통합회원가입\n화면크기\nHOME\n정책정보\n지원사업 공고\n지원사업 공고\n지원사업명\n분야(1306)\n금융(228)\n기술(231)\n인력(153)\n수출(138)\n내수(81)\n창업(65)\n경영(405)\n기타(5)\n지역(968)서울(37)부산(56)대구(34)인천(55)전남광주(115)대전(24)울산(43)세종(13)경기(126)강원(73)충북(50)충남(48)전북(58)경북(101)경남(103)제주(32)\n지난공고보기\n \n \n등록일순\n \n마감일순\n전체 중앙부처 지자체\n지원사업 공고에 대한 번호, 지원분야, 지원사업명, 신청기간, 소관부처, 등록일, 조회수의 정보가 기재된 표\n번호\t지원분야\t지원사업명\t신청기간\t소관부처·지자체\t사업수행기관\t등록일\t조회수\n1306\t기술\t2026년 의료기기 사업화 촉진 사업 지원 기업 상시 모집 공고\t2026-11-24 ~ 2026-12-01\t산업통상부\t한국산업기술시험원\t2026-11-24\t2887\n1305\t금융\t[전북] 고창군 2026년 5차 어업인 경영안정 지원사업 모집 공고\t2026-11-23 ~ 2026-11-27\t전북특별자치도\t기초자치단체\t2026-11-24\t1833\n1304\t창업\t[전북] 군산시 2027년 청년 어촌정착지원 사업 지원대상자 모집 공고\t2026-11-18 ~ 2026-12-07\t전북특별자치도\t기초자치단체\t2026-11-24\t1863\n1303\t경영\t[전북] 부안군 2026년 3차 수산물 가공ㆍ유통분야 지원사업 희망자 모집 공고\t2026-11-23 ~ 2026-11-27\t전북특별자치도\t기초자치단체\t2026-11-24\t1826\n1302\t기술\t2026년 한국건강증진개발원 기술자료 임치 계획 공고\t2026-10-14 ~ 2026-11-30\t보건복지부\t한국건강증진개발원\t2026-11-24\t2192\n1301\t금융\t[전북] 군산시 2026년 3차 어업인 경영안정 지원사업 모집 공고\t2026-11-24 ~ 2026-12-10\t전북특별자치도\t기초자치단체\t2026-11-24\t1793\n1300\t경영\t[경북] 울진군 2026년 6차 여성어업인 특화건강검진 신청 공고\t2026-11-20 ~ 2026-12-04\t경상북도\t기초자치단체\t2026-11-24\t1621\n1299\t경영\t[경북] 성주군 2026년 골목형상점가 모집 공고\t2026-11-12 ~ 2026-12-15\t경상북도\t기초자치단체\t2026-11-24\t1839\n1298\t경영\t[제주] 2026년 5차 양식장 친환경에너지보급사업(인버터) 대상자 모집 공고\t2026-11-23 ~ 2026-11-30\t제주특별자치도\t직접수행\t2026-11-24\t1741\n1297\t금융\t2026년 중소벤처기업부 소상공인 정책자금 융자사업 변경 공고\t예산 소진시까지\t중소벤처기업부\t소상공인시장진흥공단\t2026-11-24\t3995\n1296\t수출\t[전남광주] 고흥군 2027년 농수산물 베트남 홍보(판촉)행사 지원사업 공고\t2026-11-23 ~ 2026-12-04\t전남광주통합특별시\t기초자치단체\t2026-11-24\t1746\n1295\t경영\t[전남광주] 담양군 2026년 동절기 가금농장 드론소독 지원사업 참가 희망업체 접수 공고\t2026-11-20 ~ 2026-11-27\t전남광주통합특별시\t기초자치단체\t2026-11-24\t1646\n1294\t창업\t[전남광주] 순천시 2027년 청년어촌정착지원사업 신청자 모집 공고\t2026-12-09 ~ 2026-12-15\t전남광주통합특별시\t기초자치단체\t2026-11-24\t1763\n1293\t기술\t[전북] 2026년 10차 전북특별자치도 ILP 서비스 지원사업 ILP 서비스 기술연결 수요기업 모집 공고\t2026-11-23 ~ 2026-12-18\t전북특별자치도\t전북테크노파크\t2026-11-24\t1881\n1292\t기술\t[경기] 양주시 2026년 중소기업 개발생산판로 맞춤형 지원사업 참가기업 추가 모집 공고\t예산 소진시까지\t경기도\t경기도경제과학진흥원\t2026-11-24\t2216\n처음 1 2 3 4 5 6 7 8 9 10 다음 마지막\n공지사항\n개인정보처리방침\n이메일무단수집거부\n자주하는 질문\n웹접근성정책\n\n07074 서울특별시 동작구 신대방1가길 77 중소벤처기업연구원\n\n시스템문의 Tel. 02-867-9765\n\nCopyright © All rights Reserved."
+  },
+  "중소벤처기업부": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310",
+     "status": 200,
+     "links": 108
+    }
+   ],
+   "url": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310",
+   "title": "사업공고 - 알림소식 - 중소벤처기업부",
+   "links": [
+    {
+     "t": "주메뉴 바로가기",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#head-gnb"
+    },
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.mss.go.kr/site/smba/ex/siteMap/siteMap.do"
+    },
+    {
+     "t": "훈령/예규/고시/공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=125&ext6=Y"
+    },
+    {
+     "t": "확인서 발급 신청안내",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401030000002024122908&siteCd=smba"
+    },
+    {
+     "t": "민원행정서비스헌장",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401040100002024122902&siteCd=smba"
+    },
+    {
+     "t": "중소기업통합콜센터",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401050000002024122900&siteCd=smba"
+    },
+    {
+     "t": "보조금 부조리 신고",
+     "h": "https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&mapAcs=Y&insttCd=1421000"
+    },
+    {
+     "t": "기술침해행위신고",
+     "h": "https://www.ultari.go.kr/site/cntnts/CNTNTS_059.do"
+    },
+    {
+     "t": "벤처투자 부당행위 신고",
+     "h": "https://www.kvic.or.kr/customer-center/report/vc-unfair-report#none"
+    },
+    {
+     "t": "공무원ㆍ정책 국민추천",
+     "h": "https://www.mpm.go.kr/proactivePublicService/recommand/intro/"
+    },
+    {
+     "t": "사전정보공표목록",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=513"
+    },
+    {
+     "t": "사업평가 및 감사결과",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=131"
+    },
+    {
+     "t": "비공개 세부기준",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20702050000002024122924&siteCd=smba"
+    },
+    {
+     "t": "정부포상추천검증",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=235"
+    },
+    {
+     "t": "세입·세출 현황",
+     "h": "https://www.mss.go.kr/site/smba/04/budGetOprtn.jsp?path=VWFORM"
+    },
+    {
+     "t": "공공데이터오류신고",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20705020000002024122935&siteCd=smba"
+    },
+    {
+     "t": "협동조합 경영공시",
+     "h": "https://www.coop.go.kr/home/disclosure/DisclosureList.do?menu_no=2037"
+    },
+    {
+     "t": "훈령/예규/고시/공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=125&ext6=Y"
+    },
+    {
+     "t": "확인서 발급 신청안내",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401030000002024122908&siteCd=smba"
+    },
+    {
+     "t": "민원행정서비스헌장",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401040100002024122902&siteCd=smba"
+    },
+    {
+     "t": "중소기업통합콜센터",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401050000002024122900&siteCd=smba"
+    },
+    {
+     "t": "보조금 부조리 신고",
+     "h": "https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&mapAcs=Y&insttCd=1421000"
+    },
+    {
+     "t": "기술침해행위신고",
+     "h": "https://www.ultari.go.kr/site/cntnts/CNTNTS_059.do"
+    },
+    {
+     "t": "벤처투자 부당행위 신고",
+     "h": "https://www.kvic.or.kr/customer-center/report/vc-unfair-report#none"
+    },
+    {
+     "t": "공무원ㆍ정책 국민추천",
+     "h": "https://www.mpm.go.kr/proactivePublicService/recommand/intro/"
+    },
+    {
+     "t": "사전정보공표목록",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=513"
+    },
+    {
+     "t": "사업평가 및 감사결과",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=131"
+    },
+    {
+     "t": "비공개 세부기준",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20702050000002024122924&siteCd=smba"
+    },
+    {
+     "t": "정부포상추천검증",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=235"
+    },
+    {
+     "t": "세입·세출 현황",
+     "h": "https://www.mss.go.kr/site/smba/04/budGetOprtn.jsp?path=VWFORM"
+    },
+    {
+     "t": "공공데이터오류신고",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20705020000002024122935&siteCd=smba"
+    },
+    {
+     "t": "협동조합 경영공시",
+     "h": "https://www.coop.go.kr/home/disclosure/DisclosureList.do?menu_no=2037"
+    },
+    {
+     "t": "누리집 이용안내",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20901000000002024122903&siteCd=smba"
+    },
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.mss.go.kr/site/smba/ex/siteMap/siteMap.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "javascript:;"
+    },
+    {
+     "t": "현재 적용 지침",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=21003010100002026051854&siteCd=smba"
+    },
+    {
+     "t": "공공데이터 이용정책",
+     "h": "https://www.data.go.kr/ugs/selectPortalPolicyView.do"
+    },
+    {
+     "t": "자주찾는 질문(FAQ)",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20907000000002024122920&siteCd=smba"
+    },
+    {
+     "t": "페이스북으로 공유",
+     "h": "javascript:facebookOpen('HOME > %ED%8E%98%EC%9D%B4%EC%A7%80 %EC%A0%9C%EB%AA%A9');"
+    },
+    {
+     "t": "네이버블로그로 공유",
+     "h": "javascript:naverBlogOpen('HOME > %ED%8E%98%EC%9D%B4%EC%A7%80%EC%A0%9C%EB%AA%A9')"
+    },
+    {
+     "t": "네이버밴드로 공유",
+     "h": "javascript:naverBandOpen('HOME > %ED%8E%98%EC%9D%B4%EC%A7%80%EC%A0%9C%EB%AA%A9');"
+    },
+    {
+     "t": "2026년도 중소기업 정책자금 융자계획 변경공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2026년도 중소기업 정책자금 융자계획 변경공고 담당부서 기업금융과 공고번호 제2026-639호 신청기간 2026-11-25 ~ 첨부파일 등록일2026.11.24 조회1201",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(변경)",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(변경) 담당부서 소상공인경영안정정책과 공고번호 제2026-616호 첨부파일 등록일2026.11.24 조회1780",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2027년 스마트공장 구축지원사업 모집공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2027년 스마트공장 구축지원사업 모집공고 담당부서 제조혁신과 공고번호 제2026–637호 첨부파일 등록일2026.11.23 조회4011",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2027년 서울 창신 의류제조 공동인프라 운영기관 모집공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2027년 서울 창신 의류제조 공동인프라 운영기관 모집공고 담당부서 소공인성장촉진단 공고번호 2026-631 신청기간 2026-11-12 ~ 2026-11-27 첨부파일 등록일2026.11.12 조회5261",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 수정 공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 수정 공고 담당부서 창업생태계과 공고번호 2026-625 첨부파일 등록일2026.11.05 조회10597",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고 담당부서 창업생태계과 공고번호 2026 - 623 신청기간 2026-11-03 ~ 2026-11-13 첨부파일 등록일2026.11.03 조회7788",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고 담당부서 신산업기술창업과 공고번호 제2026-622호 신청기간 2026-10-30 ~ 2026-11-23 첨부파일 등록일2026.11.02 조회11789",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고 담당부서 신산업기술창업과 공고번호 제2026-621호 신청기간 2026-10-30 ~ 2026-11-20 첨부파일 등록일2026.10.30 조회10298",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "2027년 스마트 제조혁신 지원사업 통합공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "2027년 스마트 제조혁신 지원사업 통합공고 담당부서 제조혁신과 공고번호 제2026–620호 첨부파일 등록일2026.10.30 조회19228",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "창업도시 조성 프로젝트 창업도시 모집 공고",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#view"
+    },
+    {
+     "t": "창업도시 조성 프로젝트 창업도시 모집 공고 담당부서 창업생태계과 공고번호 제2026-607호 신청기간 2026-10-23 ~ 2026-11-30 첨부파일 등록일2026.10.23 조회13040",
+     "h": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=310#"
+    },
+    {
+     "t": "서울지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/seoul/main.do"
+    },
+    {
+     "t": "부산지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/busan/main.do"
+    },
+    {
+     "t": "대구·경북지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/daegu/main.do"
+    },
+    {
+     "t": "광주·전남지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/gwangju/main.do"
+    },
+    {
+     "t": "경기지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/gyeonggi/main.do"
+    },
+    {
+     "t": "인천지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/incheon/main.do"
+    },
+    {
+     "t": "대전·세종지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/daejeon/main.do"
+    },
+    {
+     "t": "울산지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/ulsan/main.do"
+    },
+    {
+     "t": "강원지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/gangwon/main.do"
+    },
+    {
+     "t": "충북지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/chungbuk/main.do"
+    },
+    {
+     "t": "충남지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/chungnam/main.do"
+    },
+    {
+     "t": "전북지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/jeonbuk/main.do"
+    },
+    {
+     "t": "경남지방중소벤처기업청",
+     "h": "https://www.mss.go.kr/site/gyeongnam/main.do"
+    },
+    {
+     "t": "구미전자공업고등학교",
+     "h": "https://school.gyo6.net/gnet/main.do?sysId=gnet"
+    },
+    {
+     "t": "전북기계공업고등학교",
+     "h": "https://school.jbedu.kr/cmt"
+    },
+    {
+     "t": "부산기계공업고등학교",
+     "h": "http://bmt.hs.kr/"
+    },
+    {
+     "t": "중소벤처기업진흥공단",
+     "h": "https://www.kosmes.or.kr/"
+    },
+    {
+     "t": "소상공인시장진흥공단",
+     "h": "https://www.semas.or.kr/web/main/index.kmdc"
+    },
+    {
+     "t": "한국중소벤처기업유통원",
+     "h": "https://www.kodma.or.kr/"
+    },
+    {
+     "t": "신용보증재단중앙회",
+     "h": "https://www.koreg.or.kr/"
+    },
+    {
+     "t": "중소기업기술정보진흥원",
+     "h": "https://www.tipa.or.kr/"
+    },
+    {
+     "t": "중소벤처기업연구원",
+     "h": "https://www.kosi.re.kr/"
+    },
+    {
+     "t": "(재)장애인기업종합지원센터",
+     "h": "https://www.debc.or.kr/"
+    },
+    {
+     "t": "(주)공영홈쇼핑",
+     "h": "https://www.gongyoungshop.kr/"
+    },
+    {
+     "t": "국가기후위기대응위원회",
+     "h": "https://www.pcccr.go.kr/"
+    },
+    {
+     "t": "과학기술정보통신부",
+     "h": "https://www.msit.go.kr/"
+    },
+    {
+     "t": "기후에너지환경부",
+     "h": "https://mcee.go.kr/"
+    },
+    {
+     "t": "식품의약품안전처",
+     "h": "https://www.mfds.go.kr/"
+    },
+    {
+     "t": "방송미디어통신위원회",
+     "h": "https://www.kcc.go.kr/"
+    },
+    {
+     "t": "행정중심복합도시건설청",
+     "h": "https://www.naacc.go.kr/"
+    },
+    {
+     "t": "중소기업기술보호 울타리",
+     "h": "https://www.ultari.go.kr/"
+    },
+    {
+     "t": "벤처투자종합포털",
+     "h": "https://www.vcs.go.kr/"
+    },
+    {
+     "t": "중소기업옴부즈만홈페이지",
+     "h": "https://www.osmb.go.kr/"
+    },
+    {
+     "t": "중소기업현황 정보시스템",
+     "h": "https://sminfo.mss.go.kr/"
+    },
+    {
+     "t": "공공구매종합정보망",
+     "h": "https://www.smpp.go.kr/"
+    },
+    {
+     "t": "중소기업수출지원센터",
+     "h": "https://www.smes.go.kr/exportcenter/"
+    },
+    {
+     "t": "중소기업기술개발종합과제관리시스템",
+     "h": "https://www.smtech.go.kr/"
+    },
+    {
+     "t": "온라인법인설립시스템",
+     "h": "https://www.startbiz.go.kr/"
+    },
+    {
+     "t": "스마트공장사업관리시스템",
+     "h": "https://www.smart-factory.kr/"
+    },
+    {
+     "t": "중소벤처기업부 인스타그램 새 창 열림",
+     "h": "https://www.instagram.com/mss.go.kr"
+    },
+    {
+     "t": "중소벤처기업부 페이스북 새 창 열림",
+     "h": "https://facebook.com/mss1357"
+    },
+    {
+     "t": "중소벤처기업부 x 새 창 열림",
+     "h": "https://twitter.com/bizinfo1357"
+    },
+    {
+     "t": "중소벤처기업부 유튜브 새 창 열림",
+     "h": "https://www.youtube.com/bizinfo1357"
+    },
+    {
+     "t": "중소벤처기업부 블로그 새 창 열림",
+     "h": "https://blog.naver.com/bizinfo1357"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=21003010100002026051854&siteCd=smba"
+    },
+    {
+     "t": "공공데이터이용정책",
+     "h": "https://www.data.go.kr/ugs/selectPortalPolicyView.do"
+    },
+    {
+     "t": "민원행정서비스헌장",
+     "h": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20401040100002024122902&siteCd=smba"
+    }
+   ],
+   "text": "본문 바로가기\n주메뉴 바로가기\n이 누리집은 대한민국 공식 전자정부 누리집입니다.\n어린이 누리집\n공식 SNS\n열기\nLanguage\n열기\n누리집 안내지도\n통합검색\n간편인증\n주요정책\n열기\n알림소식\n열기\n통계자료\n열기\n민원참여\n열기\n정보공개\n열기\n기관소개\n열기\n알림소식\n공지사항\n펼치기\n사업공고\n접기\n인사·채용\n펼치기\n보도자료\n펼치기\n홍보자료\n펼치기\n사업공고\nHOME\n알림소식\n사업공고\n공유\n프린트\n\n구분\n\n구분 검색분류 선택\n제목\n내용\n공고번호\n검색\n전체목록\n\n기간선택\n\n기간선택 년도 검색분류 선택\n전체\n2026년\n2025년\n2024년\n2023년\n2022년\n2021년\n2020년\n2019년\n2018년\n2017년\n2016년\n기간선택 월 검색분류 선택\n전체\n01월\n02월\n03월\n04월\n05월\n06월\n07월\n08월\n09월\n10월\n11월\n12월\n\n전체 : 2,231건\n\n현재 페이지 : 1/224\n\n최신순\n조회순\n사업공고 목록\n\n사업공고 목록의 번호, 제목, 신청기간, 공고번호, 첨부파일, 담당부서, 등록일, 조회 정보를 제공\n\n번호\t제목\t첨부파일\t등록일\t조회\n2231\t\n2026년도 중소기업 정책자금 융자계획 변경공고\n담당부서\n기업금융과\n공고번호\n제2026-639호\n신청기간\n2026-11-25 ~\n\t\t2026.11.24\t1201\n2230\t\n2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(변경)\n담당부서\n소상공인경영안정정책과\n공고번호\n제2026-616호\n\t\t2026.11.24\t1780\n2229\t\n2027년 스마트공장 구축지원사업 모집공고\n담당부서\n제조혁신과\n공고번호\n제2026–637호\n\t\t2026.11.23\t4011\n2228\t\n2027년 서울 창신 의류제조 공동인프라 운영기관 모집공고\n담당부서\n소공인성장촉진단\n공고번호\n2026-631\n신청기간\n2026-11-12 ~ 2026-11-27\n\t\t2026.11.12\t5261\n2227\t\n2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 수정 공고\n담당부서\n창업생태계과\n공고번호\n2026-625\n\t\t2026.11.05\t10597\n2226\t\n2026년 1인 창조기업 지원센터‧중장년 기술창업센터 신규 주관기관 모집 공고\n담당부서\n창업생태계과\n공고번호\n2026 - 623\n신청기간\n2026-11-03 ~ 2026-11-13\n\t\t2026.11.03\t7788\n2225\t\n2027년도 초기창업·창업도약 패키지 사업신규 주관기관 모집 수정 공고\n담당부서\n신산업기술창업과\n공고번호\n제2026-622호\n신청기간\n2026-10-30 ~ 2026-11-23\n\t\t2026.11.02\t11789\n2224\t\n2027년도 초기창업·창업도약 패키지 사업 신규 주관기관 모집 공고\n담당부서\n신산업기술창업과\n공고번호\n제2026-621호\n신청기간\n2026-10-30 ~ 2026-11-20\n\t\t2026.10.30\t10298\n2223\t\n2027년 스마트 제조혁신 지원사업 통합공고\n담당부서\n제조혁신과\n공고번호\n제2026–620호\n\t\t2026.10.30\t19228\n2222\t\n창업도시 조성 프로젝트 창업도시 모집 공고\n담당부서\n창업생태계과\n공고번호\n제2026-607호\n신청기간\n2026-10-23 ~ 2026-11-30\n\t\t2026.10.23\t13040\n1\n2\n3\n4\n224\n다음\n지방청/학교\n열기\n산하공공기관\n열기\n정부기관\n열기\n관련사이트\n열기\n\n30121세종특별자치시 가름로 180, 세종파이낸스센터 3차 중소벤처기업부 4층 ~ 6층\n\n대표전화\n국번없이 1357\n이용안내\n찾아오시는 길\n중소벤처기업부 인스타그램 새 창 열림\n중소벤처기업부 페이스북 새 창 열림\n중소벤처기업부 x 새 창 열림\n중소벤처기업부 유튜브 새 창 열림\n중소벤처기업부 블로그 새 창 열림\n개인정보처리방침\n공공데이터이용정책\n민원행정서비스헌장\n스마트폰 어플\n\nCOPYRIGHT ⓒ 중소벤처기업부. ALL RIGHTS RESERVED.\n\n챗봇 상담\nTOP"
+  },
+  "경기도": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.gg.go.kr/bbs/board.do?bsIdx=469&menuId=1547",
+     "status": 200,
+     "links": 760
+    }
+   ],
+   "url": "https://www.gg.go.kr/bbs/board.do?bsIdx=469&menuId=1547#page=1",
+   "title": "전체 | 고시ㆍ공고 | 공고ㆍ입법예고 | 뉴스 | 경기도청",
+   "links": [
+    {
+     "t": "주메뉴 바로가기",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=469&menuId=1547#gnvBoxunder"
+    },
+    {
+     "t": "Language",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=469&menuId=1547#"
+    },
+    {
+     "t": "Tiếng việt",
+     "h": "https://vietnamese.gg.go.kr/"
+    },
+    {
+     "t": "사실은 이렇습니다",
+     "h": "https://gnews.gg.go.kr/briefing/brief_gongbo.do?subject_Code=BO03"
+    },
+    {
+     "t": "경기도청 YouTube",
+     "h": "https://www.youtube.com/ggholics"
+    },
+    {
+     "t": "경기도의회 웹진",
+     "h": "http://webzine.ggc.go.kr/"
+    },
+    {
+     "t": "공공기관 소식지",
+     "h": "https://gnews.gg.go.kr/news/webmz_list2.do?s_code=WZ01"
+    },
+    {
+     "t": "일제강점기 도보",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=683&menuId=1788"
+    },
+    {
+     "t": "경기도소식지(나의 경기도)",
+     "h": "https://www.gg.go.kr/myggd"
+    },
+    {
+     "t": "경기도 뉴스레터(나의 경기도 Hot!)",
+     "h": "https://www.gg.go.kr/myggd_hot"
+    },
+    {
+     "t": "공무원 인사교류",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=732&menuId=1593"
+    },
+    {
+     "t": "기타(민간위탁)",
+     "h": "https://www.g2b.go.kr/link/FIUA006_01/single/?untySrchSeCd=BK+BUK&rowCnt=&instCd=6410000%2C6410073%2C6410563%2C6411268%2C6410578%2C6412462%2C6412302%2C6412102%2C6412103%2C6411789%2C6410588%2C6411997%2C6410593%2C6412271%2C6411255%2C6412035%2C6412104%2C6412518%2C6412524%2C6412105%2CZY00267%2C6412230%2C6411756%2C6412871&demaInstNm=&hghrkInstCd=&prcmBsneAreaCd=%EC%A1%B0070005&prcmMthoSeCd=&frcpYn=N&laseYn=N&rsrvYn=N&chkInstCd=&urlSrchSeCd=instCd&demaInstCd=IN0100000058633%2CIN0100000043521%2CIN0100000060276%2CIN0100000034494%2CIN0100000046197%2CIN0100000103158%2CIN0100000092712%2CIN0100000078119%2CIN0100000078099%2CIN0100000044702%2CIN0100000053013%2CIN0100000067899%2CIN0100000042782%2CIN0100000090215%2CIN0100000057661%2CIN0100000071887%2CIN0100000078149%2CIN0100000107529%2CIN0100000107494%2CIN0100000078128%2CIN0100000037784%2CIN0100000089171%2CIN0100000010532%2CIN0100000128962&prcmMaagSeCd="
+    },
+    {
+     "t": "입찰공고 자료실",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=488&menuId=1579"
+    },
+    {
+     "t": "계약법규 및 서식",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=580&menuId=1584"
+    },
+    {
+     "t": "계약입찰 관련사이트",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=493&menuId=1586"
+    },
+    {
+     "t": "신기술·특허 열린창구",
+     "h": "http://newtech.gg.go.kr/"
+    },
+    {
+     "t": "건설공사(자재‧부재) 정보공개",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=716&menuId=2878"
+    },
+    {
+     "t": "공무원 임용시험",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=482&menuId=1550"
+    },
+    {
+     "t": "2026년 시험일정",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=482&menuId=1550"
+    },
+    {
+     "t": "임기제ㆍ개방형 직위",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=546&menuId=2211"
+    },
+    {
+     "t": "경기도 전입시험",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=862&menuId=1534068"
+    },
+    {
+     "t": "경기도 기간제 채용",
+     "h": "https://apply.jobaba.net/bsns/bsnsListView.do?tpCd1=04"
+    },
+    {
+     "t": "경기도 공무직원·청원경찰 채용정보",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=849&menuId=1534028"
+    },
+    {
+     "t": "경기도 공공기관 채용정보",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=475&menuId=1563"
+    },
+    {
+     "t": "경기도 기타 채용정보",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=476&menuId=1564"
+    },
+    {
+     "t": "타기관 채용정보",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=477&menuId=1565"
+    },
+    {
+     "t": "경기도일자리포털",
+     "h": "https://www.jobaba.net/main/main.do"
+    },
+    {
+     "t": "고용24(워크넷)",
+     "h": "https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?webIsOut=region&region=41000"
+    },
+    {
+     "t": "취업ㆍ채용 민원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=490&menuId=1568"
+    },
+    {
+     "t": "경기Free:way",
+     "h": "https://www.gg.go.kr/free/web/main.do"
+    },
+    {
+     "t": "민원서식/민원사무편람",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=620&menuId=1623"
+    },
+    {
+     "t": "열린민원실 이용안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=416&menuId=1598"
+    },
+    {
+     "t": "민원수수료 감면",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987031&menuId=265938"
+    },
+    {
+     "t": "민원상담 처리결과",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=428&menuId=1619"
+    },
+    {
+     "t": "법정민원 처리결과",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1232&menuId=3004"
+    },
+    {
+     "t": "과속방지턱불편신고",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=421&menuId=1603"
+    },
+    {
+     "t": "지방보조금 부정수급 신고센터",
+     "h": "https://www.epeople.go.kr/index.jsp"
+    },
+    {
+     "t": "기업SOS 신청",
+     "h": "https://www.giupsos.or.kr/"
+    },
+    {
+     "t": "건설업 페이퍼컴퍼니ㆍ하도급부조리신고",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=425&menuId=1609"
+    },
+    {
+     "t": "특별사법경찰단신고˙제보",
+     "h": "https://www.gg.go.kr/gg_special_cop"
+    },
+    {
+     "t": "다중이용업소 안전교육",
+     "h": "https://119.gg.go.kr/prog/stm/SafeTrainingCalender.do?menuId=main_002_002_004"
+    },
+    {
+     "t": "다중이용업소 소방시설",
+     "h": "https://119.gg.go.kr/main/cont.do?id=31&menuId=main_001_001_005"
+    },
+    {
+     "t": "경기도 불법사금융 피해신고센터",
+     "h": "https://gfrc.gg.go.kr/"
+    },
+    {
+     "t": "반도체 ALL-CARE 민원 접수",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987392&menuId=1534270"
+    },
+    {
+     "t": "민원조정관 제도",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1234&menuId=2999"
+    },
+    {
+     "t": "민원 만족도 조사",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1233&menuId=2998"
+    },
+    {
+     "t": "안전한 민원실 환경 조성",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1496&menuId=3404"
+    },
+    {
+     "t": "지연처리민원 보상",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1237&menuId=3002"
+    },
+    {
+     "t": "행정정보 공동이용",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=601&menuId=3003"
+    },
+    {
+     "t": "본인서명사실확인제",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1241&menuId=3014"
+    },
+    {
+     "t": "주택 및 상가 임대차 분쟁조정",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=791&menuId=2546"
+    },
+    {
+     "t": "공인중개사 자격증 교부",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1196&menuId=1626"
+    },
+    {
+     "t": "경기사랑 도민 참여단",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=440&menuId=1641"
+    },
+    {
+     "t": "120 경기도콜센터",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1015&menuId=2698"
+    },
+    {
+     "t": "120경기도콜센터 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1015&menuId=2698"
+    },
+    {
+     "t": "120경기도콜센터 연혁",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1012&menuId=2695"
+    },
+    {
+     "t": "원산지종합관리 시스템",
+     "h": "http://www.naqs.go.kr/"
+    },
+    {
+     "t": "식품위생법위반업소",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=442&menuId=1651"
+    },
+    {
+     "t": "환경위반업소공개",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=460&menuId=1652"
+    },
+    {
+     "t": "부정유류위반업소 공개",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=623&menuId=1653"
+    },
+    {
+     "t": "위반 업소 신고",
+     "h": "https://www.gg.go.kr/gg_special_cop/contents/contents.do?ciIdx=1164&menuId=3317"
+    },
+    {
+     "t": "더 좋아지는 경기도",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1514&menuId=2007"
+    },
+    {
+     "t": "경기도 소속인력",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=841&menuId=2008"
+    },
+    {
+     "t": "후원명칭 사용승인 내역",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=847&menuId=1534023"
+    },
+    {
+     "t": "정보공개제도 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=450&menuId=1753"
+    },
+    {
+     "t": "사전정보공표 제안 게시판",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=820&menuId=265999"
+    },
+    {
+     "t": "지방재정통합공개시스템",
+     "h": "https://www.lofin365.go.kr/"
+    },
+    {
+     "t": "정보(문서)목록(2013년 이전)",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=710&menuId=2861"
+    },
+    {
+     "t": "비공개 세부기준",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=453&menuId=1760"
+    },
+    {
+     "t": "정보공개 고객관리",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=758&menuId=3049"
+    },
+    {
+     "t": "국외출장연수정보시스템",
+     "h": "https://btis.mpm.go.kr/"
+    },
+    {
+     "t": "공공데이터 개방",
+     "h": "https://www.data.go.kr/tcs/dor/insertDataOfferReqstProcssView.do"
+    },
+    {
+     "t": "행정재산 관리위탁 현황",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=831&menuId=266068"
+    },
+    {
+     "t": "예산절감 및 낭비사례집",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=604&menuId=1986"
+    },
+    {
+     "t": "중기지방재정계획",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=605&menuId=1987"
+    },
+    {
+     "t": "투자출자출연기관 예산,결산",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=606&menuId=1988"
+    },
+    {
+     "t": "경기도 예산개요",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=607&menuId=1989"
+    },
+    {
+     "t": "지방재정 투자심사",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=734&menuId=2941"
+    },
+    {
+     "t": "성과계획서 및 성과보고서",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=587&menuId=2012"
+    },
+    {
+     "t": "업무추진비 공개",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=803&menuId=1768"
+    },
+    {
+     "t": "2022.6월 이전",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=523&menuId=3415"
+    },
+    {
+     "t": "직속기관.사업소",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=537&menuId=1779&bcIdx=537"
+    },
+    {
+     "t": "경기도 감사위원회(홈페이지)",
+     "h": "https://www.gg.go.kr/audit/"
+    },
+    {
+     "t": "경기도 도민권익위원회",
+     "h": "https://www.gg.go.kr/civil-right/"
+    },
+    {
+     "t": "지방공공기관통합공시",
+     "h": "http://www.cleaneye.go.kr/"
+    },
+    {
+     "t": "지방출자출연기관이란",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987315&menuId=1534164"
+    },
+    {
+     "t": "경기도 공공기관 고용평등임금 공시",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987316&menuId=1534165"
+    },
+    {
+     "t": "월별 주민등록인구",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=547&menuId=2779"
+    },
+    {
+     "t": "자동차 등록현황",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=548&menuId=2780"
+    },
+    {
+     "t": "업무제휴 및 협약",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=753&menuId=3010"
+    },
+    {
+     "t": "국내외훈련보고서",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=807&menuId=3429"
+    },
+    {
+     "t": "멀티미디어자료실",
+     "h": "https://exciting.gg.go.kr/"
+    },
+    {
+     "t": "경기도고향사랑기부제",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1504&menuId=3420"
+    },
+    {
+     "t": "알기쉬운 경기 자치",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987141&menuId=266115"
+    },
+    {
+     "t": "경기도 도민참여 공론화",
+     "h": "https://www.gg.go.kr/governance/"
+    },
+    {
+     "t": "이주민 영상콘텐츠 공모전",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=846&menuId=1534018"
+    },
+    {
+     "t": "경기도민 정책축제",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987222&menuId=1534044"
+    },
+    {
+     "t": "경기도민 정책축제 소개",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987222&menuId=1534044"
+    },
+    {
+     "t": "경기도 통합공모",
+     "h": "https://www.gg.go.kr/gongmo/main.do"
+    },
+    {
+     "t": "경기도여성기관협의회 소식·홍보",
+     "h": "https://www.gg.go.kr/woman/bbs/board.do?bsIdx=964&menuId=4623"
+    },
+    {
+     "t": "경기데이터 드림",
+     "h": "https://data.gg.go.kr/portal/mainPage.do"
+    },
+    {
+     "t": "경기도민 표창 추천",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1250&menuId=3031"
+    },
+    {
+     "t": "후쿠시마 오염수 방류대응",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987062&menuId=265991"
+    },
+    {
+     "t": "청탁금지법 상담",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=665&menuId=1612"
+    },
+    {
+     "t": "노무법률˙산재보험 상담",
+     "h": "https://labor.gg.go.kr/counsel/application/"
+    },
+    {
+     "t": "북한이탈주민돌봄센터",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=707&menuId=2503"
+    },
+    {
+     "t": "디지털 저장매체 파기 신청",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1131&menuId=2889"
+    },
+    {
+     "t": "디지털 저장매체 파기 서비스 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1131&menuId=2889"
+    },
+    {
+     "t": "디지털 저장매체 파기 신청",
+     "h": "https://apply.gg.go.kr/verify/?r=%2Fdestroy%2F"
+    },
+    {
+     "t": "공동주택 시설 보수공사 기술자문 신청",
+     "h": "https://apply.gg.go.kr/"
+    },
+    {
+     "t": "공동주택 관리지원 자문 신청",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=775&menuId=3139#page=1"
+    },
+    {
+     "t": "누리집 오류신고",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=534&menuId=1749"
+    },
+    {
+     "t": "경기도 찾아가는 규제신고센터",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987009&menuId=265916"
+    },
+    {
+     "t": "경기도 인권센터",
+     "h": "https://www.gg.go.kr/humanrights"
+    },
+    {
+     "t": "경기도노동권익센터",
+     "h": "https://labor.gg.go.kr/"
+    },
+    {
+     "t": "경기도청 성희롱·성폭력·스토킹 상담신고센터",
+     "h": "https://metoo.gg.go.kr/"
+    },
+    {
+     "t": "공정/공동체/공익",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1279&menuId=3053"
+    },
+    {
+     "t": "노인/복지/여성안전",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1284&menuId=3057"
+    },
+    {
+     "t": "주거/문화/교통",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1285&menuId=3058"
+    },
+    {
+     "t": "환경/농정/산림",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1286&menuId=3059"
+    },
+    {
+     "t": "장애인/외국인/탈북민/인권",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1287&menuId=3060"
+    },
+    {
+     "t": "내게 맞는 정보찾기",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987257&menuId=1534097"
+    },
+    {
+     "t": "내게 맞는 정보찾기",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987257&menuId=1534097"
+    },
+    {
+     "t": "청소년 시ㆍ군 부서안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=734&menuId=2526"
+    },
+    {
+     "t": "e-청소년안전망",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1367&menuId=3172"
+    },
+    {
+     "t": "경기도 청소년 생활장학금 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=696&menuId=2488"
+    },
+    {
+     "t": "경기도 여성청소년 생리용품 보편지원사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987253&menuId=1534092"
+    },
+    {
+     "t": "학교 밖 청소년",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987307&menuId=1534154"
+    },
+    {
+     "t": "가정 밖 청소년 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987310&menuId=1534157"
+    },
+    {
+     "t": "경기도 일생활균형 정책",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987376&menuId=1534252"
+    },
+    {
+     "t": "기지촌 여성 인권 기록 아카이브",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987384&menuId=1534250"
+    },
+    {
+     "t": "여성고용 안정지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=499&menuId=1867"
+    },
+    {
+     "t": "경기 가족친화 일하기 좋은 기업",
+     "h": "https://www.gg.go.kr/gg_good_corp"
+    },
+    {
+     "t": "경기도여성비전센터",
+     "h": "https://www.gg.go.kr/woman"
+    },
+    {
+     "t": "여성 폭력 피해자 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1470&menuId=3300"
+    },
+    {
+     "t": "도민을 위한 공공생리대",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1359&menuId=3161"
+    },
+    {
+     "t": "아이돌봄지원사업 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=654&menuId=2370"
+    },
+    {
+     "t": "출산·양육 지원사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987112&menuId=266072"
+    },
+    {
+     "t": "육아종합지원센터(남부)",
+     "h": "https://gyeonggi.childcare.go.kr/ccef/main.jsp"
+    },
+    {
+     "t": "육아종합지원센터(북부)",
+     "h": "http://gyeongginorth.childcare.go.kr/"
+    },
+    {
+     "t": "아이사랑 보육 포털",
+     "h": "http://www.childcare.go.kr/"
+    },
+    {
+     "t": "자주 묻는 질문",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=798&menuId=3391"
+    },
+    {
+     "t": "복지시책·복지시설",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=641&menuId=1873"
+    },
+    {
+     "t": "요양보호사 교육기관 및 자격증",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=799&menuId=3392"
+    },
+    {
+     "t": "노인 인구 통계",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=800&menuId=3393"
+    },
+    {
+     "t": "대한노인회 경기도 연합회",
+     "h": "http://www.kscagg.or.kr/"
+    },
+    {
+     "t": "경기도노인일자리지원센터",
+     "h": "https://www.gg.go.kr/oldman_job"
+    },
+    {
+     "t": "노인일자리 검색",
+     "h": "https://www.seniorro.or.kr:4431/"
+    },
+    {
+     "t": "경기도 간병 SOS 프로젝트",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987331&menuId=1534180"
+    },
+    {
+     "t": "다문화 가족복지",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=647&menuId=1886"
+    },
+    {
+     "t": "가족지원 서비스",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1417&menuId=3306"
+    },
+    {
+     "t": "경기도1인가구 포털",
+     "h": "https://www.gg.go.kr/1ingg"
+    },
+    {
+     "t": "한부모가족 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1412&menuId=3330"
+    },
+    {
+     "t": "청소년 부모 가정 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1485&menuId=3381"
+    },
+    {
+     "t": "위기임산부 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987069&menuId=266016"
+    },
+    {
+     "t": "다문화가족 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1428&menuId=3345"
+    },
+    {
+     "t": "긴급복지 핫라인",
+     "h": "https://www.gg.go.kr/welfarehotline"
+    },
+    {
+     "t": "360도 돌봄 사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987084&menuId=266037"
+    },
+    {
+     "t": "건강·의료·식품",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987156&menuId=1534197"
+    },
+    {
+     "t": "심뇌혈관질환 예방관리",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987150&menuId=266135"
+    },
+    {
+     "t": "경기도 공공심야 약국",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=749&menuId=2530"
+    },
+    {
+     "t": "경기도립노인전문병원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987166&menuId=266153"
+    },
+    {
+     "t": "새로운경기도립정신병원",
+     "h": "http://www.recovery-hospital.or.kr/"
+    },
+    {
+     "t": "경기도 공공보건의료지원단",
+     "h": "https://www.ggpi.or.kr/"
+    },
+    {
+     "t": "경기도 감염병관리지원단",
+     "h": "https://www.gidcc.or.kr/"
+    },
+    {
+     "t": "응급의료분야 등 취약지 지원 사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987341&menuId=1534192"
+    },
+    {
+     "t": "구조 및 응급처치 교육안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987157&menuId=266144"
+    },
+    {
+     "t": "응급의료 정보검색",
+     "h": "https://www.e-gen.or.kr/"
+    },
+    {
+     "t": "소아 야간·휴일 진료기관",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987164&menuId=266151"
+    },
+    {
+     "t": "지역외상협력병원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987202&menuId=266190"
+    },
+    {
+     "t": "휴일지킴이 약국",
+     "h": "https://www.pharm114.or.kr/main.asp"
+    },
+    {
+     "t": "자동심장충격기(AED) 찾기",
+     "h": "https://www.e-gen.or.kr/egen/search_aed.do"
+    },
+    {
+     "t": "심뇌혈관질환센터 현황",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987342&menuId=1534193"
+    },
+    {
+     "t": "임신·출산 지원(총괄)",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987144&menuId=266125"
+    },
+    {
+     "t": "법정감염병 정보",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987145&menuId=266127"
+    },
+    {
+     "t": "감염병 예방 홍보",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987353&menuId=1534210"
+    },
+    {
+     "t": "재활 및 사회복귀",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987039&menuId=265956"
+    },
+    {
+     "t": "정신질환자 권익보호",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987043&menuId=265961"
+    },
+    {
+     "t": "정신건강증진시설 현황",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987045&menuId=265962"
+    },
+    {
+     "t": "시설개선자금 등 융자",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=908&menuId=2158"
+    },
+    {
+     "t": "위해식품 회수정보",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1239&menuId=3008"
+    },
+    {
+     "t": "경기도 비유전자변형식품 인증 및 관리사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1356&menuId=3156"
+    },
+    {
+     "t": "경기도 식중독 현황",
+     "h": "https://gfspi.or.kr/situation/foodpoisoning.php"
+    },
+    {
+     "t": "식중독 예방 정보",
+     "h": "https://gfspi.or.kr/information/download.php?ptype=list&code=download&category=96&code_page=&pos="
+    },
+    {
+     "t": "어린이 식생활 안전관리",
+     "h": "https://gfspi.or.kr/childfood/childfood.php"
+    },
+    {
+     "t": "반려동물 동반출입 음식점 제도",
+     "h": "https://www.foodsafetykorea.go.kr/"
+    },
+    {
+     "t": "음식점 위생등급제",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1052&menuId=2678"
+    },
+    {
+     "t": "음식문화 개선사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=997&menuId=2680"
+    },
+    {
+     "t": "농림ㆍ축산 ㆍ해양",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=851&menuId=1534033"
+    },
+    {
+     "t": "친환경 급식 사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=751&menuId=2018"
+    },
+    {
+     "t": "축산물 안전관리",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=713&menuId=2035"
+    },
+    {
+     "t": "주요 가축전염병 정보",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987065&menuId=266009"
+    },
+    {
+     "t": "농산물 안전관리",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987078&menuId=266032"
+    },
+    {
+     "t": "경기도 명품수산물 인증",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987105&menuId=266066"
+    },
+    {
+     "t": "경기도 로컬푸드 등록 직매장",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987221&menuId=1534041"
+    },
+    {
+     "t": "수산물 안전성조사 결과",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=867&menuId=1534148"
+    },
+    {
+     "t": "경기도축산진흥대회",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987442&menuId=1534342"
+    },
+    {
+     "t": "경기도평생교육진흥원",
+     "h": "https://www.gill.or.kr/"
+    },
+    {
+     "t": "온라인평생학습 지식(GSEEK)",
+     "h": "https://www.gseek.kr/"
+    },
+    {
+     "t": "경기미래교육파주캠퍼스",
+     "h": "https://www.gill.or.kr/gill/pgm/i-289/evnt/front/list.do"
+    },
+    {
+     "t": "경기미래교육양평캠퍼스",
+     "h": "https://www.gill.or.kr/gill/pgm/i-290/evnt/front/list.do"
+    },
+    {
+     "t": "경기권 통일플러스센터",
+     "h": "https://www.unipluscenter.go.kr/web/main/bbs/gyeonggi_program/list"
+    },
+    {
+     "t": "경기도일자리포털(잡아바)",
+     "h": "https://www.jobaba.net/"
+    },
+    {
+     "t": "일자리맵(잡아바)",
+     "h": "https://job.gg.go.kr/map.do?lat=37.2889398&lng=127.053822&name=%EA%B2%BD%EA%B8%B0%EB%8F%84%EC%B2%AD"
+    },
+    {
+     "t": "경기도 지역워크넷",
+     "h": "http://gyeonggi.work.go.kr/"
+    },
+    {
+     "t": "교통ㆍ건설ㆍ환경",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987277&menuId=1534121"
+    },
+    {
+     "t": "G-Bus 소개",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=629&menuId=2344"
+    },
+    {
+     "t": "시내버스 민원 관련 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987340&menuId=1534191"
+    },
+    {
+     "t": "수도권통합 요금제",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=758&menuId=2534"
+    },
+    {
+     "t": "우대용 교통카드",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=762&menuId=2538"
+    },
+    {
+     "t": "The 경기패스",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987115&menuId=266077"
+    },
+    {
+     "t": "태그리스 결제시스템",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987124&menuId=266091"
+    },
+    {
+     "t": "제2차 고속도로 건설계획(2021~2025)",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1489&menuId=3395"
+    },
+    {
+     "t": "제5차 국도·국지도 건설계획(2021~2025)",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1490&menuId=3396"
+    },
+    {
+     "t": "제4차 경기도 도로건설계획(2026~2030)",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1491&menuId=3397"
+    },
+    {
+     "t": "경기도 민자도로 운영 현황",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1492&menuId=3398"
+    },
+    {
+     "t": "경기도 건설본부",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=920&menuId=2580"
+    },
+    {
+     "t": "경기도 수자원본부",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=937&menuId=2599"
+    },
+    {
+     "t": "경기도 물정보시스템(우리동네 약수터, 물놀이시설, 물길)",
+     "h": "https://water.gg.go.kr/"
+    },
+    {
+     "t": "청정계곡 지킴이",
+     "h": "https://www.gg.go.kr/valley/valleyList.do?menuId=3203"
+    },
+    {
+     "t": "건설분야 법령모음",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987050&menuId=265970"
+    },
+    {
+     "t": "경기RE100 이야기",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=845&menuId=1534015"
+    },
+    {
+     "t": "경기RE100 홈페이지",
+     "h": "https://www.gg.go.kr/ggre100/"
+    },
+    {
+     "t": "배출사업장 관리",
+     "h": "https://www.gg.go.kr/gg_env_manage/"
+    },
+    {
+     "t": "경기국제공항추진단",
+     "h": "https://www.gg.go.kr/ggairport/"
+    },
+    {
+     "t": "자원순환마을 만들기",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987204&menuId=266192"
+    },
+    {
+     "t": "경기 흙향기 맨발길",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987452&menuId=1534357"
+    },
+    {
+     "t": "도시ㆍ주택ㆍ토지",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=669&menuId=2369"
+    },
+    {
+     "t": "경기도시정책 포럼",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=669&menuId=2369"
+    },
+    {
+     "t": "경기도 집합건물 표준관리규약",
+     "h": "https://ggarchimap.gg.go.kr/architecture-set"
+    },
+    {
+     "t": "개발제한구역(GB)",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=659&menuId=2059"
+    },
+    {
+     "t": "민간 임대 주택",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=729&menuId=2890"
+    },
+    {
+     "t": "가격열람ㆍ이의신청",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=766&menuId=2118"
+    },
+    {
+     "t": "부동산 공시지가",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=656&menuId=2372"
+    },
+    {
+     "t": "부동산 관련 공고",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=561&menuId=2080"
+    },
+    {
+     "t": "부동산 거래관리시스템",
+     "h": "https://rtms.molit.go.kr/"
+    },
+    {
+     "t": "부동산 거래신고",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1291&menuId=3066"
+    },
+    {
+     "t": "기획부동산 불법행위 대처",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1511&menuId=3425"
+    },
+    {
+     "t": "전세사기 예방 및 피해지원 안내",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987468&menuId=1534366"
+    },
+    {
+     "t": "토지거래 허가제도",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=657&menuId=2088"
+    },
+    {
+     "t": "토지이용규제정보",
+     "h": "https://www.eum.go.kr/web/am/amMain.jsp"
+    },
+    {
+     "t": "토지정보 관련사이트",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=917&menuId=2108"
+    },
+    {
+     "t": "주소정보시설 안전신문고",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987390&menuId=1534265"
+    },
+    {
+     "t": "소규모 노후주택 집수리 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987001&menuId=265903"
+    },
+    {
+     "t": "빈집정비 지원사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987027&menuId=265934"
+    },
+    {
+     "t": "경기도 도시재생지원센터",
+     "h": "https://www.ggursc.or.kr/web/index.do;jsessionid=08D69D8D32374B3F935306E783C0EFF1"
+    },
+    {
+     "t": "산업ㆍ경제ㆍ투자",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=849&menuId=2138"
+    },
+    {
+     "t": "전통시장 시설현대화",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=870&menuId=2128"
+    },
+    {
+     "t": "착한가격업소 현황",
+     "h": "https://www.goodprice.go.kr/"
+    },
+    {
+     "t": "소상공인 생애단계별 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=897&menuId=2135"
+    },
+    {
+     "t": "지식산업센터 현황",
+     "h": "https://data.gg.go.kr/portal/data/service/selectServicePage.do?infId=XF4GPCZIRJHN05FS08U018694601&infSeq=1"
+    },
+    {
+     "t": "산업입지정보시스템",
+     "h": "http://www.industryland.or.kr/"
+    },
+    {
+     "t": "중소기업제품등구매실적",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=750&menuId=2136"
+    },
+    {
+     "t": "경기도 섬유산업 지원 현황",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1416&menuId=3208"
+    },
+    {
+     "t": "중소기업 ESG 경영 활성화",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987437&menuId=1534329"
+    },
+    {
+     "t": "국제교류지역 현황",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=909&menuId=3164"
+    },
+    {
+     "t": "국제개발 협력사업",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=910&menuId=2113"
+    },
+    {
+     "t": "중소기업 수출지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=912&menuId=2114"
+    },
+    {
+     "t": "수출애로 통합지원센터",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=911&menuId=2116"
+    },
+    {
+     "t": "경기경제자유구역청",
+     "h": "https://ggfez.gg.go.kr/"
+    },
+    {
+     "t": "경기도 공무국외출장 운영 계획",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=756&menuId=3027"
+    },
+    {
+     "t": "경기도 규제합리화 사례",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987348&menuId=1534199"
+    },
+    {
+     "t": "규제합리화로 달라진 경기도",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=662&menuId=2664"
+    },
+    {
+     "t": "규제합리화 자료실",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=686&menuId=2675"
+    },
+    {
+     "t": "국무조정실 규제신문고",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1125&menuId=2106"
+    },
+    {
+     "t": "중소기업 규제애로 신고센터",
+     "h": "http://www.osmb.go.kr/"
+    },
+    {
+     "t": "에너지비전 2030",
+     "h": "https://www.ggenergy.or.kr/energy/content/story/story01_01_01"
+    },
+    {
+     "t": "에너지 정책 사업",
+     "h": "https://www.ggenergy.or.kr/energy/content/business/business01_03_01"
+    },
+    {
+     "t": "에너지절약 실천방법",
+     "h": "https://www.ggenergy.or.kr/energy/content/story/story03_01_01"
+    },
+    {
+     "t": "경기도 에너지센터",
+     "h": "https://www.ggenergy.or.kr/"
+    },
+    {
+     "t": "프리랜서 플랫폼",
+     "h": "https://www.gg.go.kr/free/web/main.do"
+    },
+    {
+     "t": "경기도 가맹정보제공",
+     "h": "https://fair.gg.go.kr/"
+    },
+    {
+     "t": "경기도 공공배달앱",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987217&menuId=1534031"
+    },
+    {
+     "t": "공공배달앱 소개",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987217&menuId=1534031"
+    },
+    {
+     "t": "공공배달앱 알림마당",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=850&menuId=1534032"
+    },
+    {
+     "t": "반도체·양자산업 지원",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987415&menuId=1534305"
+    },
+    {
+     "t": "문화ㆍ관광ㆍ체육",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987213&menuId=1534021"
+    },
+    {
+     "t": "문화유산 자료실",
+     "h": "https://ebook.gg.go.kr/home/list.php?code=17"
+    },
+    {
+     "t": "문화유산 갤러리",
+     "h": "https://exciting.gg.go.kr/board/boardList.do?bbsId=BBSMSTR_000000000261&nttId=0&bbsTyCode=&bbsAttrbCode=&authFlag=&pageIndex=1&searchCnd=-1"
+    },
+    {
+     "t": "시군별 문화유산",
+     "h": "http://www.heritage.go.kr/heri/cul/culRegionKgView.do?pageNo=1_1_3_1"
+    },
+    {
+     "t": "국가유산 공간정보",
+     "h": "http://gis-heritage.go.kr/main.do"
+    },
+    {
+     "t": "경기도장애인체육회",
+     "h": "https://psg.or.kr/"
+    },
+    {
+     "t": "수원월드컵경기장",
+     "h": "https://suwonworldcup.gg.go.kr/"
+    },
+    {
+     "t": "관광 홍보물 신청",
+     "h": "http://www.ggtourmap.or.kr/"
+    },
+    {
+     "t": "경기도 DMZ 비무장지대",
+     "h": "https://dmz.gg.go.kr/"
+    },
+    {
+     "t": "DMZ 체험관 예약",
+     "h": "http://dmzcamp131.or.kr/?p=17"
+    },
+    {
+     "t": "경기도 인증 웰니스 관광지",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=987306&menuId=1534152"
+    },
+    {
+     "t": "소방ㆍ재난ㆍ안전",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1050&menuId=2756"
+    },
+    {
+     "t": "응급상황대처요령",
+     "h": "https://119.gg.go.kr/main/cont.do?id=49&menuId=main_006_001"
+    },
+    {
+     "t": "화재사고대처요령",
+     "h": "https://119.gg.go.kr/main/cont.do?id=50&menuId=main_006_002_001"
+    },
+    {
+     "t": "119현장 포커스",
+     "h": "https://119.gg.go.kr/main/ntt/index.do?bbsId=gg_1_861&menuId=main_004_006"
+    },
+    {
+     "t": "소방서 견학신청",
+     "h": "https://share.gg.go.kr/ggfire?searchType=P1"
+    },
+    {
+     "t": "119이동안전체험신청",
+     "h": "https://share.gg.go.kr/ggfire?searchType=P1"
+    },
+    {
+     "t": "안전교육신청(CPR)",
+     "h": "https://share.gg.go.kr/ggfire?searchType=P1"
+    },
+    {
+     "t": "특별사법경찰단 소개",
+     "h": "https://www.gg.go.kr/gg_special_cop"
+    },
+    {
+     "t": "경기도남부자치경찰위원회",
+     "h": "https://www.gg.go.kr/ssgpcmit/"
+    },
+    {
+     "t": "경기도북부자치경찰위원회",
+     "h": "https://www.gg.go.kr/kssgpcmit/"
+    },
+    {
+     "t": "산업재해 예방 강화",
+     "h": "https://www.gg.go.kr/contents/contents.do?ciIdx=1382&menuId=3194"
+    },
+    {
+     "t": "재난별 행동요령",
+     "h": "https://www.gg.go.kr/bbs/board.do?bsIdx=815&menuId=265978"
+    },
+    {
+     "t": "무더위·한파쉼터",
+     "h": "https://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/sfc/htw/htweaiList.html?menuSeq=862"
+    }
+   ],
+   "text": "본문 바로가기\n주메뉴 바로가기\n태극기\n이 누리집은 대한민국 공식 전자정부 누리집입니다.\n보도자료 경기도의회 조직도 날씨 대기정보\n\n글자크기 확대\n 글자크기 \n글자크기 축소\n\n \nLanguage\n뉴스\n민원\n정보공개\n소통ㆍ참여\n공유시설 예약\n분야별 정보\n경기도 소개\n검색창 이동\n전체 메뉴 열기\n\t\n자동완성 레이어\n화살표 아이콘\n검색\n\t\n홈\n\t\n뉴스\n\t\n공고ㆍ입법예고\n\t\n고시ㆍ공고\n고시ㆍ공고\n카카오톡\n네이버\n페이스북\n엑스\nURL 복사\n페이지 프린트\n전체\n고시\n공고\n입찰공고\n기타\n게시판 검색\n\t~\t\n제목+내용\n제목\n고시번호\n담당부서\n검색\n10\n20\n30\n40\n50\n\n61,885건\n\n고시ㆍ공고 목록\n\n고시ㆍ공고 목록으로 번호,제목,첨부,담당부서,등록일,조회의 정보를 제공합니다.\n\n번호\t제목\t첨부\t담당부서\t등록일\t조회\n61885\t\n예약 가평소방서 불용 소방차량(재난지휘차, 홍보용트레일러) 매각 입찰 공고\n\t\t가평소방서 소방행정과\t2026-11-25\n10:00:00\t5\n61884\t\n예약 가평소방서 불용 소방차량 장비(트럭장착식제설삽날) 매각 입찰 공고\n\t\t가평소방서 소방행정과\t2026-11-25\n10:00:00\t5\n61883\t\n예약 소액수의 견적제출 재공고[2027년 정제수 제조장치 유지관리 용역]\n\t\t경기도동물위생시험소\t2026-11-25\n10:00:00\t5\n61882\t\n예약 「2027년 경기도평생학습포털 지식(GSEEK)홈페이지 디자인연간유지보수」제안서 평가위원(후보자)모집 공고\n\t\t평생교육과\t2026-11-25\n10:00:00\t14\n61881\t\n예약 소방시설공사업법 위반에 따른 행정처분(1차: 경고) 공고\n\t\t안성소방서 화재예방과\t2026-11-25\n09:00:00\t7\n61880\t\n예약 광주 도시관리계획(용도지역) 결정(변경) 및 지형도면 고시\n\t\t공간전략과\t2026-11-25\n09:00:00\t13\n61879\t\n예약 평택 진위3 일반산업단지계획 변경 승인 고시\n\t\t산업입지과\t2026-11-25\n09:00:00\t13\n61878\t\n예약 경기도 개발제한구역관리계획 변경(경미한 사항) 공고[고양 육군 제7535부대]\n\t\t지역정책과\t2026-11-25\n09:00:00\t10\n61877\t\n예약 「2027년 경기도평생학습포털 지식(GSEEK) 통합 운영 용역」 제안서 평가위원(후보자) 공개모집 공고\n\t\t평생교육과\t2026-11-25\n09:00:00\t30\n61876\t\n예약 「건설산업기본법」 위반 종합건설업체 행정처분(영업정지) 공고\n\t\t건설정책과\t2026-11-25\n09:00:00\t7\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n>\n>>\n\n담당부서 경기도 콜센터\n\n 031-120\n\n 이 게시물은 \"공공누리 제 3유형(출처명시 + 변경금지)\" 조건에 따라 자유롭게 이용이 가능합니다.\n\n기관안내\n합의제행정기관/직속기관/사업소 등\n산하공공기관\n시/군\n광역시도\n국가/유관기관\n유틸리티 메뉴\n누리집 오류신고\n개인정보 처리방침\n경기도민헌장\n뷰어 다운로드\n찾아오시는길\n저작권 정책\n\n경기도청 (우 16508) 경기도 수원시 영통구 도청로 30 (이의동)\n\n / \n\n북부청사 (우 11780) 경기도 의정부시 청사로 1 (신곡동)\n\n / \n\n경기도 콜센터 031-120 (365일 24시간)\n\n  경기도 콜센터 031-120 (365일 24시간)\n\n© GYEONGGI PROVINCE All Rights Reserved.\n\n공무원 메일\n\n국가상징 알아보기\n경기도청 웹접근성 인증됨 -과학기술정보통신부"
+  },
+  "GBSA": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.gbsa.or.kr/board/bbs_list.do?code=notice",
+     "status": 200,
+     "links": 0
+    },
+    {
+     "url": "https://www.gbsa.or.kr/",
+     "status": 200,
+     "links": 511
+    }
+   ],
+   "url": "https://www.gbsa.or.kr/",
+   "title": "경기도경제과학진흥원",
+   "links": [
+    {
+     "t": "주메뉴 바로가기",
+     "h": "https://www.gbsa.or.kr/#gnavigation"
+    },
+    {
+     "t": "ESG 경영 전략체계",
+     "h": "https://www.gbsa.or.kr/pages/esg_strategy.do"
+    },
+    {
+     "t": "ESG 경영공시",
+     "h": "https://www.gbsa.or.kr/pages/esg_disclosure.do"
+    },
+    {
+     "t": "공정거래자율준수",
+     "h": "https://www.gbsa.or.kr/pages/cp-introduction.do"
+    },
+    {
+     "t": "인권경영헌장(영문)",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_charter_eng.do"
+    },
+    {
+     "t": "인권경영운영지침",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_guidelines.do"
+    },
+    {
+     "t": "인권침해 구제신고·지원센터",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_abuse.do"
+    },
+    {
+     "t": "인권경영 추진내용",
+     "h": "https://www.gbsa.or.kr/board/humanrights_progress.do"
+    },
+    {
+     "t": "고객만족 전략체계",
+     "h": "https://www.gbsa.or.kr/pages/cs_strategic.do"
+    },
+    {
+     "t": "CEO 안전보건경영철학",
+     "h": "https://www.gbsa.or.kr/pages/safe_vision.do"
+    },
+    {
+     "t": "안전보건경영방침 및 목표",
+     "h": "https://www.gbsa.or.kr/pages/safe_mission.do"
+    },
+    {
+     "t": "매뉴얼 및 안전보건자료",
+     "h": "https://www.gbsa.or.kr/board/safe_data.do"
+    },
+    {
+     "t": "안전보건 신문고",
+     "h": "https://www.gbsa.or.kr/board/safe_accept.do"
+    },
+    {
+     "t": "조직도(시설관리)",
+     "h": "https://www.gbsa.or.kr/pages/organiztion_facility.do"
+    },
+    {
+     "t": "위치 및 시설 안내",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "행사현황(광교)",
+     "h": "https://www.gbsa.or.kr/board/rental.do"
+    },
+    {
+     "t": "경기 스타트업 글로벌 성장 지원",
+     "h": "https://www.gbsa.or.kr/pages/global_growth.do"
+    },
+    {
+     "t": "경기 스타트업 서밋(G-SUMMIT)",
+     "h": "https://www.gbsa.or.kr/pages/global_startup.do"
+    },
+    {
+     "t": "경기 스타트업 아카데미 운영",
+     "h": "https://www.gbsa.or.kr/pages/gyeonggi_startup_operation.do"
+    },
+    {
+     "t": "경기 스타트업 플랫폼 운영",
+     "h": "https://www.gbsa.or.kr/pages/startup_platform.do"
+    },
+    {
+     "t": "경기 창업 공모",
+     "h": "https://www.gbsa.or.kr/pages/startup_participation.do"
+    },
+    {
+     "t": "경기도 글로벌스타트업 육성",
+     "h": "https://www.gbsa.or.kr/pages/pangyo_startup_investment.do"
+    },
+    {
+     "t": "경기창업혁신공간 운영",
+     "h": "https://www.gbsa.or.kr/pages/innovation_space.do"
+    },
+    {
+     "t": "기술창업 재도전 지원",
+     "h": "https://www.gbsa.or.kr/pages/rechallenge_business.do"
+    },
+    {
+     "t": "모두의 창업 프로젝트",
+     "h": "https://www.gbsa.or.kr/pages/modu_startup.do"
+    },
+    {
+     "t": "민간투자연계형 기술창업지원",
+     "h": "https://www.gbsa.or.kr/pages/private_investment_skill.do"
+    },
+    {
+     "t": "반려동물산업 스타트업 발굴 및 창업지원",
+     "h": "https://www.gbsa.or.kr/pages/pet_startup.do"
+    },
+    {
+     "t": "스타트업캠퍼스 보육 운영",
+     "h": "https://www.gbsa.or.kr/pages/startup_campus_space.do"
+    },
+    {
+     "t": "예비·초기 기술창업지원",
+     "h": "https://www.gbsa.or.kr/pages/startup_project.do"
+    },
+    {
+     "t": "사업화지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/businessization_support.do"
+    },
+    {
+     "t": "3D프린팅 통합센터 운영",
+     "h": "https://www.gbsa.or.kr/pages/operate_3dgc.do"
+    },
+    {
+     "t": "경기도 스타기업육성",
+     "h": "https://www.gbsa.or.kr/pages/star_sme.do"
+    },
+    {
+     "t": "경제단체 우수프로그램 지원",
+     "h": "https://www.gbsa.or.kr/pages/biz-org-prgm.do"
+    },
+    {
+     "t": "글로벌강소기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/ghc_promote.do"
+    },
+    {
+     "t": "소부장 기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/mpq.do"
+    },
+    {
+     "t": "중소기업 비즈니스 융합성장 지원",
+     "h": "https://www.gbsa.or.kr/pages/sme_convergence.do"
+    },
+    {
+     "t": "중소기업 환경·사회·투명(ESG) 경영활성화 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/esg_management.do"
+    },
+    {
+     "t": "R&D지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/rnd_support.do"
+    },
+    {
+     "t": "R&D첫걸음 기업연구소 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/firststep_rnd.do"
+    },
+    {
+     "t": "경기도 기술개발사업",
+     "h": "https://www.gbsa.or.kr/pages/dev_skills.do"
+    },
+    {
+     "t": "경기도 로봇SI 기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/robotics_industry.do"
+    },
+    {
+     "t": "경기정보보호지원센터 운영",
+     "h": "https://www.gbsa.or.kr/pages/gyeonggi_security.do"
+    },
+    {
+     "t": "섬유분야 기술개발사업",
+     "h": "https://www.gbsa.or.kr/pages/textile_skills.do"
+    },
+    {
+     "t": "스마트모빌리티실증허브(SMDH) 운영 및 관리",
+     "h": "https://www.gbsa.or.kr/pages/smdh.do"
+    },
+    {
+     "t": "여성 과학기술인 연구개발 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/women_rnd.do"
+    },
+    {
+     "t": "경기도 차세대 수소에너지 기술개발",
+     "h": "https://www.gbsa.or.kr/pages/hydrogen_energy.do"
+    },
+    {
+     "t": "바이오산업 지원",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "바이오산업 지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/bio_support_intro.do"
+    },
+    {
+     "t": "경기 바이오스타트업 육성 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/bio_startuplab.do"
+    },
+    {
+     "t": "경기도 바이오 전문인력 양성 사업",
+     "h": "https://www.gbsa.or.kr/pages/bio_speciality.do"
+    },
+    {
+     "t": "경기도 의료기기 개발지원",
+     "h": "https://www.gbsa.or.kr/pages/medical_device.do"
+    },
+    {
+     "t": "경기도 첨단 바이오헬스 강소기업 육성 프로젝트",
+     "h": "https://www.gbsa.or.kr/pages/advanced_health.do"
+    },
+    {
+     "t": "국내외 천연물 및 합성물 소재개발 사업_경기도천연물소재은행",
+     "h": "https://www.gbsa.or.kr/pages/beauty_material.do"
+    },
+    {
+     "t": "기술정보 및 협력네트워크 지원",
+     "h": "https://www.gbsa.or.kr/pages/techinfo_cowork.do"
+    },
+    {
+     "t": "바이오 연구성과 확산",
+     "h": "https://www.gbsa.or.kr/pages/bio_performance.do"
+    },
+    {
+     "t": "바이오산업 글로벌 기술사업화",
+     "h": "https://www.gbsa.or.kr/pages/bio_global_biz.do"
+    },
+    {
+     "t": "비임상 연구분석 서비스",
+     "h": "https://www.gbsa.or.kr/pages/nonclinical_analysis_research.do"
+    },
+    {
+     "t": "비임상 유효성 평가지원",
+     "h": "https://www.gbsa.or.kr/pages/nonclinical_validity.do"
+    },
+    {
+     "t": "소재개발 실증연구",
+     "h": "https://www.gbsa.or.kr/pages/positive_study.do"
+    },
+    {
+     "t": "수요기술 산학연 공동연구",
+     "h": "https://www.gbsa.or.kr/pages/fusion_iuic_collaboration.do"
+    },
+    {
+     "t": "연구장비공동활용 시스템 운영",
+     "h": "https://www.gbsa.or.kr/pages/equipment_union.do"
+    },
+    {
+     "t": "의료기기 기업 해외진출 지원",
+     "h": "https://www.gbsa.or.kr/pages/med-global-spt.do"
+    },
+    {
+     "t": "전문분석/시생산 인프라지원",
+     "h": "https://www.gbsa.or.kr/pages/analysis_infra.do"
+    },
+    {
+     "t": "천연물유래 제품개발 연구",
+     "h": "https://www.gbsa.or.kr/pages/natural_origins.do"
+    },
+    {
+     "t": "초고속대용량 소재발굴지원",
+     "h": "https://www.gbsa.or.kr/pages/medicinal_properties.do"
+    },
+    {
+     "t": "마케팅지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/marketing_support.do"
+    },
+    {
+     "t": "경기비즈니스센터(GBC) 운영",
+     "h": "https://www.gbsa.or.kr/pages/operate_gbc.do"
+    },
+    {
+     "t": "GMS(GBC 수출대행 사업)",
+     "h": "https://www.gbsa.or.kr/pages/operate_gms.do"
+    },
+    {
+     "t": "GBM(무료 수출화상상담 서비스)",
+     "h": "https://www.gbsa.or.kr/pages/operate_dts.do"
+    },
+    {
+     "t": "경기도 수출기업 물류비 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/support_logistics.do"
+    },
+    {
+     "t": "경기 청년 해외 취·창업 기회 확충 지원",
+     "h": "https://www.gbsa.or.kr/pages/oversea_employment.do"
+    },
+    {
+     "t": "해외 G-FAIR 개최",
+     "h": "https://www.gbsa.or.kr/pages/oversea_gfair.do"
+    },
+    {
+     "t": "G-FAIR KOREA 개최",
+     "h": "https://www.gbsa.or.kr/pages/permanent_exhibition.do"
+    },
+    {
+     "t": "해외전시회 단체관 운영",
+     "h": "https://www.gbsa.or.kr/pages/overseas_exhibition.do"
+    },
+    {
+     "t": "무역전문가 활용 해외마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/export_mentoring.do"
+    },
+    {
+     "t": "통상촉진단(시장개척단)",
+     "h": "https://www.gbsa.or.kr/pages/market_developer.do"
+    },
+    {
+     "t": "무역위기 대응 패키지 지원",
+     "h": "https://www.gbsa.or.kr/pages/trade-crisis-package.do"
+    },
+    {
+     "t": "GBSA 아카데미 운영",
+     "h": "https://www.gbsa.or.kr/pages/gbsa_academy.do"
+    },
+    {
+     "t": "소프트웨어(SW) 미래채움",
+     "h": "https://www.gbsa.or.kr/pages/software.do"
+    },
+    {
+     "t": "현장애로 지원/인증",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "현장애로지원/인증 소개",
+     "h": "https://www.gbsa.or.kr/pages/field_support.do"
+    },
+    {
+     "t": "경기가족친화기업 인증 및 지원",
+     "h": "https://www.gbsa.or.kr/pages/family_friendly.do"
+    },
+    {
+     "t": "경기도 규제샌드박스 활성화 지원",
+     "h": "https://www.gbsa.or.kr/pages/regulatory_sandbox.do"
+    },
+    {
+     "t": "경기도 기업옴부즈만 운영",
+     "h": "https://www.gbsa.or.kr/pages/corp_omz.do"
+    },
+    {
+     "t": "경기도 대중소 상생협력 활성화 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/gwbs_project.do"
+    },
+    {
+     "t": "경기도 유망 중소기업 인증",
+     "h": "https://www.gbsa.or.kr/pages/smb_certification.do"
+    },
+    {
+     "t": "경기도 착한기업 인증 및 지원",
+     "h": "https://www.gbsa.or.kr/pages/good_company.do"
+    },
+    {
+     "t": "기업SOS지원센터운영",
+     "h": "https://www.gbsa.or.kr/pages/sos_center.do"
+    },
+    {
+     "t": "지역특화지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/regional_specific.do"
+    },
+    {
+     "t": "가구기업 제품개발 및 마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/furniture_marketing.do"
+    },
+    {
+     "t": "경기도 뿌리산업 경쟁력 강화지원",
+     "h": "https://www.gbsa.or.kr/pages/support_root.do"
+    },
+    {
+     "t": "경기북부 수출물류비 지원(고양, 남양주, 동두천, 파주, 포천)",
+     "h": "https://www.gbsa.or.kr/pages/export_subsidies.do"
+    },
+    {
+     "t": "경기 섬유패션마케팅 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/operate_gtc.do"
+    },
+    {
+     "t": "국내외조달등록 지원(파주, 연천)",
+     "h": "https://www.gbsa.or.kr/pages/support_procurement.do"
+    },
+    {
+     "t": "글로벌 마케팅지원(파주, 의정부)",
+     "h": "https://www.gbsa.or.kr/pages/global_marketing.do"
+    },
+    {
+     "t": "글로벌 시장개척단(고양, 남양주, 파주, 포천)",
+     "h": "https://www.gbsa.or.kr/pages/global_market_developer.do"
+    },
+    {
+     "t": "글로벌시장개척단(안성시)",
+     "h": "https://www.gbsa.or.kr/pages/global_market_development.do"
+    },
+    {
+     "t": "남부권역 생산레벨업 지원",
+     "h": "https://www.gbsa.or.kr/pages/southern_production_levelup.do"
+    },
+    {
+     "t": "남양주시 국내전시회 참가기업 지원",
+     "h": "https://www.gbsa.or.kr/pages/exhibition_support_nyj.do"
+    },
+    {
+     "t": "노후생산시설 현대화 지원(김포시)",
+     "h": "https://www.gbsa.or.kr/pages/decrepit_facilities_modernization.do"
+    },
+    {
+     "t": "노후생산시설 현대화 지원(동두천시)",
+     "h": "https://www.gbsa.or.kr/pages/modernization_support_ddc.do"
+    },
+    {
+     "t": "서부권역 해외시장개척단 운영(안산시,부천시)",
+     "h": "https://www.gbsa.or.kr/pages/west_market_pioneer_group.do"
+    },
+    {
+     "t": "수출기업 물류비 지원(안성시)",
+     "h": "https://www.gbsa.or.kr/pages/support_logisticsCost_anseong_icheon.do"
+    },
+    {
+     "t": "시군 중소기업 ESG 경영지원(광명시, 의왕시)",
+     "h": "https://www.gbsa.or.kr/pages/local-sme-esg.do"
+    },
+    {
+     "t": "안성시 글로벌마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/global_marketing_anseong.do"
+    },
+    {
+     "t": "안성시 중소기업 역량강화 지원",
+     "h": "https://www.gbsa.or.kr/pages/anseong_support.do"
+    },
+    {
+     "t": "양주시 해외 섬유전시회 참가지원",
+     "h": "https://www.gbsa.or.kr/pages/yangju_textile_exhibit.do"
+    },
+    {
+     "t": "여주시 기업SOS 현장클리닉",
+     "h": "https://www.gbsa.or.kr/pages/yeoju_sos.do"
+    },
+    {
+     "t": "온라인 수출 마케팅 지원(광명시)",
+     "h": "https://www.gbsa.or.kr/pages/global_export_marketing.do"
+    },
+    {
+     "t": "온라인 수출 마케팅 지원(의왕시)",
+     "h": "https://www.gbsa.or.kr/pages/global_export_marketing_uw.do"
+    },
+    {
+     "t": "의정부시 지식산업 지원",
+     "h": "https://www.gbsa.or.kr/pages/ujb_industry.do"
+    },
+    {
+     "t": "이천시 중소기업 맞춤형 성장지원사업",
+     "h": "https://www.gbsa.or.kr/pages/icheon_growth.do"
+    },
+    {
+     "t": "중소기업 개발생산판로 맞춤형 지원",
+     "h": "https://www.gbsa.or.kr/pages/family_north.do"
+    },
+    {
+     "t": "중소기업 디지털전환 컨설팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/support_digital_trans.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(광명시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_gwang.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(김포시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_sup.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(안산시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_as.do"
+    },
+    {
+     "t": "중소기업 제품디자인 및 마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/dev_design.do"
+    },
+    {
+     "t": "지역특화 프로젝트(뿌리산업의 디지털 제조혁신)",
+     "h": "https://www.gbsa.or.kr/pages/region_special_project.do"
+    },
+    {
+     "t": "평택시 수출역량강화 지원",
+     "h": "https://www.gbsa.or.kr/pages/pyeongtaek_exports.do"
+    },
+    {
+     "t": "평택시 여성기업 경쟁력강화 지원",
+     "h": "https://www.gbsa.or.kr/pages/female_company.do"
+    },
+    {
+     "t": "평택시 중소기업 상생협력 지원",
+     "h": "https://www.gbsa.or.kr/pages/pyeongtaek_winwin_cooperation.do"
+    },
+    {
+     "t": "평택시 히든 챔피언 육성지원",
+     "h": "https://www.gbsa.or.kr/pages/pyeongtaek_hidden_champion_promotion.do"
+    },
+    {
+     "t": "해외 규격인증취득 지원(양주시)",
+     "h": "https://www.gbsa.or.kr/pages/standard_certification_yangju.do"
+    },
+    {
+     "t": "정책연구 지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/policy_research.do"
+    },
+    {
+     "t": "경기연구개발지원단",
+     "h": "https://www.gbsa.or.kr/pages/research_development.do"
+    },
+    {
+     "t": "과학기술정책연구",
+     "h": "https://www.gbsa.or.kr/pages/science_technology.do"
+    },
+    {
+     "t": "중소기업 정책분석",
+     "h": "https://www.gbsa.or.kr/pages/smb_policy_analysis.do"
+    },
+    {
+     "t": "투자유치 지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/investment_attraction.do"
+    },
+    {
+     "t": "경기 디지털 제조 공급기술 글로벌화 지원",
+     "h": "https://www.gbsa.or.kr/pages/global_mfg.do"
+    },
+    {
+     "t": "경기도 투자 및 진출 지원",
+     "h": "https://www.gbsa.or.kr/pages/gyeonggi_invest.do"
+    },
+    {
+     "t": "경기도 투자조합(G-펀드)",
+     "h": "https://www.gbsa.or.kr/pages/investment_union.do"
+    },
+    {
+     "t": "국내복귀기업 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/return_support.do"
+    },
+    {
+     "t": "Invest 경기",
+     "h": "https://www.gbsa.or.kr/pages/invest_gyeonggi.do"
+    },
+    {
+     "t": "경기도 외국인투자기업 지원센터 운영",
+     "h": "https://www.gbsa.or.kr/pages/fdi_support.do"
+    },
+    {
+     "t": "AI산업육성 지원",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "AI산업육성 지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/intro_ai.do"
+    },
+    {
+     "t": "경기 AI 혁신클러스터 조성",
+     "h": "https://www.gbsa.or.kr/pages/gg_ai_cluster.do"
+    },
+    {
+     "t": "인공지능(AI) 인재양성",
+     "h": "https://www.gbsa.or.kr/pages/ai_growth.do"
+    },
+    {
+     "t": "AI 특화 공동훈련센터",
+     "h": "https://www.gbsa.or.kr/pages/ai_joint_training.do"
+    },
+    {
+     "t": "AI 디지털 배움터",
+     "h": "https://www.gbsa.or.kr/pages/ai_digiedu.do"
+    },
+    {
+     "t": "AI 글로벌 챌린지 프로그램",
+     "h": "https://www.gbsa.or.kr/pages/ai_global_prog.do"
+    },
+    {
+     "t": "AI 챌린지 프로그램",
+     "h": "https://www.gbsa.or.kr/pages/ai_challenge_prog.do"
+    },
+    {
+     "t": "열린 혁신 디지털오픈랩 구축",
+     "h": "https://www.gbsa.or.kr/pages/digital_openlab.do"
+    },
+    {
+     "t": "경기 RISE 센터",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "경기 RISE 센터 소개",
+     "h": "https://www.gbsa.or.kr/pages/intro_rise.do"
+    },
+    {
+     "t": "경기 RISE 센터",
+     "h": "https://www.gbsa.or.kr/pages/rise_center.do"
+    },
+    {
+     "t": "경기도 지역혁신중심대학지원체계(RISE)",
+     "h": "https://www.gbsa.or.kr/pages/rise_support.do"
+    },
+    {
+     "t": "정책/제도 제안",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "정책/제도 제안 소개",
+     "h": "https://www.gbsa.or.kr/pages/policy_proposal_guide.do"
+    },
+    {
+     "t": "정책/제도 제안하기",
+     "h": "https://www.gbsa.or.kr/board/policy_system.do?mode=write"
+    },
+    {
+     "t": "사이버성희롱ㆍ성폭력 신고센터",
+     "h": "https://www.gbsa.or.kr/pages/cyber_sh_report.do"
+    },
+    {
+     "t": "연도별 공시자료",
+     "h": "https://www.gbsa.or.kr/board/yr_announce.do"
+    },
+    {
+     "t": "데이터 제공목록",
+     "h": "https://bit.ly/3lv0QIq"
+    },
+    {
+     "t": "마이페이지 메인",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/main.do"
+    },
+    {
+     "t": "장비사용신청현황",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/equipAppList.do"
+    },
+    {
+     "t": "분석의뢰신청현황",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/analysis/analysisAppList.do"
+    },
+    {
+     "t": "천연물유래 소재연구",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/natureProduct/selectNatureProduct01List.do"
+    },
+    {
+     "t": "비임상유효성평가 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/natureProduct/np2/selectNatureProduct02List.do"
+    },
+    {
+     "t": "비임상 연구분석 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/natureProduct/np3/selectNatureProduct03List.do"
+    },
+    {
+     "t": "전문분석 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/natureProduct/np5/selectNatureProduct05List.do"
+    },
+    {
+     "t": "시생산지원 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/natureProduct/np6/selectNatureProduct06List.do"
+    },
+    {
+     "t": "결제/확인/취소",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "장비사용/분석의뢰 결제",
+     "h": "https://www.gbsa.or.kr/prgm/mypage/equip/list.do"
+    },
+    {
+     "t": "서비스 이용약관",
+     "h": "https://www.gbsa.or.kr/pages/useguide.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.gbsa.or.kr/pages/privacy.do"
+    },
+    {
+     "t": "이메일무단수집거부",
+     "h": "https://www.gbsa.or.kr/pages/noemail.do"
+    },
+    {
+     "t": "바이오산업본부 Home",
+     "h": "https://www.gbsa.or.kr/pages/bio/index.do"
+    },
+    {
+     "t": "바이오산업본부 안내",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "초고속약효검색지원",
+     "h": "https://www.gbsa.or.kr/#"
+    },
+    {
+     "t": "약효검색서비스 항목",
+     "h": "https://www.gbsa.or.kr/pages/search_medi_properties.do"
+    },
+    {
+     "t": "천연물 유래소재연구서비스",
+     "h": "https://www.gbsa.or.kr/prgm/natureProduct/matterResearchMain.do"
+    },
+    {
+     "t": "비임상유효성평가서비스",
+     "h": "https://www.gbsa.or.kr/prgm/natureProduct/np2/nonClinicalAssessmentMain.do"
+    },
+    {
+     "t": "비임상연구분석 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/natureProduct/np3/researchAnalysis_noclinicalMain.do"
+    },
+    {
+     "t": "시생산지원 서비스",
+     "h": "https://www.gbsa.or.kr/prgm/natureProduct/np6/newNatureProduct02Main.do"
+    },
+    {
+     "t": "수요기술 신청내역",
+     "h": "https://www.gbsa.or.kr/prgm/bio/techBank/applyList.do"
+    },
+    {
+     "t": "사용료 카드결제",
+     "h": "https://www.gbsa.or.kr/prgm/equip/usage/cardpay.do"
+    },
+    {
+     "t": "3D프린팅통합센터 바로가기",
+     "h": "https://www.3dgc.re.kr:446/html/main/index.asp"
+    },
+    {
+     "t": "통합검색(검색엔진)",
+     "h": "https://www.gbsa.or.kr/pages/search.do"
+    },
+    {
+     "t": "게시판데이터파싱",
+     "h": "https://www.gbsa.or.kr/prgm/bbsParsing/getBbsList.do"
+    },
+    {
+     "t": "3D프린팅 통합센터",
+     "h": "https://www.3dgc.re.kr/"
+    },
+    {
+     "t": "LANGUAGE",
+     "h": "https://www.gbsa.or.kr/#none"
+    },
+    {
+     "t": "ESG 경영 전략체계",
+     "h": "https://www.gbsa.or.kr/pages/esg_strategy.do"
+    },
+    {
+     "t": "ESG 경영공시",
+     "h": "https://www.gbsa.or.kr/pages/esg_disclosure.do"
+    },
+    {
+     "t": "공정거래자율준수",
+     "h": "https://www.gbsa.or.kr/pages/cp-introduction.do"
+    },
+    {
+     "t": "인권경영헌장(영문)",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_charter_eng.do"
+    },
+    {
+     "t": "인권경영운영지침",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_guidelines.do"
+    },
+    {
+     "t": "인권침해 구제신고·지원센터",
+     "h": "https://www.gbsa.or.kr/pages/humanrights_abuse.do"
+    },
+    {
+     "t": "인권경영 추진내용",
+     "h": "https://www.gbsa.or.kr/board/humanrights_progress.do"
+    },
+    {
+     "t": "고객만족 전략체계",
+     "h": "https://www.gbsa.or.kr/pages/cs_strategic.do"
+    },
+    {
+     "t": "CEO 안전보건경영철학",
+     "h": "https://www.gbsa.or.kr/pages/safe_vision.do"
+    },
+    {
+     "t": "안전보건경영방침 및 목표",
+     "h": "https://www.gbsa.or.kr/pages/safe_mission.do"
+    },
+    {
+     "t": "매뉴얼 및 안전보건자료",
+     "h": "https://www.gbsa.or.kr/board/safe_data.do"
+    },
+    {
+     "t": "안전보건 신문고",
+     "h": "https://www.gbsa.or.kr/board/safe_accept.do"
+    },
+    {
+     "t": "위치 및 시설 안내",
+     "h": "https://www.gbsa.or.kr/#none"
+    },
+    {
+     "t": "행사현황(광교)",
+     "h": "https://www.gbsa.or.kr/board/rental.do"
+    },
+    {
+     "t": "CI 소개 및 다운로드",
+     "h": "https://www.gbsa.or.kr/pages/ci.do"
+    },
+    {
+     "t": "브로셔 다운로드",
+     "h": "https://www.gbsa.or.kr/pages/promotion.do"
+    },
+    {
+     "t": "경기 스타트업 글로벌 성장 지원",
+     "h": "https://www.gbsa.or.kr/pages/global_growth.do"
+    },
+    {
+     "t": "경기 스타트업 서밋(G-SUMMIT)",
+     "h": "https://www.gbsa.or.kr/pages/global_startup.do"
+    },
+    {
+     "t": "경기 스타트업 아카데미 운영",
+     "h": "https://www.gbsa.or.kr/pages/gyeonggi_startup_operation.do"
+    },
+    {
+     "t": "경기 스타트업 플랫폼 운영",
+     "h": "https://www.gbsa.or.kr/pages/startup_platform.do"
+    },
+    {
+     "t": "경기 창업 공모",
+     "h": "https://www.gbsa.or.kr/pages/startup_participation.do"
+    },
+    {
+     "t": "경기도 글로벌스타트업 육성",
+     "h": "https://www.gbsa.or.kr/pages/pangyo_startup_investment.do"
+    },
+    {
+     "t": "경기창업혁신공간 운영",
+     "h": "https://www.gbsa.or.kr/pages/innovation_space.do"
+    },
+    {
+     "t": "기술창업 재도전 지원",
+     "h": "https://www.gbsa.or.kr/pages/rechallenge_business.do"
+    },
+    {
+     "t": "모두의 창업 프로젝트",
+     "h": "https://www.gbsa.or.kr/pages/modu_startup.do"
+    },
+    {
+     "t": "민간투자연계형 기술창업지원",
+     "h": "https://www.gbsa.or.kr/pages/private_investment_skill.do"
+    },
+    {
+     "t": "반려동물산업 스타트업 발굴 및 창업지원",
+     "h": "https://www.gbsa.or.kr/pages/pet_startup.do"
+    },
+    {
+     "t": "스타트업캠퍼스 보육 운영",
+     "h": "https://www.gbsa.or.kr/pages/startup_campus_space.do"
+    },
+    {
+     "t": "예비·초기 기술창업지원",
+     "h": "https://www.gbsa.or.kr/pages/startup_project.do"
+    },
+    {
+     "t": "사업화지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/businessization_support.do"
+    },
+    {
+     "t": "3D프린팅 통합센터 운영",
+     "h": "https://www.gbsa.or.kr/pages/operate_3dgc.do"
+    },
+    {
+     "t": "경기도 스타기업육성",
+     "h": "https://www.gbsa.or.kr/pages/star_sme.do"
+    },
+    {
+     "t": "경제단체 우수프로그램 지원",
+     "h": "https://www.gbsa.or.kr/pages/biz-org-prgm.do"
+    },
+    {
+     "t": "글로벌강소기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/ghc_promote.do"
+    },
+    {
+     "t": "소부장 기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/mpq.do"
+    },
+    {
+     "t": "중소기업 비즈니스 융합성장 지원",
+     "h": "https://www.gbsa.or.kr/pages/sme_convergence.do"
+    },
+    {
+     "t": "중소기업 환경·사회·투명(ESG) 경영활성화 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/esg_management.do"
+    },
+    {
+     "t": "R&D지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/rnd_support.do"
+    },
+    {
+     "t": "R&D첫걸음 기업연구소 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/firststep_rnd.do"
+    },
+    {
+     "t": "경기도 기술개발사업",
+     "h": "https://www.gbsa.or.kr/pages/dev_skills.do"
+    },
+    {
+     "t": "경기도 로봇SI 기업 육성",
+     "h": "https://www.gbsa.or.kr/pages/robotics_industry.do"
+    },
+    {
+     "t": "경기정보보호지원센터 운영",
+     "h": "https://www.gbsa.or.kr/pages/gyeonggi_security.do"
+    },
+    {
+     "t": "섬유분야 기술개발사업",
+     "h": "https://www.gbsa.or.kr/pages/textile_skills.do"
+    },
+    {
+     "t": "스마트모빌리티실증허브(SMDH) 운영 및 관리",
+     "h": "https://www.gbsa.or.kr/pages/smdh.do"
+    },
+    {
+     "t": "여성 과학기술인 연구개발 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/women_rnd.do"
+    },
+    {
+     "t": "경기도 차세대 수소에너지 기술개발",
+     "h": "https://www.gbsa.or.kr/pages/hydrogen_energy.do"
+    },
+    {
+     "t": "바이오산업 지원",
+     "h": "https://www.gbsa.or.kr/#none"
+    },
+    {
+     "t": "바이오산업 지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/bio_support_intro.do"
+    },
+    {
+     "t": "경기 바이오스타트업 육성 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/bio_startuplab.do"
+    },
+    {
+     "t": "경기도 바이오 전문인력 양성 사업",
+     "h": "https://www.gbsa.or.kr/pages/bio_speciality.do"
+    },
+    {
+     "t": "경기도 의료기기 개발지원",
+     "h": "https://www.gbsa.or.kr/pages/medical_device.do"
+    },
+    {
+     "t": "경기도 첨단 바이오헬스 강소기업 육성 프로젝트",
+     "h": "https://www.gbsa.or.kr/pages/advanced_health.do"
+    },
+    {
+     "t": "국내외 천연물 및 합성물 소재개발 사업_경기도천연물소재은행",
+     "h": "https://www.gbsa.or.kr/pages/beauty_material.do"
+    },
+    {
+     "t": "기술정보 및 협력네트워크 지원",
+     "h": "https://www.gbsa.or.kr/pages/techinfo_cowork.do"
+    },
+    {
+     "t": "바이오 연구성과 확산",
+     "h": "https://www.gbsa.or.kr/pages/bio_performance.do"
+    },
+    {
+     "t": "바이오산업 글로벌 기술사업화",
+     "h": "https://www.gbsa.or.kr/pages/bio_global_biz.do"
+    },
+    {
+     "t": "비임상 연구분석 서비스",
+     "h": "https://www.gbsa.or.kr/pages/nonclinical_analysis_research.do"
+    },
+    {
+     "t": "비임상 유효성 평가지원",
+     "h": "https://www.gbsa.or.kr/pages/nonclinical_validity.do"
+    },
+    {
+     "t": "소재개발 실증연구",
+     "h": "https://www.gbsa.or.kr/pages/positive_study.do"
+    },
+    {
+     "t": "수요기술 산학연 공동연구",
+     "h": "https://www.gbsa.or.kr/pages/fusion_iuic_collaboration.do"
+    },
+    {
+     "t": "연구장비공동활용 시스템 운영",
+     "h": "https://www.gbsa.or.kr/pages/equipment_union.do"
+    },
+    {
+     "t": "의료기기 기업 해외진출 지원",
+     "h": "https://www.gbsa.or.kr/pages/med-global-spt.do"
+    },
+    {
+     "t": "전문분석/시생산 인프라지원",
+     "h": "https://www.gbsa.or.kr/pages/analysis_infra.do"
+    },
+    {
+     "t": "천연물유래 제품개발 연구",
+     "h": "https://www.gbsa.or.kr/pages/natural_origins.do"
+    },
+    {
+     "t": "초고속대용량 소재발굴지원",
+     "h": "https://www.gbsa.or.kr/pages/medicinal_properties.do"
+    },
+    {
+     "t": "마케팅지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/marketing_support.do"
+    },
+    {
+     "t": "경기비즈니스센터(GBC) 운영",
+     "h": "https://www.gbsa.or.kr/pages/operate_gbc.do"
+    },
+    {
+     "t": "GMS(GBC 수출대행 사업)",
+     "h": "https://www.gbsa.or.kr/pages/operate_gms.do"
+    },
+    {
+     "t": "GBM(무료 수출화상상담 서비스)",
+     "h": "https://www.gbsa.or.kr/pages/operate_dts.do"
+    },
+    {
+     "t": "경기도 수출기업 물류비 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/support_logistics.do"
+    },
+    {
+     "t": "경기 청년 해외 취·창업 기회 확충 지원",
+     "h": "https://www.gbsa.or.kr/pages/oversea_employment.do"
+    },
+    {
+     "t": "해외 G-FAIR 개최",
+     "h": "https://www.gbsa.or.kr/pages/oversea_gfair.do"
+    },
+    {
+     "t": "G-FAIR KOREA 개최",
+     "h": "https://www.gbsa.or.kr/pages/permanent_exhibition.do"
+    },
+    {
+     "t": "해외전시회 단체관 운영",
+     "h": "https://www.gbsa.or.kr/pages/overseas_exhibition.do"
+    },
+    {
+     "t": "무역전문가 활용 해외마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/export_mentoring.do"
+    },
+    {
+     "t": "통상촉진단(시장개척단)",
+     "h": "https://www.gbsa.or.kr/pages/market_developer.do"
+    },
+    {
+     "t": "무역위기 대응 패키지 지원",
+     "h": "https://www.gbsa.or.kr/pages/trade-crisis-package.do"
+    },
+    {
+     "t": "GBSA 아카데미 운영",
+     "h": "https://www.gbsa.or.kr/pages/gbsa_academy.do"
+    },
+    {
+     "t": "소프트웨어(SW) 미래채움",
+     "h": "https://www.gbsa.or.kr/pages/software.do"
+    },
+    {
+     "t": "현장애로 지원/인증",
+     "h": "https://www.gbsa.or.kr/#none"
+    },
+    {
+     "t": "현장애로지원/인증 소개",
+     "h": "https://www.gbsa.or.kr/pages/field_support.do"
+    },
+    {
+     "t": "경기가족친화기업 인증 및 지원",
+     "h": "https://www.gbsa.or.kr/pages/family_friendly.do"
+    },
+    {
+     "t": "경기도 규제샌드박스 활성화 지원",
+     "h": "https://www.gbsa.or.kr/pages/regulatory_sandbox.do"
+    },
+    {
+     "t": "경기도 기업옴부즈만 운영",
+     "h": "https://www.gbsa.or.kr/pages/corp_omz.do"
+    },
+    {
+     "t": "경기도 대중소 상생협력 활성화 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/gwbs_project.do"
+    },
+    {
+     "t": "경기도 유망 중소기업 인증",
+     "h": "https://www.gbsa.or.kr/pages/smb_certification.do"
+    },
+    {
+     "t": "경기도 착한기업 인증 및 지원",
+     "h": "https://www.gbsa.or.kr/pages/good_company.do"
+    },
+    {
+     "t": "기업SOS지원센터운영",
+     "h": "https://www.gbsa.or.kr/pages/sos_center.do"
+    },
+    {
+     "t": "지역특화지원 소개",
+     "h": "https://www.gbsa.or.kr/pages/regional_specific.do"
+    },
+    {
+     "t": "가구기업 제품개발 및 마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/furniture_marketing.do"
+    },
+    {
+     "t": "경기도 뿌리산업 경쟁력 강화지원",
+     "h": "https://www.gbsa.or.kr/pages/support_root.do"
+    },
+    {
+     "t": "경기북부 수출물류비 지원(고양, 남양주, 동두천, 파주, 포천)",
+     "h": "https://www.gbsa.or.kr/pages/export_subsidies.do"
+    },
+    {
+     "t": "경기 섬유패션마케팅 지원사업",
+     "h": "https://www.gbsa.or.kr/pages/operate_gtc.do"
+    },
+    {
+     "t": "국내외조달등록 지원(파주, 연천)",
+     "h": "https://www.gbsa.or.kr/pages/support_procurement.do"
+    },
+    {
+     "t": "글로벌 마케팅지원(파주, 의정부)",
+     "h": "https://www.gbsa.or.kr/pages/global_marketing.do"
+    },
+    {
+     "t": "글로벌 시장개척단(고양, 남양주, 파주, 포천)",
+     "h": "https://www.gbsa.or.kr/pages/global_market_developer.do"
+    },
+    {
+     "t": "글로벌시장개척단(안성시)",
+     "h": "https://www.gbsa.or.kr/pages/global_market_development.do"
+    },
+    {
+     "t": "남부권역 생산레벨업 지원",
+     "h": "https://www.gbsa.or.kr/pages/southern_production_levelup.do"
+    },
+    {
+     "t": "남양주시 국내전시회 참가기업 지원",
+     "h": "https://www.gbsa.or.kr/pages/exhibition_support_nyj.do"
+    },
+    {
+     "t": "노후생산시설 현대화 지원(김포시)",
+     "h": "https://www.gbsa.or.kr/pages/decrepit_facilities_modernization.do"
+    },
+    {
+     "t": "노후생산시설 현대화 지원(동두천시)",
+     "h": "https://www.gbsa.or.kr/pages/modernization_support_ddc.do"
+    },
+    {
+     "t": "서부권역 해외시장개척단 운영(안산시,부천시)",
+     "h": "https://www.gbsa.or.kr/pages/west_market_pioneer_group.do"
+    },
+    {
+     "t": "수출기업 물류비 지원(안성시)",
+     "h": "https://www.gbsa.or.kr/pages/support_logisticsCost_anseong_icheon.do"
+    },
+    {
+     "t": "시군 중소기업 ESG 경영지원(광명시, 의왕시)",
+     "h": "https://www.gbsa.or.kr/pages/local-sme-esg.do"
+    },
+    {
+     "t": "안성시 글로벌마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/global_marketing_anseong.do"
+    },
+    {
+     "t": "안성시 중소기업 역량강화 지원",
+     "h": "https://www.gbsa.or.kr/pages/anseong_support.do"
+    },
+    {
+     "t": "양주시 해외 섬유전시회 참가지원",
+     "h": "https://www.gbsa.or.kr/pages/yangju_textile_exhibit.do"
+    },
+    {
+     "t": "여주시 기업SOS 현장클리닉",
+     "h": "https://www.gbsa.or.kr/pages/yeoju_sos.do"
+    },
+    {
+     "t": "온라인 수출 마케팅 지원(광명시)",
+     "h": "https://www.gbsa.or.kr/pages/global_export_marketing.do"
+    },
+    {
+     "t": "온라인 수출 마케팅 지원(의왕시)",
+     "h": "https://www.gbsa.or.kr/pages/global_export_marketing_uw.do"
+    },
+    {
+     "t": "의정부시 지식산업 지원",
+     "h": "https://www.gbsa.or.kr/pages/ujb_industry.do"
+    },
+    {
+     "t": "이천시 중소기업 맞춤형 성장지원사업",
+     "h": "https://www.gbsa.or.kr/pages/icheon_growth.do"
+    },
+    {
+     "t": "중소기업 개발생산판로 맞춤형 지원",
+     "h": "https://www.gbsa.or.kr/pages/family_north.do"
+    },
+    {
+     "t": "중소기업 디지털전환 컨설팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/support_digital_trans.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(광명시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_gwang.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(김포시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_sup.do"
+    },
+    {
+     "t": "중소기업 수출물류비 지원(안산시)",
+     "h": "https://www.gbsa.or.kr/pages/sample_and_export_cost_as.do"
+    },
+    {
+     "t": "중소기업 제품디자인 및 마케팅 지원",
+     "h": "https://www.gbsa.or.kr/pages/dev_design.do"
+    }
+   ],
+   "text": "본문 바로가기\n주메뉴 바로가기\n 오늘 하루 보지 않기 \n팝업닫기\n경기기업비서\n바이오산업본부\n3D프린팅 통합센터\n대관시설예약\n패밀리사이트\n로그인\n회원가입\nLANGUAGE\nSNS\n팝업존\n경기도경제과학진흥원 홈페이지 주메뉴\n기관소개\n주요사업\n소통과참여\n정보공개\n연구 발간물\n기관소식\n1 / 9\n이전\n슬라이드 정지\n다음\n무엇을 도와드릴까요?\n검색어\n검색\n조직도\n홍보관\n사업문의\n상담안내\n오시는길\n이전\n다음\n1 / 2\n슬라이드 정지\n자주 찾는\n서비스\n종합상담안내\n칭찬과격려\n정보공개\n윤리경영\n고객만족경영\n안전보건경영\n시설이용안내\n바이오센터\n대관시설예약\n3D프린팅\n지원사업\n창업\n사업화\nR&D\n바이오산업\n마케팅\n교육\n현장애로/인증\n지역특화\n정책연구\n투자유치\nAI산업육성\n경기 RISE 센터\nSTART UP\n창업\n\n창업정보 및 자원정보를\n단계별 상황별로 제공합니다.\n\nPREV\nNEXT\n01\n경기 스타트업\n글로벌 성장 지원\n\n도내 스타트업 글로벌 역량 강화 및 청년 창업가의 해외 전시회 참관 지원을 통해 글로벌 시장 진출 활성화\n\n02\n경기 스타트업 서밋\n(G-SUMMIT)\n\n글로벌 스타트업 박람회(경기 스타트업 서밋) 개최를 통해 글로벌 진출기회 제공 및 해외투자 확대하여 글로벌 창업생태계 기반 마련\n\n03\n경기 스타트업 아카데미 운영\n\n도내 혁신 창업가 1000+명 양성 및 AI 창업 육성 강화\n\n04\n경기 스타트업\n플랫폼 운영\n\n민간/공공의 창업정보 및 자원을 통합제공하고, 창업기업 간 실시간 소통을 위한 경기스타트업플랫폼(온라인) 운영\n\n05\n경기 창업 공모\n\n우수 창업아이템 및 창업기업을 발굴하고 투자유치 기회제공을 위한 「경기 창업 공모」를 통해 창업자의 성장 도모 등 창업생태계 조성 기여\n\n06\n경기도 글로벌스타트업 육성\n\n글로벌 메가트랜드 공유 및 투자자·스타트업 교류협력의 플랫폼 구축으로 스타트업 기업 역량강화 및 해외진출 촉진\n\n07\n경기창업혁신공간 운영\n\n경기 권역별 신산업 유망 스타트업 발굴·육성 및 체계적 기업지원서비스 제공을 위한 창업혁신공간을 운영하여 권역 혁신 창업생태계 조성\n\n08\n기술창업 재도전 지원\n\n우수한 재기창업자를 발굴하여 교육, 투자IR 등 역량강화와 사업화지원금 지원을 통해 성공적인 재창업 유도 및 일자리 창출\n\n09\n모두의 창업 프로젝트\n\n참신한 아이디어 발굴·보육을 통해 혁신 인재의 성장을 지원하고, 누구나 자유롭게 도전할 수 있는 창업환경 조성\n\n10\n민간투자연계형 기술창업지원\n\n민간(액셀러레이터)의 투자와 보육의 전문성과 공공의 지원금을 결합하여 경기도형 「예비 유니콘 기업」으로 육성\n\n11\n반려동물산업 스타트업 발굴 및 창업지원\n\n반려동물산업 관련 우수한 아이템을 보유한 예비·초기 창업자들을 발굴육성하여 창업성공율 제고 및 일자리 창출로 지역경제 활성화\n\n12\n스타트업캠퍼스 보육 운영\n\n국가 대표 혁신클러스터인 판교 스타트업캠퍼스 내 기술혁신 창업공간을 조성하여 우수 아이디어 및 혁신 기술을 보유한 스타트업 선발·보육을 통해 성장 단계별 맞춤형 지원\n\n13\n예비·초기 기술창업지원\n\n우수한 아이템을 보유한 예비·초기창업기업에 사업화자금 지원과 전문기관의 액셀러레이팅으로 창업성공률을 제고 및 기술창업 활성화 분위기 조성\n\n자세히 보기\n경기도 기업 SOS넷\n\n기업인 여러분이 경영일선에서 겪으시는 애로를\n신속하게 처리해드리기 위한 시스템입니다.\n\n지원사업문의\n\n경기도경제과학진흥원에서 진행되고 있는\n다양한 지원사업에 관한 문의하실 수 있습니다.\n\n부서별 연락처\n\n경기도경제과학진흥원의\n조직부서별 연락처를 확인 하실 수 있습니다.\n\n소식ㆍ소통\n최신 소식 지원사업\n진행중\n2026년 경기도 의료기기 개발 지원 사업 성과공유회 안내\n\n신청가능지역: 과천시,성남시,안성시,안양시,용인시,이천시,평택시,...\n\n접수기간: 2026-11-11 ~ 2026-11-25\n진행중\n[동부거점] 2026년도 4차 국내외산업재산권(디자인 상표출원)(중소기업 개발생산판로 맞춤형지원사업)\n\n신청가능지역: 광주시,양평군,여주시,하남시\n\n접수기간: 2026-11-11 ~ 2026-11-25\n진행중\n[동부거점] 2026년도 4차 국내외규격인증(중소기업 개발생산판로 맞춤형지원사업)\n\n신청가능지역: 광주시,양평군,여주시,하남시\n\n접수기간: 2026-11-11 ~ 2026-11-25\n지원사업 더보기\n 공지사항 언론보도 채용공고 입찰정보\n팝업존\n1 / 3\n이전\n슬라이드 정지\n다음\n진흥원 소식\n1 / 9\n이전\n슬라이드 정지\n다음\n19\n2026-11\n\n✈️경기도 청년, 세계를 품고 오다! '경청스타즈 네트워킹 데이' 개최\n\n29\n2026-10\n\n다양한 우수상품과 전세계 바이어들이 만나는 지금, 여기는 G-fair!\n\n27\n2026-10\n\n지자체·대학·기업이 함께 만드는 인재, 지산학 미래성장페어\n\n14\n2026-10\n\n미래산업을 이끌 스타트업의 축제, 2026 경기스타트업서밋 개최\n\n06\n2026-10\n\n바이오 투자 인사이트와 함께한 10월 GBSA Accelerating Day\n\n17\n2026-09\n\n바이오 혁신의 미래를 설계하다! 'G-BIO Week 2026' 개막\n\n07\n2026-09\n\nSW 미래채움 페스티벌 야호~🌟🤖\n\n16\n2026-07\n\n투자와 기업을 잇다! '2026 G-Invest Day' 개최\n\n09\n2026-06\n\n🌍 제2회 판다포럼 개최! 중동 리스크 시대 중소기업 생존 해법 모색\n\n소통하는 GBSA\n\n패밀리사이트\n경기도\n경기기업비서\n기업SOS\n경기스타트업플랫폼\n경기도 R&D 관리시스템\n경기도 과학기술정보서비스\nGBSA 아카데미\n판교테크노밸리\n3D프린팅통합센터\n디지털오픈랩\n광주시제품촬영스튜디오\ngbcprime(수출플랫폼)\n대한민국 우수상품전시회(G-Fair)\n경기도 연구장비공동활용사업\n힐링케어 실증지원 플랫폼\n경기도천연물소재은행\n경기앵커센터\n4차산업혁명센터\n이전\n슬라이드 정지\n다음\n서비스이용약관\n개인정보처리방침\n이메일집단수집거부\n오시는길\n\n(10956) 경기도 파주시 초롱꽃로 117-46(동패동), 5층 경기도경제과학진흥원\n\n대표자명 : 김현곤   대표번호 : 031-935-4796   사업자등록번호 : 124-82-08755\n\nCopyright © 2018 GBSA.or.kr All Rights Reserved."
+  },
+  "경기테크노파크": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://pms.gtp.or.kr/web/business/webBusinessList.do",
+     "status": 200,
+     "links": 14
+    }
+   ],
+   "url": "https://pms.gtp.or.kr/web/business/webBusinessList.do",
+   "title": "경기테크노파크 성과관리시스템",
+   "links": [
+    {
+     "t": "주메뉴 바로가기",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#gnb"
+    },
+    {
+     "t": "서브메뉴 바로가기",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#lnb"
+    },
+    {
+     "t": "2026년 성남시 온라인마케팅 지원사...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 바이오매스 관련 혁신제품 ...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 지식재산 재능나눔 참여자 ...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "「2026년 경기도 무역위기대응 K-Fo...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 안산시 온라인마케팅 지원사...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026 ICT·SW 창업 컨설팅 지원 참...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 경기도 취업 연계 지원사업 ...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 양평군 경기도 주택태양광[3...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 연천군 경기도 주택태양광[3...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "2026년 양주시 경기도 주택태양광[3...",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    },
+    {
+     "t": "이메일무단수집거부",
+     "h": "https://pms.gtp.or.kr/web/business/webBusinessList.do#none"
+    }
+   ],
+   "text": "본문 바로가기\n주메뉴 바로가기\n서브메뉴 바로가기\n유저메뉴\nHOME\n로그인\n사이트맵\n상단메뉴\n지원사업\n고객광장\n마이페이지\n지원사업\n지원사업 공고\n\n> 지원사업 > 지원사업 공고\n\n지원사업 공고\n리스트\n지역별\n테마별\n 검색 상세검색\n10\n30\n50\n100\n 지원사업 달력\n경기TP 지원사업\nNo\t공고 제목\t사업유형\t지역\t주최기관\t접수 기간\n1806\t2026년 성남시 온라인마케팅 지원사...\t마케팅/판로\t성남시\t성남시\t2026-11-10 11:00\n~ 2026-12-31 00:00\n1805\t2026년 바이오매스 관련 혁신제품 ...\t사업화\t서울,인천,경...\t산업 통상 자원부\t마감\n1804\t2026년 지식재산 재능나눔 참여자 ...\t기타\t경기도 전체\t특허청\t2026-09-29 00:00\n~ 2026-12-31 00:00\n1803\t「2026년 경기도 무역위기대응 K-Fo...\t마케팅/판로\t경기도 전체\t경기도\t2026-08-21 16:00\n~ 2026-11-30 00:00\n1802\t2026년 안산시 온라인마케팅 지원사...\t마케팅/판로\t안산시\t안산시\t2026-08-03 00:00\n~ 2026-12-31 00:00\n1801\t2026 ICT·SW 창업 컨설팅 지원 참...\t창업\t안산시\t중소벤처기업부\t2026-06-29 00:00\n~ 2026-12-31 00:00\n1800\t2026년 경기도 취업 연계 지원사업 ...\t기타\t경기도 전체\t경기도\t2026-05-07 11:00\n~ 2026-12-31 18:00\n1799\t2026년 양평군 경기도 주택태양광[3...\t기타\t양평군\t양평군\t2026-04-17 00:00\n~ 2026-12-31 00:00\n1798\t2026년 연천군 경기도 주택태양광[3...\t기타\t연천군\t연천군\t2026-04-03 00:00\n~ 2026-12-31 00:00\n1797\t2026년 양주시 경기도 주택태양광[3...\t기타\t양주시\t양주시\t2026-04-02 00:00\n~ 2026-12-31 00:00\n  1 2 3 4 5 6 7 8 9 10   \n배너존\n이전\n정지\n다음\n하단컨텐츠\n개인정보처리방침\n이메일무단수집거부\n경기TP소개\n사이트맵\n경기테크노파크\n한국테크노파크협의회\n경기대전테크노파크\n인천테크노파크\n강원테크노파크\n충남테크노파크\n대전테크노파크\n충북테크노파크\n전북테크노파크\n광주테크노파크\n전남테크노파크\n대구테크노파크\n경북테크노파크\n경남테크노파크\n포항테크노파크\n울산테크노파크\n부산테크노파크\n서울테크노파크\n\n경기도 안산시 상록구 해안로 705 | TEL : 031-500-3000 | FAX : 031-500-3301 | 사업자등록번호 : 134-82-03927\n\nCOPYRIGHT(C) 2014 GYEONGGI TECHNOPARK ALL RIGHTS RESERVED."
+  },
+  "고용노동부": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.moel.go.kr/news/notice/noticeList.do",
+     "status": 200,
+     "links": 98
+    }
+   ],
+   "url": "https://www.moel.go.kr/news/notice/noticeList.do",
+   "title": "고용노동부 > 뉴스·소식 > 공지사항 > 전체",
+   "links": [
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.moel.go.kr/site/sitemap/sitemapList.do"
+    },
+    {
+     "t": "과태료 조회·납부",
+     "h": "https://ifine.moel.go.kr/"
+    },
+    {
+     "t": "정부포상 365일 추천창구",
+     "h": "https://www.moel.go.kr/participate/posang/posangList.do"
+    },
+    {
+     "t": "적극행정 자료실",
+     "h": "https://www.moel.go.kr/participate/proactivePublic/board/list.do"
+    },
+    {
+     "t": "크리에이터 협업",
+     "h": "https://www.moel.go.kr/participate/creator/main.do"
+    },
+    {
+     "t": "뉴스·소식 열기",
+     "h": "javascript:void(0);"
+    },
+    {
+     "t": "월간내일(기관지)",
+     "h": "https://www.moel.go.kr/news/magazine/magazineList.do"
+    },
+    {
+     "t": "사전정보 공표목록",
+     "h": "https://www.moel.go.kr/info/publict/publictList.do"
+    },
+    {
+     "t": "비공개 대상정보 세부기준",
+     "h": "https://www.moel.go.kr/info/exemptInfo/exemptInfoCommon.do"
+    },
+    {
+     "t": "업무추진비 공개",
+     "h": "https://www.moel.go.kr/info/busiCost/busiCostList.do"
+    },
+    {
+     "t": "상품권 구매ㆍ사용내역",
+     "h": "https://www.moel.go.kr/info/ticket/ticketList.do"
+    },
+    {
+     "t": "정책실명제 안내",
+     "h": "https://www.moel.go.kr/info/realpolicy/realPolicyMain.do"
+    },
+    {
+     "t": "중점관리 대상사업",
+     "h": "https://www.moel.go.kr/info/policyBiz/realPolicyList.do"
+    },
+    {
+     "t": "청탁금지법 상담 및 조치",
+     "h": "https://www.moel.go.kr/info/integritycounseling/list.do"
+    },
+    {
+     "t": "예산·기금 설명",
+     "h": "https://www.moel.go.kr/agency/budget/budgetList.do"
+    },
+    {
+     "t": "최근 제·개정 법령",
+     "h": "https://www.moel.go.kr/info/lawinfo/revision/list.do"
+    },
+    {
+     "t": "훈령·예규·고시",
+     "h": "https://www.moel.go.kr/info/lawinfo/instruction/list.do"
+    },
+    {
+     "t": "행정해석(질의회시)",
+     "h": "https://www.moel.go.kr/info/publicdata/qnrinfo/qnrInfoList.do"
+    },
+    {
+     "t": "체불사업주 명단공개",
+     "h": "https://www.moel.go.kr/info/defaulter/defaulterList.do"
+    },
+    {
+     "t": "협동조합 경영공시",
+     "h": "https://www.moel.go.kr/info/coop/coopList.do"
+    },
+    {
+     "t": "재해조사보고서 공개",
+     "h": "https://www.moel.go.kr/info/dsstExaminRpt/list.do"
+    },
+    {
+     "t": "고용노동행정서비스헌장",
+     "h": "https://www.moel.go.kr/site/charter/charterList.do"
+    },
+    {
+     "t": "산업안전보건본부장",
+     "h": "https://www.moel.go.kr/agency/overview/director/intro.do"
+    },
+    {
+     "t": "기관 및 부서 검색",
+     "h": "https://www.moel.go.kr/agency/org/staff/staffList.do"
+    },
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.moel.go.kr/site/sitemap/sitemapList.do"
+    },
+    {
+     "t": "누리집 배너 모음",
+     "h": "https://www.moel.go.kr/site/banner/bannerList.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.moel.go.kr/site/protect/protectList.do"
+    },
+    {
+     "t": "영상정보처리기기 운영ㆍ관리 방침",
+     "h": "https://www.moel.go.kr/site/video/videoProtectList.do"
+    },
+    {
+     "t": "누리집 이용안내",
+     "h": "https://www.moel.go.kr/site/guide/guideList.do"
+    },
+    {
+     "t": "과태료 조회·납부",
+     "h": "https://ifine.moel.go.kr/"
+    },
+    {
+     "t": "정부포상 365일 추천창구",
+     "h": "https://www.moel.go.kr/participate/posang/posangList.do"
+    },
+    {
+     "t": "적극행정 자료실",
+     "h": "https://www.moel.go.kr/participate/proactivePublic/board/list.do"
+    },
+    {
+     "t": "크리에이터 협업",
+     "h": "https://www.moel.go.kr/participate/creator/main.do"
+    },
+    {
+     "t": "월간내일(기관지)",
+     "h": "https://www.moel.go.kr/news/magazine/magazineList.do"
+    },
+    {
+     "t": "사전정보 공표목록",
+     "h": "https://www.moel.go.kr/info/publict/publictList.do"
+    },
+    {
+     "t": "비공개 대상정보 세부기준",
+     "h": "https://www.moel.go.kr/info/exemptInfo/exemptInfoCommon.do"
+    },
+    {
+     "t": "업무추진비 공개",
+     "h": "https://www.moel.go.kr/info/busiCost/busiCostList.do"
+    },
+    {
+     "t": "상품권 구매ㆍ사용내역",
+     "h": "https://www.moel.go.kr/info/ticket/ticketList.do"
+    },
+    {
+     "t": "정책실명제 안내",
+     "h": "https://www.moel.go.kr/info/realpolicy/realPolicyMain.do"
+    },
+    {
+     "t": "중점관리 대상사업",
+     "h": "https://www.moel.go.kr/info/policyBiz/realPolicyList.do"
+    },
+    {
+     "t": "청탁금지법 상담 및 조치",
+     "h": "https://www.moel.go.kr/info/integritycounseling/list.do"
+    },
+    {
+     "t": "예산·기금 설명",
+     "h": "https://www.moel.go.kr/agency/budget/budgetList.do"
+    },
+    {
+     "t": "최근 제·개정 법령",
+     "h": "https://www.moel.go.kr/info/lawinfo/revision/list.do"
+    },
+    {
+     "t": "훈령·예규·고시",
+     "h": "https://www.moel.go.kr/info/lawinfo/instruction/list.do"
+    },
+    {
+     "t": "행정해석(질의회시)",
+     "h": "https://www.moel.go.kr/info/publicdata/qnrinfo/qnrInfoList.do"
+    },
+    {
+     "t": "체불사업주 명단공개",
+     "h": "https://www.moel.go.kr/info/defaulter/defaulterList.do"
+    },
+    {
+     "t": "협동조합 경영공시",
+     "h": "https://www.moel.go.kr/info/coop/coopList.do"
+    },
+    {
+     "t": "재해조사보고서 공개",
+     "h": "https://www.moel.go.kr/info/dsstExaminRpt/list.do"
+    },
+    {
+     "t": "고용노동행정서비스헌장",
+     "h": "https://www.moel.go.kr/site/charter/charterList.do"
+    },
+    {
+     "t": "산업안전보건본부장",
+     "h": "https://www.moel.go.kr/agency/overview/director/intro.do"
+    },
+    {
+     "t": "기관 및 부서 검색",
+     "h": "https://www.moel.go.kr/agency/org/staff/staffList.do"
+    },
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.moel.go.kr/site/sitemap/sitemapList.do"
+    },
+    {
+     "t": "누리집 배너 모음",
+     "h": "https://www.moel.go.kr/site/banner/bannerList.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.moel.go.kr/site/protect/protectList.do"
+    },
+    {
+     "t": "영상정보처리기기 운영ㆍ관리 방침",
+     "h": "https://www.moel.go.kr/site/video/videoProtectList.do"
+    },
+    {
+     "t": "누리집 이용안내",
+     "h": "https://www.moel.go.kr/site/guide/guideList.do"
+    },
+    {
+     "t": "보도·설명 하위 메뉴 열기",
+     "h": "https://www.moel.go.kr/news/notice/noticeList.do#"
+    },
+    {
+     "t": "홍보자료 하위 메뉴 열기",
+     "h": "https://www.moel.go.kr/news/notice/noticeList.do#"
+    },
+    {
+     "t": "[공고] 전문경력관 나군(사진·영상 촬영) 공무원 경력경쟁채용시험 공고",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100854"
+    },
+    {
+     "t": "[공고] 2027년 고용노동부 디지털영상게시판 유지보수 용역 입찰공고",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100849"
+    },
+    {
+     "t": "[공고] 2027년 K-뉴딜아카데미사업 운영지원센터 모집 공고",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100777"
+    },
+    {
+     "t": "[기타] 2027년 K-뉴딜아카데미 사업설명회 안내",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100761"
+    },
+    {
+     "t": "[공고] 2027년도 국가기술자격 검정시행계획",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100752"
+    },
+    {
+     "t": "[공고] 2027년도 「미래유망분야고졸인력양성사업」재진입 트랙 선정계획 공고(제2026-536호)",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100741"
+    },
+    {
+     "t": "[공고] 2027년도 「미래유망분야고졸인력양성사업」 신규 트랙 선정계획 공고(제2026-535호)",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100740"
+    },
+    {
+     "t": "[공고] 2026년도 사업주 위탁훈련(집체) 기관평가 계획 공고",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100714"
+    },
+    {
+     "t": "[공고] 전문임기제 가급(인공지능) 공무원 경채시험 서류전형 합격자 및 면접시험 일정 공고",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100694"
+    },
+    {
+     "t": "[공고] 민간자격 등록폐지",
+     "h": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261100646"
+    },
+    {
+     "t": "처음으로 이동 1",
+     "h": "https://www.moel.go.kr/news/notice/noticeList.do?pageIndex=1"
+    },
+    {
+     "t": "마지막으로 이동 798",
+     "h": "https://www.moel.go.kr/news/notice/noticeList.do?pageIndex=798"
+    },
+    {
+     "t": "서울지방고용노동청",
+     "h": "http://www.moel.go.kr/seoul/"
+    },
+    {
+     "t": "경기지방고용노동청",
+     "h": "http://www.moel.go.kr/gyeonggi/"
+    },
+    {
+     "t": "중부지방고용노동청",
+     "h": "http://www.moel.go.kr/jungbu/"
+    },
+    {
+     "t": "부산지방고용노동청",
+     "h": "http://www.moel.go.kr/busan/"
+    },
+    {
+     "t": "대구지방고용노동청",
+     "h": "http://www.moel.go.kr/daegu/"
+    },
+    {
+     "t": "광주지방고용노동청",
+     "h": "http://www.moel.go.kr/gwangju/"
+    },
+    {
+     "t": "대전지방고용노동청",
+     "h": "http://www.moel.go.kr/daejeon/"
+    },
+    {
+     "t": "산업재해보상보험재심사위원회",
+     "h": "http://www.iaciac.go.kr/"
+    },
+    {
+     "t": "고용보험심사위원회",
+     "h": "http://eiac.ei.go.kr/"
+    },
+    {
+     "t": "지역고용정보네트워크",
+     "h": "http://www.reis.or.kr/"
+    },
+    {
+     "t": "한국산업안전보건공단",
+     "h": "http://www.kosha.or.kr/"
+    },
+    {
+     "t": "한국산업인력공단",
+     "h": "http://www.hrdkorea.or.kr/"
+    },
+    {
+     "t": "한국장애인고용공단",
+     "h": "https://www.kead.or.kr/"
+    },
+    {
+     "t": "한국기술교육대학교",
+     "h": "http://www.koreatech.ac.kr/"
+    },
+    {
+     "t": "건설근로자공제회",
+     "h": "http://www.cwma.or.kr/"
+    },
+    {
+     "t": "한국사회적기업진흥원",
+     "h": "http://www.socialenterprise.or.kr/index.do"
+    },
+    {
+     "t": "한국고용노동교육원",
+     "h": "http://www.keli.kr/"
+    },
+    {
+     "t": "경제사회노동위원회",
+     "h": "http://www.eslc.go.kr/"
+    },
+    {
+     "t": "방송미디어통신위원회",
+     "h": "http://www.kcc.go.kr/"
+    },
+    {
+     "t": "중앙선거관리위원회",
+     "h": "http://www.nec.go.kr/"
+    },
+    {
+     "t": "과학기술정보통신부",
+     "h": "http://www.msit.go.kr/"
+    },
+    {
+     "t": "기후에너지환경부",
+     "h": "http://www.me.go.kr/"
+    },
+    {
+     "t": "식품의약품안전처",
+     "h": "http://www.mfds.go.kr/"
+    },
+    {
+     "t": "044-202-7999",
+     "h": "tel:044-202-7999"
+    },
+    {
+     "t": "고용노동행정서비스헌장",
+     "h": "https://www.moel.go.kr/site/charter/charterList.do"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.moel.go.kr/site/protect/protectList.do"
+    },
+    {
+     "t": "영상정보처리기기 운영·관리 방침",
+     "h": "https://www.moel.go.kr/site/video/videoProtectList.do"
+    },
+    {
+     "t": "누리집 안내지도",
+     "h": "https://www.moel.go.kr/site/sitemap/sitemapList.do"
+    }
+   ],
+   "text": "메뉴 바로가기\n본문 바로가기\n\n이 누리집은 대한민국 공식 전자정부 누리집입니다.\n \n누리집 안내지도\n화면크기\nLanguage\n 통합검색\n열기\n민원\n열기\n국민참여\n열기\n뉴스·소식\n열기\n정보공개\n열기\n정책소개\n열기\n기관소개\n열기\n이용안내\n열기\n고용노동부\n\n국민 누구나 원하는 일자리에서 마음껏 역량을 발휘하는 나라!\n\n뉴스·소식\n공지사항\n보도·설명\n하위 메뉴 열기\n홍보자료\n하위 메뉴 열기\n공지사항\n홈\n뉴스·소식\n공지사항\n인쇄하기\n전체\n공고\n행사\n입찰\n인사\n포상대상자공개\n기타\n게시판검색\n전체\n제목\n내용\n담당부서\n검색\n\n전체 7,975\n\n10건 보기\n20건 보기\n30건 보기\n40건 보기\n50건 보기\n 보기\n\n공지사항 목록 - 번호, 제목, 담당부서, 첨부, 등록일, 조회로 구성\n번호\t제목\t담당부서\t첨부\t등록일\t조회\n7975\t\n[공고] 전문경력관 나군(사진·영상 촬영) 공무원 경력경쟁채용시험 공고\n\t\n인사계\n\t\n첨부파일 있음\n\t2026.11.25\t183\n7974\t\n[공고] 2027년 고용노동부 디지털영상게시판 유지보수 용역 입찰공고\n\t\n디지털소통팀\n\t\n첨부파일 있음\n\t2026.11.24\t436\n7973\t\n[공고] 2027년 K-뉴딜아카데미사업 운영지원센터 모집 공고\n\t\n직업능력정책과\n\t\n첨부파일 있음\n\t2026.11.23\t1,730\n7972\t\n[기타] 2027년 K-뉴딜아카데미 사업설명회 안내\n\t\n직업능력정책과\n\t\n첨부파일 있음\n\t2026.11.23\t1,522\n7971\t\n[공고] 2027년도 국가기술자격 검정시행계획\n\t\n직업능력평가과\n\t\n첨부파일 있음\n\t2026.11.23\t12,416\n7970\t\n[공고] 2027년도 「미래유망분야고졸인력양성사업」재진입 트랙 선정계획 공고(제2026-536호)\n\t\n기업훈련지원과\n\t\n첨부파일 있음\n\t2026.11.20\t1,212\n7969\t\n[공고] 2027년도 「미래유망분야고졸인력양성사업」 신규 트랙 선정계획 공고(제2026-535호)\n\t\n기업훈련지원과\n\t\n첨부파일 있음\n\t2026.11.20\t1,277\n7968\t\n[공고] 2026년도 사업주 위탁훈련(집체) 기관평가 계획 공고\n\t\n기업훈련지원과\n\t\n첨부파일 있음\n\t2026.11.20\t2,021\n7967\t\n[공고] 전문임기제 가급(인공지능) 공무원 경채시험 서류전형 합격자 및 면접시험 일정 공고\n\t\n인사계\n\t\n첨부파일 있음\n\t2026.11.19\t2,051\n7966\t\n[공고] 민간자격 등록폐지\n\t\n직업능력평가과\n\t\n첨부파일 있음\n\t2026.11.18\t2,972\n이전\n처음으로 이동\n12345\n마지막으로 이동\n798다음\n이동할 쪽 숫자 입력\n / 798 이동\n문의안내\n* 게시물에 대한 문의는 페이지 상단의 담당자 및 전화번호 내용을 참고하세요.\n* 고객상담센터 국번없이 1350(전화연결장애문의:052-702-5016)\n소속기관(지청 및 위원회)\n업무별 누리집\n산하기관 및 관련 단체\n정부기관\n(30117) 세종특별자치시 한누리대로 422. 정부세종청사 11동\n\n대표전화 1350 (유료, 평일 09시~18시)\n\n당직실 전화 044-202-7999 (평일 18시~익일 09시, 주말 · 공휴일, '26.1.1.부터 재택당직 시행 중)\n  * 평일 근무시간(09:00~18:00) 이후 업무상담은 제한될 수 있습니다.\n\n유튜브\n페이스북\n트위터\n인스타그램\n블로그\n고용노동행정서비스헌장\n개인정보처리방침\n영상정보처리기기 운영·관리 방침\n저작권정책\n누리집 안내지도\n찾아오시는 길\n\n© Ministry of Employment and Labor. All rights reserved.\n\n상단으로 이동"
+  },
+  "고용24": {
+   "ok": false,
+   "tried": [
+    {
+     "url": "https://www.work24.go.kr/cm/e/a/0110/selectOpenNoticeList.do",
+     "status": 404,
+     "links": 0
+    },
+    {
+     "url": "https://www.work24.go.kr/",
+     "error": "Page.eval_on_selector_all: TypeError: extraEngines is not iterable\n    at new SelectorEvaluatorImpl (<anonymous>:3181:34)\n    at new InjectedScript (<anonymous>:5557:23)\n    at <anonymous>:6845:16\n   "
+    }
+   ]
+  },
+  "KHIDI": {
+   "ok": true,
+   "tried": [
+    {
+     "url": "https://www.khidi.or.kr/board?menuId=MENU01108",
+     "status": 200,
+     "links": 107
+    }
+   ],
+   "url": "https://www.khidi.or.kr/board?menuId=MENU01108",
+   "title": "사업공고<알림·소식-KHIDI 대표사이트",
+   "links": [
+    {
+     "t": "KHIDI 한국보건산업진흥원",
+     "h": "https://www.khidi.or.kr/kps"
+    },
+    {
+     "t": "바이오헬스산업정보",
+     "h": "https://www.khidi.or.kr/kps/bioHealthInfo/main?menuId=MENU03855"
+    },
+    {
+     "t": "바이오헬스 리포트",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU03859"
+    },
+    {
+     "t": "KHIDI 브리프",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01783"
+    },
+    {
+     "t": "바이오헬스정책연구",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02686"
+    },
+    {
+     "t": "바이오헬스 뉴스클리핑",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU00102"
+    },
+    {
+     "t": "친인척 채용현황",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02556"
+    },
+    {
+     "t": "KHIDI 헬프라인",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03091"
+    },
+    {
+     "t": "바이오헬스 규제통합플랫폼",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03931"
+    },
+    {
+     "t": "규제개혁마당 개요",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03486"
+    },
+    {
+     "t": "규제개혁마당 제안",
+     "h": "https://www.khidi.or.kr/kps/regulationReform/form?menuId=MENU03495"
+    },
+    {
+     "t": "규제개혁 접수현황",
+     "h": "https://www.khidi.or.kr/kps/rglRcptPrst/list?menuId=MENU03968"
+    },
+    {
+     "t": "자주하는질문(FAQ)",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03903"
+    },
+    {
+     "t": "관세·수출 피해지원센터",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03625"
+    },
+    {
+     "t": "누리집 정정 요청",
+     "h": "https://www.khidi.or.kr/kps/contentsMonitoring/certification?menuId=MENU03483"
+    },
+    {
+     "t": "정보공개절차안내",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00177"
+    },
+    {
+     "t": "관련법령 및 서식",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU00191"
+    },
+    {
+     "t": "ESG경영 추진체계",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03114"
+    },
+    {
+     "t": "ESG경영 선언문",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03115"
+    },
+    {
+     "t": "ESG경영 결과보고",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03376"
+    },
+    {
+     "t": "안전보건경영방침",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02515"
+    },
+    {
+     "t": "인권경영 선언문",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03086"
+    },
+    {
+     "t": "인권경영 추진체계",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03087"
+    },
+    {
+     "t": "인권침해 구제절차",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03088"
+    },
+    {
+     "t": "고객서비스 헌장",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00171"
+    },
+    {
+     "t": "공공데이터 제공",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU02418"
+    },
+    {
+     "t": "공공데이터 제공",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03896"
+    },
+    {
+     "t": "디지털 약자를 위한 점자파일 제공",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03897"
+    },
+    {
+     "t": "법령 개정 정보",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03494"
+    },
+    {
+     "t": "사규(제규정) 정보",
+     "h": "https://www.alio.go.kr/item/itemOrganList.do?apbaId=C0201&reportFormRootNo=21110"
+    },
+    {
+     "t": "사규(제규정) 제·개정 예고",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02306"
+    },
+    {
+     "t": "이사회 내 소위원회",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03374"
+    },
+    {
+     "t": "보건산업혁신창업센터",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01261"
+    },
+    {
+     "t": "바이오헬스산업정보",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01108#mGnb-anchor-MENU03854"
+    },
+    {
+     "t": "KHIDI 소개",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01108#mGnb-anchor-MENU00128"
+    },
+    {
+     "t": "바이오헬스산업정보",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03854"
+    },
+    {
+     "t": "바이오헬스산업정보",
+     "h": "https://www.khidi.or.kr/kps/bioHealthInfo/main?menuId=MENU03855"
+    },
+    {
+     "t": "바이오헬스 리포트",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU03859"
+    },
+    {
+     "t": "KHIDI 브리프",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01783"
+    },
+    {
+     "t": "바이오헬스정책연구",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02686"
+    },
+    {
+     "t": "바이오헬스 뉴스클리핑",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU00102"
+    },
+    {
+     "t": "친인척 채용현황",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02556"
+    },
+    {
+     "t": "KHIDI 헬프라인",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03091"
+    },
+    {
+     "t": "바이오헬스 규제통합플랫폼",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03931"
+    },
+    {
+     "t": "규제개혁마당 개요",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03486"
+    },
+    {
+     "t": "규제개혁마당 제안",
+     "h": "https://www.khidi.or.kr/kps/regulationReform/form?menuId=MENU03495"
+    },
+    {
+     "t": "규제개혁 접수현황",
+     "h": "https://www.khidi.or.kr/kps/rglRcptPrst/list?menuId=MENU03968"
+    },
+    {
+     "t": "자주하는질문(FAQ)",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03903"
+    },
+    {
+     "t": "관세·수출 피해지원센터",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03625"
+    },
+    {
+     "t": "누리집 정정 요청",
+     "h": "https://www.khidi.or.kr/kps/contentsMonitoring/certification?menuId=MENU03483"
+    },
+    {
+     "t": "정보공개절차안내",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00177"
+    },
+    {
+     "t": "관련법령 및 서식",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU00191"
+    },
+    {
+     "t": "ESG경영 추진체계",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03114"
+    },
+    {
+     "t": "ESG경영 선언문",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03115"
+    },
+    {
+     "t": "ESG경영 결과보고",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03376"
+    },
+    {
+     "t": "안전보건경영방침",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02515"
+    },
+    {
+     "t": "인권경영 선언문",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03086"
+    },
+    {
+     "t": "인권경영 추진체계",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03087"
+    },
+    {
+     "t": "인권침해 구제절차",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03088"
+    },
+    {
+     "t": "고객서비스 헌장",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00171"
+    },
+    {
+     "t": "공공데이터 제공",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU02418"
+    },
+    {
+     "t": "공공데이터 제공",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03896"
+    },
+    {
+     "t": "디지털 약자를 위한 점자파일 제공",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03897"
+    },
+    {
+     "t": "법령 개정 정보",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03494"
+    },
+    {
+     "t": "사규(제규정) 정보",
+     "h": "https://www.alio.go.kr/item/itemOrganList.do?apbaId=C0201&reportFormRootNo=21110"
+    },
+    {
+     "t": "사규(제규정) 제·개정 예고",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02306"
+    },
+    {
+     "t": "KHIDI 소개",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00128"
+    },
+    {
+     "t": "이사회 내 소위원회",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU03374"
+    },
+    {
+     "t": "보건산업혁신창업센터",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01261"
+    },
+    {
+     "t": "페이스북 공유하기",
+     "h": "https://www.facebook.com/KHIDI.KOREA"
+    },
+    {
+     "t": "2026년 제약바이오산업단 지원 사업 위탁회계정산기관 모집 공고(~11.27(금))",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=9999999998&linkId=48953077&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "디지털 의료기기 실증지원센터 전담기관 운영 모집 공고(~12/4)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=9999999997&linkId=48952461&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "바이오헬스 핵심인재 글로벌 브릿지 연수 프로그램(KHIDI-Stanford Biodesign) 연수생 모집 공고",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=9999999996&linkId=48952446&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "광역형 국산의료기기 교육·훈련 지원센터 구축 및 운영 컨소시엄 모집 공고(~11/30)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=9999999995&linkId=48951946&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "Medical Korea 2027 연계 지역 콘퍼런스 및 비즈니스 미팅 참여 지자체 모집 공모(~11.27.(금))",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=937&linkId=48952917&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "「2027년 중동 의료인(의사·치과의사) 연수프로그램 한국어교육 운영」 교육기관 모집 공고(~11.19)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=936&linkId=48952503&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "2027년 제약바이오 글로벌 마케팅 지원 공동수행기관 모집 공고(~11/20(금) 18시까지)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=935&linkId=48952024&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "「2026 헬스케어 AI 투자포럼」 투자유치 발표(IR 피칭) 희망기업 모집 공고",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=934&linkId=48951083&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "2027년 융합형 의사과학자 양성 사업(대학원과정) 공고('26.11.18.(수), 15시 제출 마감)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=933&linkId=48951045&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "2026년 몽골 의료인 연수 프로그램(K-MCTP) 운영 모집공고(~10.23.(금)., 17:00)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=932&linkId=48950887&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "「제2회 메디컬코리아 국제의료광고제」 출품작 공모 변경 공고(~11월 30일(월)까지)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=931&linkId=48950846&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "[공고] 「HLTH USA 2026」 디지털헬스케어 한국관 참가기관 모집 공고(~10.13.(화) 18시까지)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=930&linkId=48950673&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "「제2회 메디컬코리아 국제의료광고제」 출품작 공모(~11월 30일(월)까지)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=929&linkId=48950575&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "2027 WHX Dubai 및 WHX Tech 연계 한국의료기기 통합전시관 및 세미나 발표 기업 모집공고 (10.16(금), 18:00까지)",
+     "h": "https://www.khidi.or.kr/board/view?pageNum=1&rowCnt=10&no1=928&linkId=48950492&menuId=MENU01108&maxIndex=00489529179998&minIndex=00489504929998&schType=0&schText=&schStartDate=&schEndDate=&boardStyle=&categoryId=&continent=&country="
+    },
+    {
+     "t": "medical korea",
+     "h": "https://www.medicalkorea.or.kr/en/index"
+    },
+    {
+     "t": "HT Dream",
+     "h": "https://www.htdream.kr/"
+    },
+    {
+     "t": "KHISS 보건산업통계",
+     "h": "https://khiss.go.kr/"
+    },
+    {
+     "t": "의료기관 회계정보 공시",
+     "h": "https://haspa.khidi.or.kr/"
+    },
+    {
+     "t": "의료기관 회계기준 시스템",
+     "h": "https://has.khidi.or.kr/"
+    },
+    {
+     "t": "국가통합바이오빅데이터구축사업단",
+     "h": "https://www.biobigdata.kr/"
+    },
+    {
+     "t": "제증명 발급 신청",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU02642"
+    },
+    {
+     "t": "개인정보처리방침",
+     "h": "https://www.khidi.or.kr/menu?menuId=MENU00628"
+    },
+    {
+     "t": "KHIDI 헬프라인",
+     "h": "https://www.redwhistle.org/report/report.asp?organ=7918&RType=1"
+    },
+    {
+     "t": "홈페이지 인증현황",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU01696"
+    },
+    {
+     "t": "제약산업정보포털",
+     "h": "https://www.khidi.or.kr/epharmakorea"
+    },
+    {
+     "t": "의료기기산업정보",
+     "h": "https://www.khidi.or.kr/mdtis"
+    },
+    {
+     "t": "사회적경제플랫폼",
+     "h": "https://www.khidi.or.kr/hisep"
+    },
+    {
+     "t": "의료기관해외진출정보",
+     "h": "https://www.khidi.or.kr/kohes/main"
+    },
+    {
+     "t": "스마트병원확산지원센터",
+     "h": "https://www.khidi.or.kr/smart-hospital"
+    },
+    {
+     "t": "의료기관회계정보공시",
+     "h": "https://haspa.khidi.or.kr/"
+    },
+    {
+     "t": "KHISS보건산업통계",
+     "h": "https://khiss.go.kr/"
+    },
+    {
+     "t": "보건신기술NET",
+     "h": "https://www.khidi.or.kr/board?menuId=MENU00563&siteId=SITE00010"
+    },
+    {
+     "t": "Medical Korea",
+     "h": "https://www.medicalkorea.or.kr/en/index"
+    },
+    {
+     "t": "보건산업혁신창업센터",
+     "h": "https://www.khidi.or.kr/kbic"
+    },
+    {
+     "t": "K-헬스미래추진단",
+     "h": "https://www.khidi.or.kr/khmi"
+    },
+    {
+     "t": "국가통합바이오빅데이터",
+     "h": "https://www.biobigdata.kr/"
+    },
+    {
+     "t": "보건의료기술종합정보시스템",
+     "h": "https://www.htdream.kr/"
+    }
+   ],
+   "text": "본문 바로가기\n이 누리집은 대한민국 공식 전자정부 누리집입니다.\n바로이동 \n규제개혁마당 \n피해지원센터 \n Language \nKHIDI 한국보건산업진흥원\n통합검색\n로그인\n회원가입\n바이오헬스산업정보\n알림·소식\n소통·참여\n열린경영\nKHIDI 소개\n사업포털\n사이트맵\n알림·소식\n공지사항\n사업공고\n보도자료\n행사정보\n입찰정보\n채용정보\n열기\n후원승인\n홈\n알림·소식\n사업공고\n사업공고\n페이지 공유하기\n페이지 인쇄\n\n\n\n\n제목\n내용\n작성자\n\n전체 937건, 현재 페이지 1/94\n\n사업공고 : 번호, 제목, 작성자, 등록일, 조회수, 첨부에 따른 게시글 목록\n번호\t제목\t작성자\t등록일\t조회수\t첨부\n공지\t\n2026년 제약바이오산업단 지원 사업 위탁회계정산기관 모집 공고(~11.27(금))\n\t관리자\t2026-11-20\t2,181\t\n공지\t\n디지털 의료기기 실증지원센터 전담기관 운영 모집 공고(~12/4)\n\t관리자\t2026-11-06\t4,575\t\n공지\t\n바이오헬스 핵심인재 글로벌 브릿지 연수 프로그램(KHIDI-Stanford Biodesign) 연수생 모집 공고\n\t관리자\t2026-11-06\t5,477\t\n공지\t\n광역형 국산의료기기 교육·훈련 지원센터 구축 및 운영 컨소시엄 모집 공고(~11/30)\n\t관리자\t2026-10-29\t4,688\t\n937\t\nMedical Korea 2027 연계 지역 콘퍼런스 및 비즈니스 미팅 참여 지자체 모집 공모(~11.27.(금))\n\t관리자\t2026-11-17\t1,636\t\n936\t\n「2027년 중동 의료인(의사·치과의사) 연수프로그램 한국어교육 운영」 교육기관 모집 공고(~11.19)\n\t관리자\t2026-11-10\t2,286\t\n935\t\n2027년 제약바이오 글로벌 마케팅 지원 공동수행기관 모집 공고(~11/20(금) 18시까지)\n\t관리자\t2026-11-02\t3,808\t\n934\t\n「2026 헬스케어 AI 투자포럼」 투자유치 발표(IR 피칭) 희망기업 모집 공고\n\t관리자\t2026-10-20\t6,020\t\n933\t\n2027년 융합형 의사과학자 양성 사업(대학원과정) 공고('26.11.18.(수), 15시 제출 마감)\n\t관리자\t2026-10-19\t5,805\t\n932\t\n2026년 몽골 의료인 연수 프로그램(K-MCTP) 운영 모집공고(~10.23.(금)., 17:00)\n\t관리자\t2026-10-13\t4,893\t\n931\t\n「제2회 메디컬코리아 국제의료광고제」 출품작 공모 변경 공고(~11월 30일(월)까지)\n\t관리자\t2026-10-08\t5,820\t\n930\t\n[공고] 「HLTH USA 2026」 디지털헬스케어 한국관 참가기관 모집 공고(~10.13.(화) 18시까지)\n\t관리자\t2026-10-06\t5,722\t\n929\t\n「제2회 메디컬코리아 국제의료광고제」 출품작 공모(~11월 30일(월)까지)\n\t관리자\t2026-10-01\t5,408\t\n928\t\n2027 WHX Dubai 및 WHX Tech 연계 한국의료기기 통합전시관 및 세미나 발표 기업 모집공고 (10.16(금), 18:00까지)\n\t관리자\t2026-09-30\t7,204\t\n12345678910\n조직도\n경영공시\n정보공개\n자료실\n뉴스클리핑\n이전 슬라이드\n다음 슬라이드\n관련사이트 자동재생 멈춤\n보건복지부\n지표누리\n문서24\nmedical korea\nHT Dream\nKHISS 보건산업통계\n의료기관 회계정보 공시\n의료기관 회계기준 시스템\n국가통합바이오빅데이터구축사업단\nKRDS - Korea Design System\n\n(28159) 충청북도 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운 한국보건산업진흥원\n\n대표전화 043-713-8000\n부서별 연락처 \n찾아오시는 길 \n제증명 발급 신청 \n인스타그램\n유튜브\n페이스북\n블로그\n링크드인\n  \n개인정보처리방침\nKHIDI 헬프라인\n홈페이지 인증현황\n\n©2026. KHIDI. All rights reserved."
+  }
+ }
+}

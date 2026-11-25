@@ -1,0 +1,13 @@
+{
+ "collected_at": "2026-11-25T10:52+09:00",
+ "sources": {
+  "bizinfo": {
+   "ok": false,
+   "error": "BIZINFO_API_KEY 없음"
+  },
+  "kstartup": {
+   "ok": false,
+   "error": "DATA_GO_KR_API_KEY 없음"
+  }
+ }
+}
