@@ -26,23 +26,33 @@ if key:
 else:
     out["sources"]["bizinfo"] = {"ok": False, "error": "BIZINFO_API_KEY 없음"}
 
-# 2. K-Startup 사업공고 API (공공데이터포털 15125364), 모집 중인 공고만
+# 2. K-Startup 사업공고 API (공공데이터포털), 모집 중인 공고만
+#    포털에 표시된 End Point는 kisedKstartupService02. 운영 이름이 바뀔 수 있어 몇 가지를 차례로 시도한다.
 key = os.environ.get("DATA_GO_KR_API_KEY", "").strip()
+CANDIDATES = [
+    "https://apis.data.go.kr/B552735/kisedKstartupService02/getAnnouncementInformation02",
+    "https://apis.data.go.kr/B552735/kisedKstartupService02/getAnnouncementInformation01",
+    "https://apis.data.go.kr/B552735/kisedKstartupService01/getAnnouncementInformation01",
+]
 if key:
-    try:
-        items, page = [], 1
-        while page <= 10:
-            d = get("https://apis.data.go.kr/B552735/kisedKstartupService01/getAnnouncementInformation01",
-                    {"serviceKey": key, "page": page, "perPage": 100, "returnType": "json",
-                     "cond[rcrt_prgs_yn::EQ]": "Y"})
-            batch = d.get("data", [])
-            items += batch
-            if len(batch) < 100:
-                break
-            page += 1
-        out["sources"]["kstartup"] = {"ok": True, "count": len(items), "items": items}
-    except Exception as e:
-        out["sources"]["kstartup"] = {"ok": False, "error": str(e)[:300]}
+    errors = []
+    for url in CANDIDATES:
+        try:
+            items, page = [], 1
+            while page <= 10:
+                d = get(url, {"serviceKey": key, "page": page, "perPage": 100, "returnType": "json",
+                              "cond[rcrt_prgs_yn::EQ]": "Y"})
+                batch = d.get("data", [])
+                items += batch
+                if len(batch) < 100:
+                    break
+                page += 1
+            out["sources"]["kstartup"] = {"ok": True, "endpoint": url, "count": len(items), "items": items}
+            break
+        except Exception as e:
+            errors.append(f"{url.rsplit('/',2)[-2:]}: {str(e)[:150]}")
+    else:
+        out["sources"]["kstartup"] = {"ok": False, "error": " / ".join(errors)}
 else:
     out["sources"]["kstartup"] = {"ok": False, "error": "DATA_GO_KR_API_KEY 없음"}
 
