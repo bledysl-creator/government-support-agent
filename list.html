@@ -41,6 +41,7 @@ a{color:inherit}
 .side b{display:block;color:var(--ink);font-size:14px}
 .star{position:absolute;top:12px;right:12px;background:none;border:0;cursor:pointer;color:#b9c3bd;padding:4px;border-radius:8px}
 .star:hover{background:#fdecec}.star.on{color:#e03131}
+footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:28px;line-height:1.7}
 .empty{background:#fff;border-radius:16px;padding:40px;text-align:center;color:var(--sub)}
 @media(max-width:720px){.item{grid-template-columns:70px 1fr}.side{grid-column:2;text-align:left}}
 </style>
@@ -52,6 +53,7 @@ a{color:inherit}
   <div class="chips" id="chips"></div>
   <div class="tools"><input id="q" type="search" placeholder="사업명·기관 검색"><select id="sort"><option value="due">마감 빠른 순</option><option value="fit">적합도 순</option><option value="new">최근 수집 순</option></select></div>
   <div class="list" id="list"></div>
+  <footer>평일 09:00 자동갱신 및 알림 전용<br>만든이: JYKING</footer>
 </div>
 <script>
 const today = (() => { const d = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"})); d.setHours(0,0,0,0); return d; })();
