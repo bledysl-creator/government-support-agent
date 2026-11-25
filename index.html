@@ -120,6 +120,11 @@ td.fv{text-align:center;width:52px}
 table{width:100%;border-collapse:collapse;font-size:14px}
 th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--sub);font-weight:600;font-size:13px;white-space:nowrap}
+.sortb{background:none;border:0;padding:2px 4px;margin:-2px -4px;font:inherit;color:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:4px;border-radius:6px}
+.sortb:hover{background:var(--g100);color:var(--g700)}
+.sortb .sa{font-size:10px;opacity:.45}
+.sortb.on{color:var(--g700)}.sortb.on .sa{opacity:1}
+td.src{min-width:52px;word-break:keep-all}
 td.nm a{font-weight:600;text-decoration:none}
 td.nm a:hover{text-decoration:underline}
 .search{padding:8px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14px;min-width:200px;margin-left:auto}
@@ -198,7 +203,7 @@ footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:24px;line-
 
   <section class="panel" id="all">
     <div class="rechead"><h2 style="font-size:18px">전체 공고</h2><p id="allCount"></p><input class="search" id="q" type="search" placeholder="사업명·기관 검색"></div>
-    <div class="tablewrap"><table><thead><tr><th>판정</th><th>사업명</th><th>기관</th><th>마감</th><th>판단 사유</th><th>수집처</th><th style="text-align:center">관심</th></tr></thead><tbody id="tbody"></tbody></table></div>
+    <div class="tablewrap"><table><thead><tr id="thead"><th><button class="sortb" data-k="v" type="button">판정<span class="sa"></span></button></th><th><button class="sortb" data-k="n" type="button">사업명<span class="sa"></span></button></th><th><button class="sortb" data-k="o" type="button">기관<span class="sa"></span></button></th><th><button class="sortb" data-k="d" type="button">마감<span class="sa"></span></button></th><th><button class="sortb" data-k="r" type="button">판단 사유<span class="sa"></span></button></th><th><button class="sortb" data-k="s" type="button">수집처<span class="sa"></span></button></th><th style="text-align:center"><button class="sortb" data-k="f" type="button">관심<span class="sa"></span></button></th></tr></thead><tbody id="tbody"></tbody></table></div>
   </section>
 
   <footer>평일 09:00 자동갱신 및 알림 전용<br>만든이: JYKING</footer>
@@ -338,18 +343,40 @@ function cards(act){
   }).join("") : `<div class="empty">조건에 맞는 공고가 없어요.</div>`;
 }
 
+let sortK = null, sortD = 1;   // null = 기본(판정→마감)
+const reason = x => (x.한줄평||"").replace(/^(꼭 맞음|검토 필요|제외)\s*[:.]\s*/,"");
+const srcLabel = s => { s = s||""; return /^[가-힣]{4}$/.test(s) ? esc(s.slice(0,2))+"<br>"+esc(s.slice(2)) : `<span style="white-space:nowrap">${esc(s)}</span>`; };
 function table(all){
   const q = document.getElementById("q").value.trim();
   const rank = {"꼭 맞음":0,"검토 필요":1,"제외":2};
+  // 가나다 기준: 앞의 [경기]·(사) 같은 머리말은 빼고, 한글로 시작하면 영문·숫자보다 앞에
+  const tkey = s => String(s||"").replace(/^\s*([\[(（][^\])）]*[\])）]\s*)+/,"").trim();
+  const grp = s => !s || s==="-" ? 2 : /^[가-힣]/.test(s) ? 0 : 1;   // 한글 → 영문·숫자 → 빈칸
+  const txt = (a,b)=>{ a=tkey(a); b=tkey(b); return (grp(a)-grp(b))*sortD || a.localeCompare(b,"ko"); };
+  const due = x => daysLeft(x.마감일) ?? 99999;
+  const K = { v:(a,b)=>(rank[a.판정]??3)-(rank[b.판정]??3), n:(a,b)=>txt(a.사업명,b.사업명), o:(a,b)=>txt(a.기관,b.기관),
+    d:(a,b)=>due(a)-due(b), r:(a,b)=>txt(reason(a),reason(b)), s:(a,b)=>txt(a.수집처,b.수집처), f:(a,b)=>(saved.has(b.id)?1:0)-(saved.has(a.id)?1:0) };
+  const base = (a,b)=>K.v(a,b) || K.d(a,b);
   const rows = all.filter(x=>!q || (x.사업명+" "+(x.기관||"")).includes(q))
-    .sort((a,b)=>(rank[a.판정]??3)-(rank[b.판정]??3) || (daysLeft(a.마감일)??9999)-(daysLeft(b.마감일)??9999));
+    .sort(sortK==="d" ? (a,b)=>{ const na=daysLeft(a.마감일), nb=daysLeft(b.마감일);
+        if (na===null||nb===null) return (na===null)-(nb===null) || base(a,b);   // 상시는 항상 맨 뒤
+        return sortD*(na-nb) || base(a,b); }
+      : sortK ? (a,b)=>sortD*K[sortK](a,b) || base(a,b) : base);
+  const tip = {d:["마감 빠른 순","마감 늦은 순"], v:["꼭 맞음 먼저","제외 먼저"], f:["관심 먼저","관심 나중"]};
+  document.querySelectorAll("#thead .sortb").forEach(b=>{
+    const k=b.dataset.k, on=k===sortK;
+    b.classList.toggle("on",on);
+    b.querySelector(".sa").textContent = on ? (sortD>0?"▲":"▼") : "↕";
+    const t = tip[k]||["가나다 순","역순(하다가)"];
+    b.title = on ? `지금: ${t[sortD>0?0:1]} · 누르면 ${t[sortD>0?1:0]}` : `${t[0]}으로 정렬`;
+  });
   document.getElementById("allCount").textContent = `${rows.length}건`;
   const cls = v => v==="꼭 맞음"?"v-fit":v==="검토 필요"?"v-rev":"v-ex";
   document.getElementById("tbody").innerHTML = rows.map(x=>`<tr>
     <td><span class="verdict ${cls(x.판정)}" style="font-size:12px;padding:3px 8px">${esc(x.판정)}</span></td>
     <td class="nm">${x.링크?`<a href="${esc(safeUrl(x.링크))}" target="_blank" rel="noopener">${esc(x.사업명)}</a>`:esc(x.사업명)}</td>
     <td>${esc(x.기관||"-")}</td><td style="white-space:nowrap">${esc(x.마감일||"-")}</td>
-    <td>${esc((x.한줄평||"").replace(/^(꼭 맞음|검토 필요|제외)\s*[:.]\s*/,""))}</td><td>${esc(x.수집처||"")}</td><td class="fv">${starBtn(x.id)}</td></tr>`).join("");
+    <td>${esc(reason(x))}</td><td class="src">${srcLabel(x.수집처)}</td><td class="fv">${starBtn(x.id)}</td></tr>`).join("");
 }
 
 function sources(){
@@ -389,6 +416,11 @@ document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click", ()=>{
   if (a.dataset.jump) { tab = a.dataset.jump; render(); }
 }));
 document.getElementById("q").addEventListener("input", ()=>table(visible()));
+document.getElementById("thead").addEventListener("click", e=>{
+  const b = e.target.closest(".sortb"); if (!b) return;
+  if (sortK===b.dataset.k) sortD = -sortD; else { sortK = b.dataset.k; sortD = 1; }
+  table(visible());
+});
 
 fetch("notices.json?t="+Date.now()).then(r=>r.json()).then(j=>{
   DATA = j; DATA.notices = DATA.notices||[];
