@@ -326,8 +326,8 @@
  "sources": [
   {
    "name": "기업마당",
-   "ok": false,
-   "note": "접속 차단 (API 키 등록 후 수집)"
+   "ok": true,
+   "note": "목록 15건만 연결 (전체는 API 키 필요)"
   },
   {
    "name": "K-Startup",
@@ -336,8 +336,8 @@
   },
   {
    "name": "중소벤처기업부",
-   "ok": false,
-   "note": "접속 차단"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "서울시",
@@ -351,28 +351,28 @@
   },
   {
    "name": "경기도",
-   "ok": false,
-   "note": "서버 오류"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "GBSA",
-   "ok": false,
-   "note": "내용 없음"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "경기테크노파크",
-   "ok": false,
-   "note": "스크립트 화면"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "고용노동부",
-   "ok": false,
-   "note": "목록 없음"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "고용24",
    "ok": false,
-   "note": "목록 없음"
+   "note": "사이트가 자동 읽기를 막음 (인력 공고는 기업마당·고용노동부로 확인)"
   },
   {
    "name": "IRIS",
@@ -381,8 +381,8 @@
   },
   {
    "name": "KHIDI",
-   "ok": false,
-   "note": "목록 없음"
+   "ok": true,
+   "note": "GitHub 수집 연결"
   },
   {
    "name": "NIPA",
