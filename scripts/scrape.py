@@ -15,7 +15,8 @@ SOURCES = {
     "GBSA":           ["https://www.gbsa.or.kr/board/notice.do", "https://www.egbiz.or.kr/", "https://www.gbsa.or.kr/"],
     "경기테크노파크": ["https://pms.gtp.or.kr/web/business/webBusinessList.do", "https://www.gtp.or.kr/"],
     "고용노동부":     ["https://www.moel.go.kr/news/notice/noticeList.do"],
-    "고용24":         ["https://www.work24.go.kr/cm/main.do", "https://www.work24.go.kr/"],
+    "고용24":         ["https://m.work24.go.kr/cm/c/b/1100/selectBbttList.do?currentPageNo=1", "https://m.work24.go.kr/cm/main.do"],
+    "고용노동부_지원제도": ["https://www.moel.go.kr/info/govsupport/govsupportcon/govSupportConList.do"],
     "KHIDI":          ["https://www.khidi.or.kr/board?menuId=MENU01108", "https://www.khidi.or.kr/main"],
 }
 only = set(sys.argv[1:])  # 인자로 특정 수집처만 돌릴 수 있음
