@@ -44,8 +44,8 @@ SOURCES = {
     "중진공_연수원":   ["https://www.kosmes.or.kr/nsh/SH/NTS/SHNTS001M0.do", "https://hrd.kosmes.or.kr/", "https://www.kosmes.or.kr/"],
     "한국산업인력공단": ["https://www.hrdkorea.or.kr/1/3/1", "https://www.hrdkorea.or.kr/"],
     "의료기기안전정보원": ["https://www.nids.or.kr/board/list.do?bbsId=notice", "https://www.nids.or.kr/"],
-    "의료기기산업협회": ["https://www.kmdia.or.kr/notice/list", "https://www.kmdia.or.kr/"],
-    "KHIDI_교육":     ["https://edu.khidi.or.kr/", "https://www.khidi.or.kr/board?menuId=MENU01110"],
+    "의료기기산업협회": ["https://www.kmdia.or.kr/", "https://edu.kmdia.or.kr/"],
+    "의료기기안전정보원_교육": ["https://edu.nids.or.kr/", "https://edu.nids.or.kr/common/greeting.do"],
 }
 only = set(sys.argv[1:])  # 인자로 특정 수집처만 돌릴 수 있음
 

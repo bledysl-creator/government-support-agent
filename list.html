@@ -63,7 +63,7 @@ const isDate = d => /^\d{4}-\d{2}-\d{2}$/.test(d||"");
 const daysLeft = d => isDate(d) ? Math.round((new Date(d+"T00:00:00") - today)/86400000) : null;
 const isActive = x => x.판정 !== "제외";
 const isUrgent = x => { const n = daysLeft(x.마감일); return n!==null && n<=7; };
-const FIELDS = [["R&D", /R&D|연구|기술개발|과제|실증|테스트베드|TIPS|팁스/i],["바우처", /바우처/],["인력", /인력|채용|인건비|고용|일자리|교육|훈련/],["사업화·판로", /사업화|판로|수출|해외|마케팅|전시|입점/]];
+const FIELDS = [["R&D", /R&D|연구|기술개발|과제|실증|테스트베드|TIPS|팁스/i],["바우처", /바우처/],["교육", /교육|훈련|연수|아카데미|역량강화|직무|재직자|강좌/],["인력", /인력|채용|인건비|고용|일자리/],["사업화·판로", /사업화|판로|수출|해외|마케팅|전시|입점/]];
 const fieldOf = x => { if (x.분야) return x.분야; const t=(x.사업명||"")+" "+(x.자격요건||""); for (const [n,re] of FIELDS) if (re.test(t)) return n; return "기타"; };
 const DUE = [["7일 이내",n=>n!==null&&n<=7],["8~14일",n=>n!==null&&n>7&&n<=14],["15~30일",n=>n!==null&&n>14&&n<=30],["31일 이후",n=>n!==null&&n>30],["상시",n=>n===null]];
 const saved = new Set(JSON.parse(localStorage.getItem("savedNotices")||"[]"));

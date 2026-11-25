@@ -224,7 +224,8 @@ const isUrgent = x => { const n = daysLeft(x.마감일); return n!==null && n<=7
 const FIELDS = [
   ["R&D", /R&D|연구|기술개발|과제|실증|테스트베드|TIPS|팁스/i, "#1b7a47"],
   ["바우처", /바우처/, "#3fb15f"],
-  ["인력", /인력|채용|인건비|고용|일자리|교육|훈련/, "#b4e28f"],
+  ["교육", /교육|훈련|연수|아카데미|역량강화|직무|재직자|강좌/, "#5fb8a6"],
+  ["인력", /인력|채용|인건비|고용|일자리/, "#b4e28f"],
   ["사업화·판로", /사업화|판로|수출|해외|마케팅|전시|입점/, "#e8c547"],
 ];
 const fieldOf = x => {
@@ -263,7 +264,7 @@ function kpis(all){
 
 function donut(all){
   const cnt = {}; all.forEach(x=>{const f=fieldOf(x); cnt[f]=(cnt[f]||0)+1;});
-  const order = [...FIELDS.map(f=>f[0]),"기타"].filter(k=>cnt[k]);
+  const order = ["R&D","바우처","인력","교육","사업화·판로","기타"].filter(k=>cnt[k]);
   const total = all.length || 1, R=78, r=50, cx=95, cy=95;
   const p = (rad,ang)=>[cx+rad*Math.cos(ang), cy+rad*Math.sin(ang)];
   let a = -Math.PI/2, svg = "";
@@ -313,7 +314,7 @@ function insights(all, k, d){
 function tabs(act){
   const fields = {}; act.forEach(x=>{const f=fieldOf(x); fields[f]=(fields[f]||0)+1;});
   const T = [["all",`전체 (${act.length})`],["꼭 맞음",`꼭 맞음 (${act.filter(x=>x.판정==="꼭 맞음").length})`],["urgent",`마감 임박 (${act.filter(isUrgent).length})`],
-    ...Object.keys(fields).map(f=>["f:"+f,`${f} (${fields[f]})`]), ["saved",`관심 (${visible().filter(x=>saved.has(x.id)).length})`]];
+    ...[...new Set(["R&D","바우처","인력","교육",...FIELDS.map(f=>f[0]),"기타"])].filter(f=>fields[f]||["R&D","바우처","인력","교육"].includes(f)).map(f=>["f:"+f,`${f} (${fields[f]||0})`]), ["saved",`관심 (${visible().filter(x=>saved.has(x.id)).length})`]];
   document.getElementById("tabs").innerHTML = T.map(([k,l])=>`<button data-t="${esc(k)}" class="${k===tab?"on":""}">${esc(l)}</button>`).join("");
 }
 
