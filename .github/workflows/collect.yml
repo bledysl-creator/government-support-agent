@@ -1,0 +1,27 @@
+name: 공고 수집 (평일 08:40 KST)
+on:
+  schedule:
+    - cron: "40 23 * * 0-4"   # UTC 일~목 23:40 = 한국 월~금 08:40
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 공식 API로 공고 받기
+        env:
+          BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+          DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+        run: python scripts/collect.py
+      - name: 저장
+        run: |
+          git config user.name "gov-support-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw
+          git diff --cached --quiet || git commit -m "공고 원자료 $(TZ=Asia/Seoul date +%F)"
+          git push
