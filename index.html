@@ -52,6 +52,7 @@ main{padding:24px 28px 48px;min-width:0;background:radial-gradient(1200px 300px 
 .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:16px}
 .kpi.fav .ki{background:#fdecec}
 .kpi.fav .n{color:#e03131}
+.go{cursor:pointer}.legend li.go{border-radius:8px;transition:background .15s}.legend li.go:hover{background:var(--g100)}g.go:hover .bar{opacity:.8}.kpi.click:hover h3{text-decoration:underline}
 .kpi.click{cursor:pointer}.kpi.click:hover{box-shadow:0 4px 16px rgba(20,60,30,.12)}
 .kpi{background:var(--card);border-radius:var(--r);padding:18px;display:flex;gap:16px;align-items:center;box-shadow:var(--shadow)}
 .kpi.first{background:linear-gradient(135deg,#fff,var(--g100));border:1px solid var(--g200)}
@@ -172,11 +173,11 @@ footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:24px}
   </div>
 
   <section class="kpis">
-    <div class="kpi first"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><div><h3>확인한 공고</h3><div class="n" id="kAll">0<small>건</small></div><div class="s" id="kAllS">-</div></div></div>
-    <div class="kpi"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><div><h3>신규 공고</h3><div class="n" id="kNew">0<small>건</small></div><div class="s up" id="kNewS">-</div></div></div>
-    <div class="kpi"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></div><div><h3>맞춤 공고</h3><div class="n" id="kFit">0<small>건</small></div><div class="s" id="kFitS">-</div></div></div>
-    <div class="kpi warn"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d64535" stroke-width="1.8"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M5 3L2 6M19 3l3 3"/></svg></div><div><h3>마감 임박</h3><div class="n" id="kUrg">0<small>건</small></div><div class="s">7일 이내 마감 (맞춤 공고)</div></div></div>
-    <div class="kpi fav click" id="kFavCard" title="관심 공고만 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="#e03131" stroke="#e03131" stroke-width="1.5"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></div><div><h3>관심 공고</h3><div class="n" id="kFav">0<small>건</small></div><div class="s" id="kFavS">별을 눌러 저장</div></div></div>
+    <div class="kpi first click" data-go="all" title="확인한 공고 목록 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><div><h3>확인한 공고</h3><div class="n" id="kAll">0<small>건</small></div><div class="s" id="kAllS">-</div></div></div>
+    <div class="kpi click" data-go="new" title="신규 공고 목록 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><div><h3>신규 공고</h3><div class="n" id="kNew">0<small>건</small></div><div class="s up" id="kNewS">-</div></div></div>
+    <div class="kpi click" data-go="fit" title="맞춤 공고 목록 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23944f" stroke-width="1.8"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></div><div><h3>맞춤 공고</h3><div class="n" id="kFit">0<small>건</small></div><div class="s" id="kFitS">-</div></div></div>
+    <div class="kpi warn click" data-go="urg" title="마감 임박 목록 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d64535" stroke-width="1.8"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M5 3L2 6M19 3l3 3"/></svg></div><div><h3>마감 임박</h3><div class="n" id="kUrg">0<small>건</small></div><div class="s">7일 이내 마감 (맞춤 공고)</div></div></div>
+    <div class="kpi fav click" id="kFavCard" data-go="fav" title="관심 공고 목록 보기"><div class="ki"><svg width="32" height="32" viewBox="0 0 24 24" fill="#e03131" stroke="#e03131" stroke-width="1.5"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></div><div><h3>관심 공고</h3><div class="n" id="kFav">0<small>건</small></div><div class="s" id="kFavS">별을 눌러 저장</div></div></div>
   </section>
 
   <section class="row">
@@ -270,7 +271,7 @@ function donut(all){
   svg += `<text x="95" y="96" text-anchor="middle" font-size="30" font-weight="800" fill="#16251c">${all.length}</text><text x="95" y="118" text-anchor="middle" font-size="13" fill="#5b6b61">건</text>`;
   document.getElementById("donut").innerHTML = svg;
   document.getElementById("donutTotal").textContent = `(전체 ${all.length}건)`;
-  document.getElementById("legend").innerHTML = order.map(k=>`<li><i style="background:${COLOR[k]||"#cfd6d1"}"></i><span>${esc(k)} (${(cnt[k]/total*100).toFixed(1)}%)</span><span>${cnt[k]}건</span></li>`).join("");
+  document.getElementById("legend").innerHTML = order.map(k=>`<li class="go" data-go="field:${esc(k)}" title="${esc(k)} 공고 목록 보기"><i style="background:${COLOR[k]||"#cfd6d1"}"></i><span>${esc(k)} (${(cnt[k]/total*100).toFixed(1)}%)</span><span>${cnt[k]}건</span></li>`).join("");
   return {cnt, order};
 }
 
@@ -283,9 +284,10 @@ function bars(act){
   for (let i=0;i<=4;i++){ const y=y0-H*i/4; s+=`<line x1="${x0}" x2="352" y1="${y}" y2="${y}" stroke="#e4ece2" ${i?'stroke-dasharray="3 4"':''}/><text x="${x0-8}" y="${y+4}" text-anchor="end" font-size="11" fill="#5b6b61">${top*i/4}</text>`; }
   v.forEach((n,i)=>{
     const h = H*n/top, x = x0+6+i*(w+gap);
-    s += `<rect x="${x}" y="${y0-h}" width="${w}" height="${h}" rx="6" fill="${cols[i]}"/>`;
+    s += `<g class="go" data-go="due:${i}"><title>${B[i][0]} 공고 목록 보기</title><rect x="${x-4}" y="${y0-H-10}" width="${w+8}" height="${H+40}" fill="transparent"/>`;
+    s += `<rect class="bar" x="${x}" y="${y0-h}" width="${w}" height="${h}" rx="6" fill="${cols[i]}"/>`;
     s += `<text x="${x+w/2}" y="${y0-h-7}" text-anchor="middle" font-size="13" font-weight="700" fill="#16251c">${n}</text>`;
-    s += `<text x="${x+w/2}" y="${y0+20}" text-anchor="middle" font-size="12" fill="#5b6b61">${B[i][0]}</text>`;
+    s += `<text x="${x+w/2}" y="${y0+20}" text-anchor="middle" font-size="12" fill="#5b6b61">${B[i][0]}</text></g>`;
   });
   document.getElementById("bars").innerHTML = s;
 }
@@ -376,9 +378,11 @@ document.addEventListener("click", e=>{
 });
 // 다른 탭에서 바꿔도 맞춰지게
 window.addEventListener("storage", e=>{ if(e.key==="savedNotices"){ saved.clear(); JSON.parse(e.newValue||"[]").forEach(i=>saved.add(i)); render(); } });
-document.getElementById("kFavCard").addEventListener("click", ()=>{
-  tab="saved"; document.querySelectorAll("nav a").forEach(b=>b.classList.toggle("on", b.dataset.jump==="saved"));
-  render(); document.getElementById("rec").scrollIntoView({behavior:"smooth"});
+// KPI 카드·분야 범례·마감 막대를 누르면 목록 페이지로 이동
+document.addEventListener("click", e=>{
+  if (e.target.closest(".star")) return;
+  const g = e.target.closest("[data-go]"); if (!g) return;
+  location.href = "list.html?view=" + encodeURIComponent(g.dataset.go);
 });
 document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click", ()=>{
   document.querySelectorAll("nav a").forEach(b=>b.classList.toggle("on", b===a));

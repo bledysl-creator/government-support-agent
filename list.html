@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공고 목록 · 정부지원사업 통합 대시보드</title>
+<style>
+:root{--g900:#0f4d2c;--g800:#14633a;--g700:#1b7a47;--g600:#23944f;--g500:#3fb15f;--g400:#7fcf6b;--g300:#b4e28f;--g200:#dff2d3;--g100:#eef8e8;
+  --ink:#16251c;--sub:#5b6b61;--line:#e4ece2;--bg:#f4f8f1;--red:#d64535;--redbg:#fde8e5;--r:18px;--shadow:0 2px 10px rgba(20,60,30,.06)}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;font-size:15px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 20px 60px}
+.top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.back{display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:#fff;border-radius:999px;padding:8px 14px;box-shadow:var(--shadow);font-weight:600;font-size:14px;color:var(--g700)}
+.back:hover{background:var(--g100)}
+.upd{margin-left:auto;color:var(--sub);font-size:13px}
+.head{background:linear-gradient(135deg,#fff,var(--g100));border:1px solid var(--g200);border-radius:var(--r);padding:20px 22px;margin-bottom:14px}
+.head h1{margin:0;font-size:24px}.head h1 small{font-size:16px;color:var(--g600);margin-left:8px}
+.head p{margin:6px 0 0;color:var(--sub);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.chips a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--sub)}
+.chips a.on{background:var(--g700);border-color:var(--g700);color:#fff}
+.chips .sep{width:1px;background:var(--line);margin:0 4px}
+.tools{display:flex;gap:10px;margin-bottom:12px;align-items:center}
+.tools input,.tools select{border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;font-size:14px;background:#fff}
+.tools input{flex:1}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:16px 56px 16px 18px;position:relative;display:grid;grid-template-columns:86px 1fr 120px;gap:14px;align-items:start}
+.item.faved{box-shadow:0 0 0 2px #f3b4b4,var(--shadow)}
+.dd{border-radius:12px;background:var(--g100);color:var(--g700);text-align:center;padding:10px 4px;font-weight:800;font-size:17px}
+.dd small{display:block;font-weight:500;font-size:11px;color:var(--sub);margin-top:2px}
+.dd.u{background:var(--redbg);color:var(--red)}.dd.x{background:#eef1f0;color:#7b8580}
+.item h3{margin:0 0 4px;font-size:16px}
+.item h3 a{text-decoration:none}.item h3 a:hover{text-decoration:underline}
+.meta{color:var(--sub);font-size:13px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.why{margin-top:8px;font-size:13.5px;background:#f7faf5;border-radius:10px;padding:8px 10px}
+.tag{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700}
+.tag.fit{background:var(--g200);color:var(--g800)}.tag.rev{background:#fdf4d6;color:#8a6a06}.tag.ex{background:#eef1f0;color:#6b7570}
+.side{text-align:right;font-size:13px;color:var(--sub)}
+.side b{display:block;color:var(--ink);font-size:14px}
+.star{position:absolute;top:12px;right:12px;background:none;border:0;cursor:pointer;color:#b9c3bd;padding:4px;border-radius:8px}
+.star:hover{background:#fdecec}.star.on{color:#e03131}
+.empty{background:#fff;border-radius:16px;padding:40px;text-align:center;color:var(--sub)}
+@media(max-width:720px){.item{grid-template-columns:70px 1fr}.side{grid-column:2;text-align:left}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a class="back" href="./">← 대시보드</a><span class="upd" id="upd"></span></div>
+  <div class="head"><h1 id="title">공고 목록<small id="count"></small></h1><p id="desc"></p></div>
+  <div class="chips" id="chips"></div>
+  <div class="tools"><input id="q" type="search" placeholder="사업명·기관 검색"><select id="sort"><option value="due">마감 빠른 순</option><option value="fit">적합도 순</option><option value="new">최근 수집 순</option></select></div>
+  <div class="list" id="list"></div>
+</div>
+<script>
+const today = (() => { const d = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"})); d.setHours(0,0,0,0); return d; })();
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "#";
+const isDate = d => /^\d{4}-\d{2}-\d{2}$/.test(d||"");
+const daysLeft = d => isDate(d) ? Math.round((new Date(d+"T00:00:00") - today)/86400000) : null;
+const isActive = x => x.판정 !== "제외";
+const isUrgent = x => { const n = daysLeft(x.마감일); return n!==null && n<=7; };
+const FIELDS = [["R&D", /R&D|연구|기술개발|과제|실증|테스트베드|TIPS|팁스/i],["바우처", /바우처/],["인력", /인력|채용|인건비|고용|일자리|교육|훈련/],["사업화·판로", /사업화|판로|수출|해외|마케팅|전시|입점/]];
+const fieldOf = x => { if (x.분야) return x.분야; const t=(x.사업명||"")+" "+(x.자격요건||""); for (const [n,re] of FIELDS) if (re.test(t)) return n; return "기타"; };
+const DUE = [["7일 이내",n=>n!==null&&n<=7],["8~14일",n=>n!==null&&n>7&&n<=14],["15~30일",n=>n!==null&&n>14&&n<=30],["31일 이후",n=>n!==null&&n>30],["상시",n=>n===null]];
+const saved = new Set(JSON.parse(localStorage.getItem("savedNotices")||"[]"));
+const STAR = on => `<svg width="22" height="22" viewBox="0 0 24 24" fill="${on?"currentColor":"none"}" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>`;
+let DATA = {notices:[]};
+const params = new URLSearchParams(location.search);
+let view = params.get("view") || "all";
+
+function views(){
+  const all = DATA.notices.filter(x=>{ const n=daysLeft(x.마감일); return n===null || n>=0; });
+  const act = all.filter(isActive);
+  const latest = all.reduce((m,x)=> (x.처음본날짜||"")>m ? x.처음본날짜 : m, "");
+  const V = {
+    all:  ["확인한 공고", "지금 신청 가능한 공고 전체예요. 제외 공고도 함께 보여요.", all],
+    new:  ["신규 공고", latest ? `${latest} 수집에서 처음 확인한 공고예요.` : "최근 수집 공고예요.", all.filter(x=>x.처음본날짜===latest)],
+    fit:  ["맞춤 공고", "꼭 맞음 또는 검토 필요로 판단한 공고예요.", act],
+    urg:  ["마감 임박", "맞춤 공고 중 7일 안에 마감되는 공고예요.", act.filter(isUrgent)],
+    fav:  ["관심 공고", "별을 눌러 저장한 공고예요. 별을 다시 누르면 목록에서 빠져요.", all.filter(x=>saved.has(x.id))],
+  };
+  [...FIELDS.map(f=>f[0]),"기타"].forEach(f=> V["field:"+f] = [`${f} 분야`, `지원 분야가 ${f}인 공고예요 (제외 포함).`, all.filter(x=>fieldOf(x)===f)]);
+  DUE.forEach(([n,f],i)=> V["due:"+i] = [`마감 ${n}`, `맞춤 공고 중 마감까지 ${n==="상시"?"기한이 없는(상시)":n+" 남은"} 공고예요.`, act.filter(x=>f(daysLeft(x.마감일)))]);
+  return V;
+}
+
+function chips(V){
+  const link = (k,label) => `<a href="?view=${encodeURIComponent(k)}" data-v="${esc(k)}" class="${k===view?"on":""}">${esc(label)} ${V[k][2].length}</a>`;
+  document.getElementById("chips").innerHTML =
+    ["all","new","fit","urg","fav"].map(k=>link(k,V[k][0])).join("") + '<span class="sep"></span>' +
+    Object.keys(V).filter(k=>k.startsWith("field:")&&V[k][2].length).map(k=>link(k,k.slice(6))).join("") + '<span class="sep"></span>' +
+    DUE.map((d,i)=>link("due:"+i,d[0])).join("");
+}
+
+function render(){
+  const V = views(); if (!V[view]) view = "all";
+  const [title, desc, rows0] = V[view];
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  let rows = rows0.filter(x=>!q || ((x.사업명||"")+" "+(x.기관||"")).toLowerCase().includes(q));
+  const s = document.getElementById("sort").value, rank = {"꼭 맞음":0,"검토 필요":1,"제외":2};
+  const dk = x => { const n=daysLeft(x.마감일); return n===null ? 9999 : n; };
+  rows.sort(s==="fit" ? (a,b)=>(rank[a.판정]??3)-(rank[b.판정]??3)||dk(a)-dk(b) : s==="new" ? (a,b)=>(b.처음본날짜||"").localeCompare(a.처음본날짜||"")||dk(a)-dk(b) : (a,b)=>dk(a)-dk(b));
+  document.title = `${title} · 정부지원사업 통합 대시보드`;
+  document.getElementById("title").innerHTML = `${esc(title)}<small>${rows.length}건</small>`;
+  document.getElementById("desc").textContent = desc;
+  chips(V);
+  const tagc = {"꼭 맞음":"fit","검토 필요":"rev","제외":"ex"};
+  document.getElementById("list").innerHTML = rows.length ? rows.map(x=>{
+    const n = daysLeft(x.마감일), on = saved.has(x.id);
+    const dd = n===null ? `<div class="dd">상시<small>${esc(x.마감일||"")}</small></div>` : `<div class="dd ${n<=7?"u":""} ${x.판정==="제외"?"x":""}">${n===0?"D-Day":"D-"+n}<small>${esc(x.마감일)}</small></div>`;
+    return `<div class="item ${on?"faved":""}">${dd}
+      <div><h3><a href="${esc(safeUrl(x.링크))}" target="_blank" rel="noopener">${esc(x.사업명)}</a></h3>
+        <div class="meta"><span class="tag ${tagc[x.판정]||"ex"}">${esc(x.판정)}</span><span>${esc(x.기관||"-")}</span><span>분야: ${esc(fieldOf(x))}</span><span>수집처: ${esc(x.수집처||"-")}</span></div>
+        <div class="why">${esc((x.한줄평||"").replace(/^(꼭 맞음|검토 필요|제외)\s*[:.]\s*/,""))}${x.자격요건?`<br><span style="color:var(--sub)">자격: ${esc(x.자격요건)}</span>`:""}</div></div>
+      <div class="side"><b>${esc(x.지원금액||"-")}</b>${x.접수시작?`접수 ${esc(x.접수시작)}~`:""}</div>
+      <button class="star ${on?"on":""}" data-id="${esc(x.id)}" title="${on?"관심 해제":"관심 공고로 저장"}" aria-pressed="${on}">${STAR(on)}</button></div>`;
+  }).join("") : `<div class="empty">${view==="fav"?"아직 관심 공고가 없어요. 별을 눌러 저장해 보세요.":"해당하는 공고가 없어요."}</div>`;
+}
+
+document.addEventListener("click", e=>{
+  const b = e.target.closest(".star");
+  if (b){ saved.has(b.dataset.id) ? saved.delete(b.dataset.id) : saved.add(b.dataset.id); localStorage.setItem("savedNotices", JSON.stringify([...saved])); render(); return; }
+  const c = e.target.closest(".chips a");
+  if (c){ e.preventDefault(); view = c.dataset.v; history.pushState(null,"","?view="+encodeURIComponent(view)); render(); window.scrollTo(0,0); }
+});
+window.addEventListener("popstate", ()=>{ view = new URLSearchParams(location.search).get("view")||"all"; render(); });
+window.addEventListener("storage", e=>{ if(e.key==="savedNotices"){ saved.clear(); JSON.parse(e.newValue||"[]").forEach(i=>saved.add(i)); render(); } });
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("sort").addEventListener("change", render);
+fetch("notices.json?t="+Date.now()).then(r=>r.json()).then(j=>{
+  DATA = j; DATA.notices = DATA.notices||[];
+  document.getElementById("upd").textContent = (j.updated||"-")+" 기준";
+  render();
+}).catch(()=>{ document.getElementById("list").innerHTML = '<div class="empty">데이터를 불러오지 못했어요.</div>'; });
+</script>
+</body>
+</html>
