@@ -18,10 +18,17 @@ jobs:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: python scripts/collect.py
+        continue-on-error: true
+      - name: 브라우저 설치
+        run: pip install playwright==1.49.1 && python -m playwright install --with-deps chromium
+      - name: 기관 게시판 읽기 (브라우저)
+        run: python scripts/scrape.py
+        continue-on-error: true
       - name: 저장
         run: |
           git config user.name "gov-support-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/raw
           git diff --cached --quiet || git commit -m "공고 원자료 $(TZ=Asia/Seoul date +%F)"
+          git pull --rebase
           git push
