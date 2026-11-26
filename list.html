@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>공고 목록 · 정부지원사업 통합 대시보드</title>
+<script src="gate.js"></script>
 <style>
 :root{--g900:#0f4d2c;--g800:#14633a;--g700:#1b7a47;--g600:#23944f;--g500:#3fb15f;--g400:#7fcf6b;--g300:#b4e28f;--g200:#dff2d3;--g100:#eef8e8;
   --ink:#16251c;--sub:#5b6b61;--line:#e4ece2;--bg:#f4f8f1;--red:#d64535;--redbg:#fde8e5;--r:18px;--shadow:0 2px 10px rgba(20,60,30,.06)}
@@ -53,7 +54,7 @@ footer{color:var(--sub);font-size:12.5px;text-align:center;margin-top:28px;line-
   <div class="chips" id="chips"></div>
   <div class="tools"><input id="q" type="search" placeholder="사업명·기관 검색"><select id="sort"><option value="due">마감 빠른 순</option><option value="fit">적합도 순</option><option value="new">최근 수집 순</option></select></div>
   <div class="list" id="list"></div>
-  <footer>평일 09:00 자동갱신 및 알림 전용<br>만든이: JYK</footer>
+  <footer>평일 09:00 자동갱신 및 알림 전용<br>만든이: JYK · <a href="#" onclick="gsaLogout();return false" style="color:inherit">로그아웃</a></footer>
 </div>
 <script>
 const today = (() => { const d = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"})); d.setHours(0,0,0,0); return d; })();
