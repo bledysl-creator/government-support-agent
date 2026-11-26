@@ -1,8 +1,8 @@
 /* 간단한 로그인 화면. GitHub Pages는 공개 정적 사이트라 진짜 보안은 아니고 가림막 용도다.
    계정 정보는 평문으로 두지 않고 SHA-256 해시로만 비교한다. */
 (function(){
-  var KEY = "gsaAuth", HASH = "da4c25a07e8a0293e4f493d7e12dc56d380d3d604f11fa603eec8db51c436247";
-  if (sessionStorage.getItem(KEY) === HASH) return;
+  var KEY = "gsaAuth", HASHES = ["da4c25a07e8a0293e4f493d7e12dc56d380d3d604f11fa603eec8db51c436247", "d879c6b2d898f7676d01efae52167c8e0e3a593953a957a9cc8597f2ba5efb44"];
+  if (HASHES.indexOf(sessionStorage.getItem(KEY)) >= 0) return;
   document.documentElement.classList.add("locked");
   var css = document.createElement("style");
   css.textContent = [
@@ -36,7 +36,7 @@
     g.querySelector("form").addEventListener("submit", async function(e){
       e.preventDefault();
       var h = await sha(document.getElementById("gId").value.trim() + "\n" + document.getElementById("gPw").value);
-      if (h === HASH){ sessionStorage.setItem(KEY, HASH); document.documentElement.classList.remove("locked"); g.remove(); }
+      if (HASHES.indexOf(h) >= 0){ sessionStorage.setItem(KEY, h); document.documentElement.classList.remove("locked"); g.remove(); }
       else { document.getElementById("gErr").textContent = "아이디 또는 비밀번호가 맞지 않아요."; document.getElementById("gPw").value = ""; document.getElementById("gPw").focus(); }
     });
     document.getElementById("gId").focus();
