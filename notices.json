@@ -1704,13 +1704,13 @@
   },
   {
    "name": "서울시",
-   "ok": false,
-   "note": "이 실행 환경에서 접속 차단"
+   "ok": true,
+   "note": "GitHub 수집 (서울시 경제분야 누리집 공고)"
   },
   {
    "name": "SBA",
-   "ok": false,
-   "note": "목록이 동적으로 불러와져 공고가 안 보임 (기업마당·K-Startup으로 SBA 공고 확인)"
+   "ok": true,
+   "note": "GitHub 수집 (SBA 기업지원 공고 목록)"
   },
   {
    "name": "경기도",
@@ -1769,13 +1769,13 @@
   },
   {
    "name": "의료기기산업협회",
-   "ok": false,
-   "note": "GitHub 수집 실패(목록 없음)"
+   "ok": true,
+   "note": "GitHub 수집 (통합 게이트 → 협회 홈)"
   },
   {
    "name": "의료기기안전정보원 교육",
-   "ok": false,
-   "note": "GitHub 수집 실패(목록 없음)"
+   "ok": true,
+   "note": "GitHub 수집 (교육 사이트가 외부 접속을 막아 정보원 공지 게시판의 설명회·교육으로 대체)"
   }
  ]
 }
