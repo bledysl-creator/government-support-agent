@@ -44,8 +44,8 @@ SOURCES = {
     "중진공_연수원":   ["https://www.kosmes.or.kr/nsh/SH/NTS/SHNTS001M0.do", "https://hrd.kosmes.or.kr/", "https://www.kosmes.or.kr/"],
     "한국산업인력공단": ["https://www.hrdkorea.or.kr/1/3/1", "https://www.hrdkorea.or.kr/"],
     "의료기기안전정보원": ["https://www.nids.or.kr/board/list.do?bbsId=notice", "https://www.nids.or.kr/"],
-    "의료기기산업협회": ["https://www.kmdia.or.kr/kor/board/list.do?bbsId=notice", "https://www.kmdia.or.kr/kor/main.do", "http://www.kmdia.or.kr/", "https://www.kmdia.or.kr/"],
-    "의료기기안전정보원_교육": [("https://edu.nids.or.kr/common/greeting.do", "https://www.nids.or.kr/"), ("https://edu.nids.or.kr/", "https://www.nids.or.kr/"), "http://edu.nids.or.kr/", "https://edu.nids.or.kr/main.do"],
+    "의료기기산업협회": ["https://www.kmdia.or.kr/index.do", "https://www.kmdia.or.kr/kmdia/main.do", "https://kmdia.or.kr/", "https://www.kmdia.or.kr/"],
+    "의료기기안전정보원_교육": [("https://edu.nids.or.kr/common/greeting.do", "https://www.nids.or.kr/"), ("https://edu.nids.or.kr/", "https://www.nids.or.kr/"), "https://www.nids.or.kr/board/list.jsp?page=NT&mnu=1&tabno=0&category=1", ("https://www.nids.or.kr/board/list.jsp?page=NT", "https://www.nids.or.kr/")],
     # 서울시·SBA: 본 사이트가 막히거나 목록이 늦게 그려져서, 서울시 경제분야 누리집의 공고·SBA 태그도 함께 시도
     "서울시":         ["https://news.seoul.go.kr/economy/archives/tag/%ea%b3%b5%ea%b3%a0", "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277", "https://www.seoul.go.kr/news/news_notice.do"],
     "SBA":            ["https://www.sba.seoul.kr/Pages/ContentsMenu/Company_Support.aspx?C=6FA70790-6677-EC11-80E8-9418827691E2", "https://news.seoul.go.kr/economy/archives/tag/sba", "https://www.sba.seoul.kr/"],
@@ -87,7 +87,7 @@ with sync_playwright() as p:
                     text = text or "\n".join(lp.text)
                 text = (text or "")[:30000]
                 status = r.status if r else None
-                res["tried"].append({"url": url, "status": status, "links": len(links)})
+                res["tried"].append({"url": url, "status": status, "links": len(links), "final": page.url, "title": (page.title() or "")[:80], "sample": " ".join((text or "").split())[:300] if len(links) < 5 else ""})
                 last = urls[-1] if not isinstance(urls[-1], tuple) else urls[-1][0]
                 if status and status < 400 and len(links) >= 5 and not url.rstrip("/").endswith((".or.kr", ".go.kr")) or (status and status < 400 and url == last and len(links) >= 5):
                     res.update({"ok": True, "url": page.url, "title": page.title(), "links": links[:300], "text": text})
