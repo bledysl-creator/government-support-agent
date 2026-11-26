@@ -71,6 +71,19 @@ with sync_playwright() as p:
                 except Exception:
                     pass
                 page.wait_for_timeout(3000)  # 목록을 늦게 그리는 사이트 대비
+                # 방문자 확인 화면(스크립트가 확인 후 스스로 새로고침)이면 새로고침이 끝날 때까지 기다린다
+                for _ in range(3):
+                    try:
+                        body = page.evaluate("() => document.body ? document.body.innerText.slice(0, 200) : ''") or ""
+                    except Exception:
+                        body = ""
+                    if "FingerprintJS" not in body and "Request Blocked" not in body:
+                        break
+                    page.wait_for_timeout(6000)
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=15000)
+                    except Exception:
+                        pass
                 links = []
                 for fr in page.frames:  # 프레임 안에 목록이 있는 사이트 대비
                     try:
