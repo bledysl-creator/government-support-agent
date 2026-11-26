@@ -44,7 +44,7 @@ SOURCES = {
     "중진공_연수원":   ["https://www.kosmes.or.kr/nsh/SH/NTS/SHNTS001M0.do", "https://hrd.kosmes.or.kr/", "https://www.kosmes.or.kr/"],
     "한국산업인력공단": ["https://www.hrdkorea.or.kr/1/3/1", "https://www.hrdkorea.or.kr/"],
     "의료기기안전정보원": ["https://www.nids.or.kr/board/list.do?bbsId=notice", "https://www.nids.or.kr/"],
-    "의료기기산업협회": ["https://www.kmdia.or.kr/index.do", "https://www.kmdia.or.kr/kmdia/main.do", "https://kmdia.or.kr/", "https://www.kmdia.or.kr/"],
+    "의료기기산업협회": ["https://www.kmdia.or.kr/"],   # 통합 게이트 페이지 → 안의 바로가기(협회·교육센터)로 이어서 수집
     "의료기기안전정보원_교육": [("https://edu.nids.or.kr/common/greeting.do", "https://www.nids.or.kr/"), ("https://edu.nids.or.kr/", "https://www.nids.or.kr/"), "https://www.nids.or.kr/board/list.jsp?page=NT&mnu=1&tabno=0&category=1", ("https://www.nids.or.kr/board/list.jsp?page=NT", "https://www.nids.or.kr/")],
     # 서울시·SBA: 본 사이트가 막히거나 목록이 늦게 그려져서, 서울시 경제분야 누리집의 공고·SBA 태그도 함께 시도
     "서울시":         ["https://news.seoul.go.kr/economy/archives/tag/%ea%b3%b5%ea%b3%a0", "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277", "https://www.seoul.go.kr/news/news_notice.do"],
@@ -60,6 +60,7 @@ with sync_playwright() as p:
         if only and name not in only:
             continue
         res = {"ok": False, "tried": []}
+        urls = list(urls)   # 안내(게이트) 페이지면 그 안의 바로가기 링크를 뒤에 이어서 시도
         for url in urls:
             url, referer = (url if isinstance(url, tuple) else (url, None))
             page = ctx.new_page()
@@ -89,9 +90,15 @@ with sync_playwright() as p:
                 status = r.status if r else None
                 res["tried"].append({"url": url, "status": status, "links": len(links), "final": page.url, "title": (page.title() or "")[:80], "sample": " ".join((text or "").split())[:300] if len(links) < 5 else ""})
                 last = urls[-1] if not isinstance(urls[-1], tuple) else urls[-1][0]
-                if status and status < 400 and len(links) >= 5 and not url.rstrip("/").endswith((".or.kr", ".go.kr")) or (status and status < 400 and url == last and len(links) >= 5):
+                gate_followed = len(urls) > len(SOURCES[name])
+                if status and status < 400 and len(links) >= 5 and not url.rstrip("/").endswith((".or.kr", ".go.kr")) or (status and status < 400 and (url == last or gate_followed) and len(links) >= 5):
                     res.update({"ok": True, "url": page.url, "title": page.title(), "links": links[:300], "text": text})
                     break
+                if status and status < 400 and 0 < len(links) < 5 and len(urls) < 12:
+                    for l in links:
+                        h = l.get("h") or ""
+                        if h.startswith("http") and h not in urls:
+                            urls.append(h)
             except Exception as e:
                 res["tried"].append({"url": url, "error": str(e)[:200]})
             finally:
