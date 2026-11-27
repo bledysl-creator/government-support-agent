@@ -2,7 +2,8 @@
    계정 정보는 평문으로 두지 않고 SHA-256 해시로만 비교한다. */
 (function(){
   var KEY = "gsaAuth", HASHES = ["da4c25a07e8a0293e4f493d7e12dc56d380d3d604f11fa603eec8db51c436247", "d879c6b2d898f7676d01efae52167c8e0e3a593953a957a9cc8597f2ba5efb44"];
-  if (HASHES.indexOf(sessionStorage.getItem(KEY)) >= 0) return;
+  var cur = sessionStorage.getItem(KEY);
+  if (HASHES.indexOf(cur) >= 0 || cur === "guest") return;
   document.documentElement.classList.add("locked");
   var css = document.createElement("style");
   css.textContent = [
@@ -19,6 +20,8 @@
     "#gate button:hover{filter:brightness(1.07)}",
     "#gate .remember{display:flex;align-items:center;gap:8px;font-size:13.5px;color:#3d4d43;margin:-4px 0 14px;cursor:pointer;user-select:none}",
     "#gate .remember input{width:17px;height:17px;margin:0;padding:0;accent-color:#23944f;cursor:pointer;box-shadow:none}",
+    "#gate button.guest{background:#fff;color:#1b7a47;border:1px solid #b4e28f;margin-top:10px}",
+    "#gate button.guest:hover{background:#eef8e8;filter:none}",
     "#gate .err{min-height:20px;color:#d64535;font-size:13px;text-align:center;margin-top:10px}",
     "#gate .gh{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px;padding-top:16px;border-top:1px solid #eef2ec;color:#8a958e;font-size:13px}"
   ].join("\n");
@@ -32,17 +35,23 @@
       + '<label for="gId">아이디</label><input id="gId" name="username" autocomplete="username" required>'
       + '<label for="gPw">비밀번호</label><input id="gPw" name="password" type="password" autocomplete="current-password" required>'
       + '<label class="remember"><input type="checkbox" id="gSave">아이디 저장</label>'
-      + '<button type="submit">로그인</button><div class="err" id="gErr"></div>'
+      + '<button type="submit">로그인</button>'
+      + '<button type="button" class="guest" id="gGuest">게스트로 들어가기</button><div class="err" id="gErr"></div>'
       + '<div class="gh"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Github</div>'
       + '</form>';
     document.body.appendChild(g);
     g.querySelector("form").addEventListener("submit", async function(e){
       e.preventDefault();
       var h = await sha(document.getElementById("gId").value.trim() + "\n" + document.getElementById("gPw").value);
-      if (HASHES.indexOf(h) >= 0){ sessionStorage.setItem(KEY, h);
+      if (HASHES.indexOf(h) >= 0){ sessionStorage.setItem(KEY, h); sessionStorage.setItem("gsaRole", "member");
         if (document.getElementById("gSave").checked) localStorage.setItem("gsaSavedId", document.getElementById("gId").value.trim());   // 아이디만 저장, 비밀번호는 저장하지 않음
         else localStorage.removeItem("gsaSavedId"); document.documentElement.classList.remove("locked"); g.remove(); }
       else { document.getElementById("gErr").textContent = "아이디 또는 비밀번호가 맞지 않아요."; document.getElementById("gPw").value = ""; document.getElementById("gPw").focus(); }
+    });
+    // 게스트: 지금은 제한 없음. 나중에 제한을 둘 때 sessionStorage "gsaRole" 값("guest"/"member")으로 구분한다.
+    document.getElementById("gGuest").addEventListener("click", function(){
+      sessionStorage.setItem(KEY, "guest"); sessionStorage.setItem("gsaRole", "guest");
+      document.documentElement.classList.remove("locked"); g.remove();
     });
     var savedId = localStorage.getItem("gsaSavedId");
     if (savedId){ document.getElementById("gId").value = savedId; document.getElementById("gSave").checked = true; document.getElementById("gPw").focus(); }
@@ -50,4 +59,4 @@
   }
   if (document.body) build(); else document.addEventListener("DOMContentLoaded", build);
 })();
-window.gsaLogout = function(){ sessionStorage.removeItem("gsaAuth"); location.reload(); };
+window.gsaLogout = function(){ sessionStorage.removeItem("gsaAuth"); sessionStorage.removeItem("gsaRole"); location.reload(); };
